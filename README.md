@@ -1,3 +1,7 @@
+# BS Insights
+
+Practical knowledge. Clearly explained. A modern editorial knowledge platform built with Next.js, Tailwind CSS and shadcn/ui.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
