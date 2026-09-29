@@ -16,9 +16,13 @@ import { cn } from "@/lib/utils";
 export function MobileTableOfContents({
   headings,
   className,
+  title = "On this page",
+  navLabel = "Table of contents",
 }: {
   headings: Heading[];
   className?: string;
+  title?: string;
+  navLabel?: string;
 }) {
   if (!headings.length) return null;
 
@@ -26,10 +30,10 @@ export function MobileTableOfContents({
     <Accordion className={cn("rounded-xl border border-border bg-card px-4", className)}>
       <AccordionItem value="toc">
         <AccordionTrigger className="py-3.5 text-sm font-semibold hover:no-underline">
-          On this page
+          {title}
         </AccordionTrigger>
         <AccordionContent className="pb-4">
-          <nav aria-label="Table of contents">
+          <nav aria-label={navLabel}>
             <TocList headings={headings} />
           </nav>
         </AccordionContent>

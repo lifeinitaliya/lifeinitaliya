@@ -1,6 +1,6 @@
 "use server";
 
-import { categories } from "@/lib/mock-data/categories";
+import { categories } from "@/data/categories";
 import { isEmail, isHttpUrl, text, wordCount, type FormState } from "@/lib/forms";
 
 export type GuestPostField =

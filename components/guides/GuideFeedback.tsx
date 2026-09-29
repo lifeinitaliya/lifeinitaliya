@@ -4,10 +4,18 @@ import { useState } from "react";
 import { ThumbsDown, ThumbsUp } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { t, type Locale } from "@/lib/i18n";
 
 type Vote = "yes" | "no";
 
-export function GuideFeedback() {
+export function GuideFeedback({
+  noun = "guide",
+  locale = "en",
+}: {
+  noun?: "guide" | "article";
+  locale?: Locale;
+}) {
+  const dict = t(locale);
   // TODO: persist votes (e.g. a Supabase `guide_feedback` table) once the backend exists.
   const [vote, setVote] = useState<Vote | null>(null);
 
@@ -17,12 +25,12 @@ export function GuideFeedback() {
       className="flex flex-col gap-4 rounded-xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between"
     >
       <h2 id="feedback-title" className="text-lg font-semibold tracking-[-0.015em]">
-        Was this guide useful?
+        {dict.feedbackQuestion(noun)}
       </h2>
       <div aria-live="polite">
         {vote ? (
           <p className="text-sm text-muted-foreground">
-            Thanks for your feedback.
+            {dict.feedbackThanks}
           </p>
         ) : (
           <div className="flex gap-2">
@@ -35,7 +43,7 @@ export function GuideFeedback() {
                 onClick={() => setVote(option)}
               >
                 {option === "yes" ? <ThumbsUp aria-hidden /> : <ThumbsDown aria-hidden />}
-                {option === "yes" ? "Yes" : "No"}
+                {option === "yes" ? dict.yes : dict.no}
               </Button>
             ))}
           </div>

@@ -1,6 +1,6 @@
-# BS Insights
+# Life in Italia
 
-Practical knowledge. Clearly explained. A modern editorial knowledge platform built with Next.js, Tailwind CSS and shadcn/ui.
+Life in Italia is an independent editorial publication about Italy, in English and Italian, built with Next.js, Tailwind CSS and shadcn/ui.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

@@ -9,7 +9,8 @@ const sizes = {
 };
 
 const initials = (name: string) => {
-  if (name.startsWith("BS Insights")) return "BS";
+  // The editorial team (Italian: Redazione) uses the publication's monogram.
+  if (name === "Editorial Team" || name === "Redazione") return "Li";
   return name
     .split(/\s+/)
     .slice(0, 2)

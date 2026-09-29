@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Menu, Search } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 
+import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { NavLinks } from "@/components/layout/NavLinks";
 import { Logo } from "@/components/layout/Logo";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -15,12 +16,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { mainNav, routes } from "@/lib/site";
-import { cn } from "@/lib/utils";
+import { t, type Locale } from "@/lib/i18n";
+import { itRoutes, itTopicNav, routes, topicNav } from "@/lib/site";
 
-export function MobileNav() {
+export function MobileNav({ locale = "en" }: { locale?: Locale }) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+  const it = locale === "it";
+  const dict = t(locale);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -29,8 +32,8 @@ export function MobileNav() {
           <Button
             variant="ghost"
             size="icon-lg"
-            aria-label="Open menu"
-            className="md:hidden"
+            aria-label={dict.openMenu}
+            className="lg:hidden"
           />
         }
       >
@@ -38,40 +41,59 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent side="right" className="w-full gap-0 bg-background sm:max-w-sm">
         <SheetHeader className="h-16 justify-center border-b border-border px-5 py-0">
-          <Logo className="self-start" />
-          <SheetTitle className="sr-only">Menu</SheetTitle>
+          <Logo className="self-start" locale={locale} />
+          <SheetTitle className="sr-only">{dict.menu}</SheetTitle>
           <SheetDescription className="sr-only">
-            Browse BS Insights sections
+            {it ? "Sezioni di Life in Italia" : "Browse Life in Italia sections"}
           </SheetDescription>
         </SheetHeader>
 
-        <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-5 py-6">
+        <nav aria-label={it ? "Menu mobile" : "Mobile"} className="flex-1 overflow-y-auto px-5 py-6">
           <NavLinks
-            links={mainNav}
+            links={it ? itTopicNav : topicNav}
             onNavigate={close}
             className="flex flex-col"
-            linkClassName="flex items-center justify-between border-b border-border py-4 text-2xl font-semibold tracking-[-0.02em] text-foreground"
+            linkClassName="flex items-center border-b border-border py-3 font-display text-[26px] leading-tight text-foreground"
           />
+          {it ? (
+            // "About" pages exist in English only.
+            <ul className="mt-6 flex gap-6 text-[15px] font-medium text-muted-foreground">
+              <li>
+                <Link href={routes.about} hrefLang="en" onClick={close} className="rounded-sm hover:text-foreground">
+                  Chi siamo
+                </Link>
+              </li>
+              <li>
+                <Link href={routes.contact} hrefLang="en" onClick={close} className="rounded-sm hover:text-foreground">
+                  Contatti
+                </Link>
+              </li>
+            </ul>
+          ) : (
+            <NavLinks
+              links={[
+                { label: "About", href: routes.about },
+                { label: "Contact", href: routes.contact },
+              ]}
+              onNavigate={close}
+              className="mt-6 flex gap-6"
+              linkClassName="text-[15px] font-medium text-muted-foreground"
+            />
+          )}
           <Link
-            href={routes.search}
+            href={it ? itRoutes.search : routes.search}
             onClick={close}
             className="mt-6 flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 text-muted-foreground transition-colors hover:text-foreground"
           >
             <Search aria-hidden className="size-4" />
-            Search BS Insights
+            {dict.search}
           </Link>
+          <LanguageSwitcher
+            locale={locale}
+            label={it ? "Lingua del sito, menu" : "Site language, menu"}
+            className="mt-6"
+          />
         </nav>
-
-        <div className="border-t border-border p-5">
-          <Link
-            href={routes.writeForUs}
-            onClick={close}
-            className={cn(buttonVariants({ size: "xl" }), "w-full")}
-          >
-            Write for Us
-            <ArrowRight aria-hidden data-icon="inline-end" />
-          </Link>
-        </div>
       </SheetContent>
     </Sheet>
   );

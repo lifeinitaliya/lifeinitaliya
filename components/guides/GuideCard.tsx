@@ -4,16 +4,18 @@ import { CategoryLabel } from "@/components/guides/CategoryLabel";
 import { GuideCover } from "@/components/guides/GuideCover";
 import { GuideMeta } from "@/components/guides/GuideMeta";
 import { GuideRank } from "@/components/guides/GuideRank";
+import { articleLocale, type Locale } from "@/lib/i18n";
 import { routes } from "@/lib/site";
-import type { Guide } from "@/lib/types";
+import type { Article } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface GuideCardProps {
-  guide: Guide;
+  guide: Article;
   /** "vertical" stacks image above text; "horizontal" puts a thumbnail beside it. */
   layout?: "vertical" | "horizontal";
   showRank?: boolean;
   className?: string;
+  locale?: Locale;
 }
 
 export function GuideCard({
@@ -21,6 +23,7 @@ export function GuideCard({
   layout = "vertical",
   showRank = true,
   className,
+  locale = "en",
 }: GuideCardProps) {
   const horizontal = layout === "horizontal";
 
@@ -48,14 +51,15 @@ export function GuideCard({
         <CategoryLabel category={guide.category} />
         <h3
           className={cn(
-            "mt-2 font-semibold tracking-[-0.015em] text-balance",
+            "mt-2 font-display text-balance",
             horizontal
-              ? "text-base leading-snug sm:text-[17px]"
-              : "text-xl leading-tight"
+              ? "text-[19px] leading-snug sm:text-[21px]"
+              : "text-[23px] leading-[1.15]"
           )}
         >
           <Link
-            href={routes.guide(guide.slug)}
+            href={routes.article(guide)}
+            hrefLang={articleLocale(guide) !== locale ? articleLocale(guide) : undefined}
             className="rounded-sm transition-colors after:absolute after:inset-0 after:content-[''] group-hover:text-primary"
           >
             {guide.title}
@@ -70,8 +74,8 @@ export function GuideCard({
           {guide.excerpt}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
-          {showRank && <GuideRank score={guide.guideRank} />}
-          <GuideMeta guide={guide} />
+          {showRank && guide.kind === "guide" && <GuideRank score={guide.guideRank} locale={locale} />}
+          <GuideMeta guide={guide} locale={locale} />
         </div>
       </div>
     </article>

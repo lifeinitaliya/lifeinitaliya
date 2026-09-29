@@ -10,6 +10,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { t, type Locale } from "@/lib/i18n";
 import { breadcrumbSchema, type BreadcrumbItem } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
@@ -17,11 +18,12 @@ interface BreadcrumbsProps {
   /** Trail after "Home"; the last item is the current page. */
   items: BreadcrumbItem[];
   className?: string;
+  locale?: Locale;
 }
 
 /** Visible breadcrumb trail plus matching BreadcrumbList structured data. */
-export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
-  const trail = [{ label: "Home", href: "/" }, ...items];
+export function Breadcrumbs({ items, className, locale = "en" }: BreadcrumbsProps) {
+  const trail = [{ label: t(locale).home, href: locale === "it" ? "/it" : "/" }, ...items];
 
   return (
     <>

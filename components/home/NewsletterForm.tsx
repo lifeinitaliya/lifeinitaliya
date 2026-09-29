@@ -3,26 +3,41 @@
 import { useActionState } from "react";
 
 import { buttonVariants } from "@/components/ui/button";
-import {
-  subscribeToNewsletter,
-  type NewsletterState,
-} from "@/lib/actions/newsletter";
+import { subscribeToNewsletter } from "@/lib/actions/newsletter";
+import type { FormState } from "@/lib/forms";
+import type { Locale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-const initialState: NewsletterState = { status: "idle", message: "" };
+const initialState: FormState<"email"> = { status: "idle", message: "" };
 
-export function NewsletterForm() {
-  const [state, formAction, pending] = useActionState(
-    subscribeToNewsletter,
-    initialState
-  );
+const copy = {
+  en: {
+    label: "Email address",
+    placeholder: "Email address",
+    submit: "Subscribe",
+    pending: "Subscribing…",
+    note: "We'll only use your email to send The Italy Edit.",
+  },
+  it: {
+    label: "Indirizzo email",
+    placeholder: "Il tuo indirizzo email",
+    submit: "Iscriviti",
+    pending: "Iscrizione in corso…",
+    note: "Useremo il tuo indirizzo solo per inviarti la newsletter.",
+  },
+} as const;
+
+export function NewsletterForm({ locale = "en" }: { locale?: Locale }) {
+  const text = copy[locale];
+  const [state, formAction, pending] = useActionState(subscribeToNewsletter, initialState);
   const hasError = state.status === "error";
 
   return (
     <form action={formAction} noValidate className="w-full">
+      <input type="hidden" name="locale" value={locale} />
       <div className="flex flex-col gap-3 sm:flex-row">
         <label htmlFor="newsletter-email" className="sr-only">
-          Email address
+          {text.label}
         </label>
         <input
           id="newsletter-email"
@@ -30,20 +45,21 @@ export function NewsletterForm() {
           type="email"
           required
           autoComplete="email"
-          placeholder="Your email address"
+          placeholder={text.placeholder}
+          defaultValue={state.values?.email}
           aria-invalid={hasError || undefined}
           aria-describedby="newsletter-status"
-          className="h-12 w-full min-w-0 rounded-lg sm:flex-1 border border-border bg-background px-4 text-base text-foreground transition-[border-color,box-shadow] outline-none placeholder:text-muted-foreground focus-visible:border-primary/60 focus-visible:ring-4 focus-visible:ring-primary/10 aria-invalid:border-destructive"
+          className="h-13 w-full min-w-0 border-b-2 border-foreground bg-transparent px-1 text-lg text-foreground outline-none placeholder:text-foreground/45 focus-visible:border-primary aria-invalid:border-destructive sm:flex-1"
         />
         <button
           type="submit"
           disabled={pending}
           className={cn(
             buttonVariants({ size: "xl" }),
-            "h-12 bg-foreground text-background hover:bg-foreground/85"
+            "h-13 rounded-none bg-foreground px-7 text-background hover:bg-foreground/85"
           )}
         >
-          {pending ? "Subscribing…" : "Subscribe"}
+          {pending ? text.pending : text.submit}
         </button>
       </div>
       <p
@@ -51,11 +67,11 @@ export function NewsletterForm() {
         role="status"
         aria-live="polite"
         className={cn(
-          "mt-3 min-h-5 text-sm",
+          "mt-4 min-h-5 text-sm",
           hasError ? "text-destructive" : "text-muted-foreground"
         )}
       >
-        {state.message || "One useful email a week. Unsubscribe anytime."}
+        {state.message || text.note}
       </p>
     </form>
   );

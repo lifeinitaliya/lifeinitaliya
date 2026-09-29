@@ -30,7 +30,8 @@ export function LegalPage({ document }: { document: PolicyDocument }) {
       </PageHeader>
 
       <Container className="grid gap-10 py-12 sm:py-16 lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-16">
-        <div className="max-w-[760px]">
+        {/* min-w-0 lets wide tables scroll inside their wrapper instead of widening the page on phones. */}
+        <div className="min-w-0 max-w-[760px]">
           <MobileTableOfContents headings={headings} className="mb-10 lg:hidden" />
           {document.intro && (
             <p className="mb-8 text-lg leading-relaxed text-foreground">

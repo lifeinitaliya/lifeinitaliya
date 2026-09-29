@@ -1,11 +1,11 @@
-import type { Guide } from "@/lib/types";
+import type { Article } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export function CategoryLabel({
   category,
   className,
 }: {
-  category: Guide["category"];
+  category: Article["category"];
   className?: string;
 }) {
   return (

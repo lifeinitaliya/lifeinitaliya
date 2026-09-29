@@ -39,7 +39,7 @@ export default async function OpengraphImage() {
               fontWeight: 800,
             }}
           >
-            BS
+            Li
             <div
               style={{
                 width: 24,
@@ -51,7 +51,7 @@ export default async function OpengraphImage() {
             />
           </div>
           <div style={{ fontSize: 30, fontWeight: 600, letterSpacing: 7 }}>
-            INSIGHTS
+            LIFE IN ITALIA
           </div>
         </div>
 
@@ -64,18 +64,19 @@ export default async function OpengraphImage() {
               lineHeight: 1,
             }}
           >
-            Practical knowledge.
+            Italy, in one place.
           </div>
           <div
             style={{
-              fontSize: 84,
-              fontWeight: 800,
-              letterSpacing: -3,
-              lineHeight: 1.1,
-              color: "#6b7280",
+              marginTop: 20,
+              fontSize: 40,
+              fontWeight: 600,
+              letterSpacing: -1,
+              lineHeight: 1.2,
+              color: "#666666",
             }}
           >
-            Clearly explained.
+            Practical travel guides, cities and food.
           </div>
           <div
             style={{

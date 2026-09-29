@@ -1,9 +1,10 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import { routes } from "@/lib/site";
 import type { ContentBlock } from "@/lib/types";
 
-// Policy page content. Written as general website policies — have them
-// reviewed before launch and update them whenever site behaviour changes
-// (e.g. when analytics, advertising or accounts are added).
+// Editorial policy and legal pages. They describe how the site actually works;
+// update them before site behaviour changes (for example when the contact form
+// is connected, or if analytics, advertising or a newsletter are ever added).
 
 export interface PolicySection {
   title: string;
@@ -23,169 +24,303 @@ export interface PolicyDocument {
 const p = (text: string): ContentBlock => ({ type: "paragraph", text });
 const list = (items: string[]): ContentBlock => ({ type: "list", items });
 
-const LAST_UPDATED = "2026-09-23";
-const contactLine = p(`If you have questions about this page, please [contact us](${routes.contact}).`);
+const LAST_UPDATED = "2026-09-29";
 
 export const editorialPolicy: PolicyDocument = {
   path: routes.editorialPolicy,
   eyebrow: "Standards",
   title: "Editorial Policy",
-  description: "How BS Insights creates, reviews and updates its content.",
+  description: "How Life in Italia researches, writes, illustrates, corrects and updates its articles about Italy.",
   updatedAt: LAST_UPDATED,
   sections: [
     {
       title: "Our Editorial Mission",
-      blocks: [p("BS Insights publishes practical, clearly explained information that helps readers understand topics, make decisions and get things done. We prioritise usefulness and accuracy over volume.")],
+      blocks: [p("Life in Italia is an independent publication about Italy, in English and Italian. We publish practical travel guides, city guides and articles on Italian food culture, written to help readers plan a trip and understand what they see. We prioritise usefulness and accuracy over volume, and we would rather publish fewer articles than thin ones.")],
     },
     {
       title: "How We Create Content",
       blocks: [
-        p("Each guide starts with a specific reader question. We then outline the answer, research it, write it in plain language and edit it for clarity and structure."),
-        list(["Guides are organised so the most important information comes first.", "We avoid filler and unnecessary jargon.", "Where a topic depends on personal circumstances — such as money, health or law — we say so and point readers to qualified sources."]),
+        p("Each article starts from a specific reader question. We research it, write the answer in plain language and edit it for clarity and structure. English and Italian editions are written separately for their readers rather than translated line by line."),
+        list(["The most important information comes first.", "We avoid filler, rankings and unsupported superlatives.", "Where a topic depends on rules that change — such as transport, driving or opening arrangements — we say so, date the information and point readers to the official source."]),
       ],
     },
     {
       title: "Research & Sources",
-      blocks: [p("We aim to base factual claims on primary or authoritative sources, such as official websites, published documentation and reputable organisations. Where practical, we link to sources so readers can check them.")],
+      blocks: [
+        p("We base factual claims on primary or authoritative sources wherever possible: government and regional authorities, official registers (such as the EU register of protected food and wine names), transport operators, museums, UNESCO, recognised institutions and producers' consortia. Articles list their main sources so readers can check them."),
+        p("We do not invent statistics, prices, quotes, reviews or personal experiences, and we do not present ourselves as having visited or tested something unless we have."),
+      ],
+    },
+    {
+      title: "History, Origins and Uncertainty",
+      blocks: [p("Many Italian traditions come with origin stories. We distinguish between what is documented, what an institution states, what is commonly said and what is legend or disputed, and we label each accordingly — for example \"according to the regional authority\" or \"the origin is disputed\". We avoid \"oldest\", \"original\" or \"best\" claims unless an authoritative source supports them.")],
     },
     {
       title: "Fact Checking",
-      blocks: [p("Editors review guides before publication and check key facts — such as prices, dates, rules and figures — against available sources. Not every article is reviewed by a subject-matter expert, and we don't claim otherwise. Information such as prices and schedules can change after publication, so please confirm critical details with the original provider.")],
+      blocks: [p("Editors check key facts — dates, rules, names, protected designations and figures — against available sources before publication. Not every article is reviewed by a subject-matter expert, and we don't claim otherwise. Information such as timetables and rules can change after publication, so please confirm critical details with the official provider before you travel.")],
+    },
+    {
+      title: "Images",
+      blocks: [p("Photographs are used under licence. Where a photo illustrates a particular place, we check the location using the photo's metadata, the photographer's description or other reliable context, and we reject images that turn out to show somewhere else.")],
     },
     {
       title: "Updates & Corrections",
-      blocks: [p("Guides show the date they were last updated. We revisit guides periodically and when we learn that information has changed. Guide Rank, our internal editorial score, takes freshness into account.")],
+      blocks: [
+        p("Articles show when they were first published and when they were last updated. We revisit them periodically and when we learn that information has changed. Guide Rank, our internal editorial score for guides, takes freshness into account."),
+        p(`If you spot an error, please [let us know](${routes.contact}) — or email ${CONTACT_EMAIL} — with a link to the page and a description of the issue. We review correction requests and update articles where appropriate.`),
+      ],
     },
     {
-      title: "Guest Contributions",
-      blocks: [p(`Guest contributions go through the same editorial review as other content and may be edited for clarity, accuracy and style. Submitting an article does not guarantee publication. See [Write for Us](${routes.writeForUs}) for our guidelines.`)],
-    },
-    {
-      title: "Sponsored Content",
-      blocks: [p("If we publish sponsored content, it will be clearly labelled as sponsored. Sponsors do not control the conclusions of our independent guides.")],
-    },
-    {
-      title: "Affiliate Disclosure",
-      blocks: [p("Some pages may include affiliate links, which means we may earn a commission if you buy through them, at no extra cost to you. Where a page contains affiliate links, we disclose it on that page. Affiliate relationships do not determine what we recommend.")],
+      title: "Independence, Advertising and Sponsorship",
+      blocks: [p("Life in Italia does not currently carry advertising, sponsored content or affiliate links, and no business pays to be included in an article. If that changes, advertising will be clearly separated from editorial content, sponsored content will be labelled as such, and affiliate links will be disclosed on the page. Commercial relationships will not decide what we write or recommend.")],
     },
     {
       title: "AI-Assisted Content",
-      blocks: [p("We may use AI tools to help with tasks such as research, outlining or editing. Published content is reviewed and edited by a person, and we remain responsible for its accuracy. We do not publish unreviewed AI-generated articles.")],
-    },
-    {
-      title: "Corrections",
-      blocks: [p(`If you spot an error, please [let us know](${routes.contact}) with a link to the page and a description of the issue. We review correction requests and update content where appropriate.`)],
+      blocks: [p("We may use AI tools to help with tasks such as research, outlining, drafting or editing. Published content is reviewed by the editorial team, facts are checked against sources, and we remain responsible for its accuracy.")],
     },
   ],
 };
+
+// ——— Legal pages ———
+// Written from an audit of the site as it runs today (29 September 2026): no
+// cookies, analytics, advertising, affiliate links, embeds, accounts or
+// newsletter; one functional localStorage key for checklists; a contact form
+// delivered by email through Resend to CONTACT_EMAIL (a Gmail inbox); images
+// and fonts served from this domain. Items the code can't establish — the
+// hosting provider, the operator's legal identity and governing law — are
+// deliberately not asserted. Update these pages before any of that changes.
+
+const h3 = (text: string): ContentBlock => ({ type: "heading", level: 3, text });
+const table = (headers: string[], rows: string[][], caption?: string): ContentBlock => ({ type: "table", headers, rows, caption });
+
+const mail = `[${CONTACT_EMAIL}](mailto:${CONTACT_EMAIL})`;
+const contactNow = p(`You can email us at ${mail} or use the form on our [contact page](${routes.contact}).`);
 
 export const privacyPolicy: PolicyDocument = {
   path: routes.privacyPolicy,
   eyebrow: "Legal",
   title: "Privacy Policy",
-  description: "What information BS Insights collects, how it is used and the choices you have.",
+  description: "What personal information Life in Italia handles when you read the site or contact us, how it is used, and the choices and rights you have.",
   updatedAt: LAST_UPDATED,
-  intro: "This policy explains how BS Insights handles personal information when you use this website. It will be updated as features such as newsletters, accounts or analytics are introduced.",
+  intro: "Life in Italia is an independent editorial publication about Italy, in English and Italian. It is a reading website: there are no accounts, no shop, no newsletter and no comments. This policy explains the small amount of personal information involved when you visit or contact us, and what happens to it.",
   sections: [
     {
-      title: "Information We Collect",
+      title: "The Short Version",
       blocks: [
-        p("We collect information you choose to give us and limited technical information needed to run the website:"),
-        list(["Information you submit through forms, such as your name, email address and message", "Content you submit as a guest contributor, including your author bio and images", "Technical data such as your browser type and pages requested, which may be recorded in standard server logs"]),
+        list([
+          "We don't use analytics, advertising or tracking of any kind, and the site sets no cookies.",
+          "Like any website, the servers that deliver our pages receive technical information such as your IP address; this may be recorded in server logs by our hosting provider.",
+          "If you contact us, your message is delivered to our email inbox through an email service, Resend, so that we can reply.",
+          "If you tick items in one of our planning checklists, your progress is saved in your own browser and never sent to us.",
+          "Images and fonts are served from our own domain, so reading an article doesn't connect your browser to other companies' servers.",
+        ]),
       ],
     },
     {
-      title: "How We Use Information",
-      blocks: [list(["To respond to messages and correction requests", "To review and, where accepted, publish guest contributions", "To send newsletters you have signed up for", "To operate, secure and improve the website"])],
+      title: "Information You Give Us",
+      blocks: [
+        h3("The contact form"),
+        p(`The only place on the site where you can type personal information is the form on our [contact page](${routes.contact}). It asks for your name, your email address, a subject and a message, and anything else you choose to include in the message.`),
+        p("When you press \"Send message\", what you typed is sent to our web server, which checks it and passes it to Resend, an email delivery service, to deliver to our inbox at " + mail + ". Your email address is set as the reply address, so that we can answer you directly. The website itself doesn't keep a copy of your message in a database."),
+        p("You can also simply email us at " + mail + "; the same applies to what you send."),
+        p("We use what you send only to read and reply to your message and to deal with any follow-up, such as a correction to an article. Please don't include sensitive personal information you don't need to share."),
+      ],
     },
     {
-      title: "Cookies",
-      blocks: [p(`We explain our use of cookies in our [Cookie Policy](${routes.cookiePolicy}).`)],
+      title: "Information Collected Automatically",
+      blocks: [
+        h3("When you load a page"),
+        p("Whenever your browser requests a page or image, it sends the web server some technical information: your IP address, the address of the page requested, the time, your browser and operating system (the \"user agent\"), and usually the page you came from. This is how the web works; without it, the page couldn't be delivered to you."),
+        p("The hosting provider that runs our servers may record some of this in server logs, which are used to deliver the site, diagnose faults and protect it against abuse. Which details are logged and for how long is determined by the provider's configuration."),
+        h3("What we don't collect"),
+        p("We don't use analytics tools, advertising networks, tracking pixels, social-media plugins or fingerprinting, and we don't build profiles of visitors. We don't ask for your location; the only location information involved is what can be inferred from an IP address."),
+      ],
     },
     {
-      title: "Analytics",
-      blocks: [p("BS Insights does not currently use third-party analytics services. If we add analytics in the future, we will update this policy to describe the service and the data it collects.")],
+      title: "Cookies and Browser Storage",
+      blocks: [
+        p("The site does not set any cookies."),
+        p(`Some guides — for example the [travel planning checklist](/guides/italy-travel-planning-checklist) — contain interactive checklists. When you tick an item, your browser's local storage remembers which items are ticked so that your progress is still there next time. This information stays on your device and is never sent to us. Our [Cookie Policy](${routes.cookiePolicy}) describes it in detail, including how to clear it.`),
+      ],
     },
     {
-      title: "Advertising",
-      blocks: [p("BS Insights does not currently display third-party advertising. If this changes, we will update this policy and explain any related data use.")],
+      title: "Images and Fonts",
+      blocks: [
+        p("Photographs on the site are delivered from our own website in an appropriately sized copy, so your browser does not connect to a third-party image service to display them."),
+        p("The typefaces used on the site are bundled with it and served from our own domain; your browser doesn't request them from Google Fonts or any other font service."),
+      ],
     },
     {
-      title: "Third-Party Services",
-      blocks: [p("The website relies on service providers such as hosting and image delivery. These providers may process technical data, such as IP addresses, to deliver their services. Links to external websites are governed by those websites' own privacy policies.")],
+      title: "Why We Use Information, and on What Basis",
+      blocks: [
+        p("Where the EU and UK General Data Protection Regulation (GDPR) applies, each use of personal data needs a legal basis. This is how our current uses map to those bases:"),
+        table(
+          ["What happens", "Why", "Legal basis"],
+          [
+            ["Your browser's request (IP address, user agent, page, time) is processed and may be logged by our hosting provider", "To deliver the website and keep it secure and working", "Our legitimate interest in running a secure, working website"],
+            ["Messages you send through the contact form or by email", "To read and reply to your message and handle any follow-up", "Our legitimate interest in responding to people who contact us, or steps you ask us to take"],
+            ["Disclosure to authorities", "Only where the law requires it", "Legal obligation"],
+          ],
+        ),
+        p("Checklist progress saved in your browser is not listed because it is not sent to us: it stays on your device and is under your control."),
+      ],
     },
     {
-      title: "Guest Submissions",
-      blocks: [p("When you submit a guest post, we use your details to review the submission and contact you about it. If your article is published, your name, author bio and any profile links you provide will be shown publicly with it.")],
+      title: "Who Else Receives Information",
+      blocks: [
+        list([
+          "**Our hosting provider** runs the servers that deliver the site and receives the technical request information described above. It acts on our behalf, to provide that service.",
+          "**Resend** (Resend, Inc.) delivers contact-form messages to our inbox. It processes the message and the details you entered on our behalf; see its [privacy policy](https://resend.com/legal/privacy-policy).",
+          "**Google** provides the Gmail inbox where messages sent through the form or by email are received and kept; see [Google's privacy policy](https://policies.google.com/privacy).",
+          "**Nobody else.** We don't use analytics or advertising providers, and we don't sell or rent personal information.",
+          "**Authorities**, if we are legally required to disclose information, for example in response to a valid legal request.",
+        ]),
+      ],
     },
     {
-      title: "Contact Forms",
-      blocks: [p("Information sent through our contact form is used only to respond to your enquiry and related follow-up.")],
+      title: "International Transfers",
+      blocks: [
+        p("Some of the services we rely on process information outside the European Economic Area:"),
+        list([
+          "**Resend** is based in the United States and processes data there. According to its [data processing addendum](https://resend.com/legal/dpa), transfers are covered by Standard Contractual Clauses and by its certification under the EU-U.S. Data Privacy Framework.",
+          "**Google** may process email in its data centres around the world, under the safeguards described in its privacy documentation.",
+          "**Our hosting provider** may process technical request information outside your country, depending on where its infrastructure is located, under the safeguards in its own data-processing terms.",
+        ]),
+      ],
     },
     {
-      title: "Data Retention",
-      blocks: [p("We keep personal information only for as long as needed for the purposes described here, or as required by law. Unaccepted guest submissions are deleted after review.")],
+      title: "How Long Information Is Kept",
+      blocks: [
+        list([
+          "**Server logs** are kept for the period set by our hosting provider's configuration, and are not used to identify or profile individual readers.",
+          "**Messages you send us** are kept in our email inbox for as long as we need them to deal with your enquiry and any follow-up — for example, to show why an article was corrected — and are then deleted. We haven't set a fixed period. Resend keeps records of the emails it delivers according to its own retention settings.",
+          "**Checklist progress** stays in your browser until you clear it or untick every item.",
+        ]),
+      ],
     },
     {
       title: "Your Rights",
-      blocks: [p("Depending on where you live, you may have rights to access, correct, delete or restrict the use of your personal information, and to object to certain processing. To make a request, please contact us.")],
+      blocks: [
+        p("If the GDPR applies to you — for example because you are in the EU, the EEA or the UK — you have rights over your personal data, including the right to:"),
+        list([
+          "access the personal data we hold about you",
+          "have inaccurate data corrected",
+          "have data deleted",
+          "restrict or object to how it is used, including processing based on legitimate interests",
+          "receive data you have given us in a portable format, where that applies",
+          "withdraw consent at any time, where processing is based on consent",
+        ]),
+        p(`To make a request, email ${mail}. Some of these rights depend on the circumstances and have exceptions, and because we hold so little personal information there may be nothing to give you. Other privacy laws may give you similar rights.`),
+        p("You can also complain to a data protection supervisory authority, usually the one in the country where you live or work. In Italy that is the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/)."),
+      ],
+    },
+    {
+      title: "Children",
+      blocks: [p("Life in Italia is a general-interest publication. Apart from the contact form, the site doesn't ask anyone for personal information, and we don't knowingly collect personal information from children.")],
+    },
+    {
+      title: "Links to Other Websites",
+      blocks: [p("Our articles link to official sources such as transport operators, museums and public authorities. Those websites have their own privacy practices, which this policy does not cover.")],
     },
     {
       title: "Changes to This Policy",
-      blocks: [p("We may update this policy from time to time. The date at the top of the page shows when it was last changed.")],
+      blocks: [p("We will update this policy before we change how the site handles personal information — for example if we ever add analytics or advertising, or change how messages are delivered. The date at the top of the page shows when it last changed, and significant changes will be summarised on this page.")],
     },
-    { title: "Contact", blocks: [contactLine] },
+    {
+      title: "Contact",
+      blocks: [contactNow],
+    },
   ],
 };
 
 export const termsAndConditions: PolicyDocument = {
   path: routes.terms,
   eyebrow: "Legal",
-  title: "Terms & Conditions",
-  description: "The terms that apply when you use the BS Insights website.",
+  title: "Terms and Conditions",
+  description: "The terms for using Life in Italia, an editorial publication about Italy: what you can do with our content, what we can and can't promise, and your responsibilities.",
   updatedAt: LAST_UPDATED,
-  intro: "These are the general terms of use for this website. They are not legal advice for your own situation.",
+  intro: "Life in Italia is an editorial publication: we write travel guides, city guides and articles about Italian food and culture, in English and Italian. We don't sell products or services, take bookings or run user accounts. These terms explain how you may use the site and what you can expect from it.",
   sections: [
     {
-      title: "Acceptance of Terms",
-      blocks: [p("By using BS Insights, you agree to these terms. If you do not agree, please do not use the website.")],
-    },
-    {
-      title: "Use of the Website",
+      title: "Using the Website",
       blocks: [
-        p("You may use the website for personal, non-commercial purposes. You agree not to:"),
-        list(["Use the website in a way that breaks any law", "Attempt to disrupt, damage or gain unauthorised access to the website", "Copy or republish content at scale, including through automated scraping, without permission"]),
+        p("You're welcome to read and browse the site, share links to any page, and use the information in it for your own lawful, personal purposes — planning a trip, for instance."),
+        p("You may quote short passages if you credit Life in Italia and link to the page they come from. Please don't republish whole articles or substantial parts of them, on another website or elsewhere, without our permission."),
       ],
     },
     {
-      title: "Intellectual Property",
-      blocks: [p("Unless stated otherwise, content on BS Insights — including text, design and logos — belongs to BS Insights or its contributors. Images may be licensed from third parties. You may share links to our pages and quote short excerpts with attribution.")],
+      title: "What Our Articles Are",
+      blocks: [
+        p("Our articles provide general information to help readers plan and understand a trip to Italy. We research them using official and authoritative sources, which each article lists, and we date them and revise them when we learn that something has changed."),
+        p("Cultural and historical topics often involve traditions, interpretations and stories whose origins are uncertain. We say so when that is the case — for example by noting that an institution gives a particular account or that an origin is disputed — rather than presenting a legend as fact."),
+        p("Our articles are not legal, medical, financial or other professional advice, and they don't take account of your personal circumstances."),
+      ],
     },
     {
-      title: "User Submissions",
-      blocks: [p("When you send us content, such as a message or correction, you confirm that it is accurate to the best of your knowledge and that you have the right to share it.")],
+      title: "Travel Information Changes",
+      blocks: [
+        p("Travel details change, sometimes at short notice. After we publish:"),
+        list([
+          "transport timetables, routes and fares can change",
+          "museums, sites and attractions can close, change their opening hours or introduce booking rules",
+          "events and festivals can move dates or be cancelled",
+          "local regulations — such as traffic-restricted zones or access fees — can change",
+          "businesses can change their hours, prices or services",
+          "weather and sea conditions can disrupt plans",
+        ]),
+        p("Before you rely on a detail that matters to your trip — a timetable, a booking rule, an entry requirement — please check it with the official provider. Many of our articles link to them."),
+      ],
     },
     {
-      title: "Guest Posts",
-      blocks: [p(`Guest contributors confirm that submitted work is original and does not infringe anyone else's rights. By submitting, you allow BS Insights to edit and publish the work if accepted. Publication is at our discretion. See [Write for Us](${routes.writeForUs}) for details.`)],
+      title: "Copyright and Trademarks",
+      blocks: [
+        list([
+          "**Our work.** The articles, their text, the site's design and graphics, the Life in Italia name and logo, and the Guide Rank score belong to Life in Italia.",
+          "**Photographs.** Photographs are used under licence; their photographers keep the copyright and we don't claim ownership of them. Please don't copy them from our site.",
+          "**Other names and marks.** Names and trademarks of transport operators, museums, producers and other organisations mentioned on the site belong to their owners. Mentioning them doesn't imply any relationship with or endorsement by them.",
+        ]),
+      ],
     },
     {
-      title: "External Links",
-      blocks: [p("We link to external websites for reference. We are not responsible for their content, availability or practices.")],
+      title: "Acceptable Use",
+      blocks: [
+        p("When using the site, please don't:"),
+        list([
+          "use it for anything unlawful",
+          "try to gain unauthorised access to it, disrupt it or overload it",
+          "upload or send malware or other harmful code",
+          "scrape or copy the site in bulk in breach of applicable law or of technical restrictions such as our robots.txt file",
+          "impersonate someone else or misuse the contact form, for example to send spam",
+        ]),
+      ],
     },
     {
-      title: "Accuracy of Information",
-      blocks: [p(`We work to keep information accurate and up to date, but we cannot guarantee that all content is complete or current. Please read our [Disclaimer](${routes.disclaimer}).`)],
+      title: "Messages You Send Us",
+      blocks: [p(`If you send us a message or a correction, please make sure it's accurate as far as you know and that you're entitled to share what it contains. Our [Privacy Policy](${routes.privacyPolicy}) explains how we handle messages.`)],
     },
     {
-      title: "Limitation of Liability",
-      blocks: [p("To the extent permitted by law, BS Insights is not liable for any loss or damage arising from your use of the website or reliance on its content.")],
+      title: "Links to Other Websites",
+      blocks: [p("We link to other websites — official tourism bodies, transport operators, museums, public authorities, producers' associations and other publications — so you can check information at its source. We don't control those sites, and a link isn't an endorsement of everything they contain. Their own terms and privacy policies apply when you visit them.")],
     },
     {
-      title: "Changes to Terms",
-      blocks: [p("We may update these terms. Continued use of the website after changes means you accept the updated terms.")],
+      title: "Advertising and Commercial Relationships",
+      blocks: [p("Life in Italia doesn't currently carry advertising, sponsored articles or affiliate links, and nobody pays to be mentioned in an article. If that changes, advertising and sponsored content will be clearly labelled and kept separate from editorial content, and these terms and our other policies will be updated first.")],
     },
-    { title: "Contact", blocks: [contactLine] },
+    {
+      title: "Our Responsibility",
+      blocks: [
+        p("We work to keep our articles accurate and current, but we can't guarantee that every detail is complete, free of errors or still correct by the time you read it. Please use your own judgement and check important information with the relevant official source. We are not responsible for losses that result from relying on information that has since changed, or from the content of websites we link to."),
+        p("Nothing in these terms limits any liability that cannot be limited by law, or affects rights you have as a consumer under the law that applies to you."),
+      ],
+    },
+    {
+      title: "Changes to These Terms",
+      blocks: [p("We may update these terms, for example when the site adds a feature. The date at the top of this page shows when they last changed. The version published here applies from that date.")],
+    },
+    {
+      title: "Contact",
+      blocks: [contactNow],
+    },
   ],
 };
 
@@ -193,40 +328,45 @@ export const disclaimer: PolicyDocument = {
   path: routes.disclaimer,
   eyebrow: "Legal",
   title: "Disclaimer",
-  description: "Important information about how to use the content on BS Insights.",
+  description: "What to keep in mind when using the travel, transport, food and wine information on Life in Italia.",
   updatedAt: LAST_UPDATED,
+  intro: "Life in Italia publishes editorial articles about travelling in Italy and about Italian food and culture. We research them carefully and list our sources, but some information changes after publication. Here is what that means in practice.",
   sections: [
     {
-      title: "General Information Only",
-      blocks: [p("Content on BS Insights is provided for general informational purposes. It is not tailored to your personal circumstances.")],
+      title: "Travel Information",
+      blocks: [p("Timetables, fares, opening hours, booking rules and local regulations can change, sometimes with little notice. Our articles are dated so you can see when they were last updated. For anything your plans depend on, check the official provider's website shortly before you travel.")],
     },
     {
-      title: "Not Professional Advice",
-      blocks: [p("Guides on topics such as finance, health, law or careers are not a substitute for advice from a qualified professional. Please seek appropriate advice before making significant decisions.")],
+      title: "Events and Festivals",
+      blocks: [p("Where we mention events, festivals or seasonal traditions, dates and programmes are set by the organisers and can change from year to year. Confirm them with the official organiser or the local tourist office.")],
     },
     {
-      title: "Accuracy",
-      blocks: [p("We aim to keep content accurate and current, but details such as prices, schedules, rules and product features can change. Please verify important information with the original source before relying on it.")],
+      title: "Weather and Seasons",
+      blocks: [p("We describe typical seasonal conditions to help with planning; we don't publish forecasts. Weather, sea conditions and mountain conditions vary, so check a current forecast and any official alerts before and during your trip, especially for ferries, mountain walks and driving.")],
     },
     {
-      title: "External Links",
-      blocks: [p("Links to other websites are provided for convenience. We do not control and are not responsible for external content.")],
+      title: "Food and Drink",
+      blocks: [p("Our food and drink articles are general cultural information, not dietary, allergy or medical advice. If you have an allergy or dietary requirement, ask the restaurant or producer about ingredients. Articles about wine are not encouragements to drink: alcohol carries health risks, and you should never drive after drinking.")],
     },
     {
-      title: "Affiliate Relationships",
-      blocks: [p("Some pages may contain affiliate links. When they do, we disclose this on the page. We may earn a commission from qualifying purchases, at no extra cost to you.")],
+      title: "Transport and Driving",
+      blocks: [p("Our transport and driving guides explain how things generally work. You remain responsible for following current laws, road signs, operators' conditions and the instructions of officials — including rules on traffic-restricted zones, speed limits and alcohol, which apply to you whatever an article says.")],
     },
     {
-      title: "Advertising",
-      blocks: [p("BS Insights does not currently display third-party advertising. Any sponsored content will be clearly labelled.")],
+      title: "Links to Other Websites",
+      blocks: [p("We link to external websites, mainly official sources, so you can check information yourself. We don't control them and aren't responsible for their content or availability.")],
     },
     {
-      title: "Guest Contributions",
-      blocks: [p("Guest posts reflect the views of their authors. They are reviewed by our editorial team before publication but do not necessarily represent the views of BS Insights.")],
+      title: "Commercial Relationships",
+      blocks: [p("Life in Italia doesn't currently carry advertising or sponsored content and doesn't use affiliate links. No business pays to appear in our articles.")],
     },
     {
       title: "Guide Rank",
-      blocks: [p("Guide Rank is an internal BS Insights editorial score. It is not a search-engine ranking, an official industry rating or a guarantee of quality.")],
+      blocks: [p("Guide Rank is our own editorial score for how useful, clear, well researched and current we consider a guide to be. It is not a search-engine ranking, an official rating or a guarantee.")],
+    },
+    {
+      title: "Accuracy and Corrections",
+      blocks: [p(`We base our articles on reliable, preferably official sources, revisit time-sensitive information and correct errors when we find them. Even so, we can't guarantee that every detail is current at the moment you read it. Our [Editorial Policy](${routes.editorialPolicy}) explains how we research and correct articles; to report an error, email ${mail}.`)],
     },
   ],
 };
@@ -235,40 +375,66 @@ export const cookiePolicy: PolicyDocument = {
   path: routes.cookiePolicy,
   eyebrow: "Legal",
   title: "Cookie Policy",
-  description: "How cookies and similar technologies are used on BS Insights.",
+  description: "Life in Italia sets no cookies. This page lists the one thing the site does store in your browser — checklist progress — and how to clear it.",
   updatedAt: LAST_UPDATED,
-  intro: "BS Insights does not currently set analytics or advertising cookies. This page explains what cookies are and how we will describe any we use in future.",
+  intro: "Life in Italia does not set cookies — not for analytics, not for advertising and not for anything else. The only thing the site stores in your browser is your progress in our interactive planning checklists, and only if you use them. This page explains exactly what that is.",
   sections: [
     {
-      title: "What Cookies Are",
-      blocks: [p("Cookies are small text files that a website stores in your browser. They can remember preferences, keep you signed in or help site owners understand how a website is used.")],
+      title: "Cookies and Browser Storage",
+      blocks: [p("Cookies are small files a website can place in your browser, and they are sent back to the website with every request. Local storage is a different mechanism: it lets a page keep information in your browser, but that information is not sent to the website automatically. Life in Italia uses local storage for one feature, described below, and no cookies.")],
     },
     {
-      title: "How We Use Cookies",
-      blocks: [p("At the moment, BS Insights does not use cookies for tracking, analytics or advertising. If that changes, we will list the cookies here and, where required, ask for your consent first.")],
-    },
-    {
-      title: "Essential Cookies",
-      blocks: [p("Some features, such as future account sign-in or security protections, may need essential cookies to work. These cannot be switched off without affecting how the website functions.")],
-    },
-    {
-      title: "Analytics Cookies",
-      blocks: [p("We do not currently use analytics cookies.")],
-    },
-    {
-      title: "Advertising Cookies",
-      blocks: [p("We do not currently use advertising cookies.")],
-    },
-    {
-      title: "Third-Party Cookies",
-      blocks: [p("External services linked from or embedded in our pages may set their own cookies under their own policies.")],
-    },
-    {
-      title: "Managing Cookies",
+      title: "What the Site Stores",
       blocks: [
-        p("You can view, block or delete cookies in your browser settings. Blocking some cookies may affect how websites work."),
-        contactLine,
+        table(
+          ["Name", "Provider", "Purpose", "Type", "Duration", "Required?"],
+          [
+            [
+              "bsi-checklist:[checklist name]",
+              "Life in Italia (this website)",
+              "Remembers which items you have ticked in an interactive planning checklist, so your progress is still there when you come back",
+              "Local storage (functional)",
+              "Until you untick every item in that checklist or clear your browser's site data; it doesn't expire automatically",
+              "Optional: created only when you tick an item",
+            ],
+          ],
+          "A complete list of what Life in Italia stores in your browser. No cookies are set.",
+        ),
+        p(`The checklists appear in a few practical guides, such as the [travel planning checklist](/guides/italy-travel-planning-checklist) and our guides to [airport transfers](/guides/italy-airport-transfers), [getting between cities](/guides/getting-between-italian-cities), [ferries](/transport/ferries-in-italy) and [the Dolomites](/guides/visiting-the-dolomites), and in their Italian editions. Each checklist has its own entry. It contains only the text of the items you ticked — no name, email address or identifier — and it is never sent to us.`),
+        p("If your browser blocks site data, for example in some private-browsing modes, the checklist still works for the page you're on but forgets your ticks when you leave."),
       ],
+    },
+    {
+      title: "What the Site Does Not Use",
+      blocks: [
+        list([
+          "**Analytics** — no Google Analytics or any other analytics service.",
+          "**Advertising** — no advertising cookies, pixels or ad networks.",
+          "**Third-party embeds** — no embedded videos, maps or social-media widgets that could set their own cookies.",
+          "**Third-party requests** — images and fonts are served from our own domain, so reading a page doesn't send requests to other companies' servers.",
+        ]),
+      ],
+    },
+    {
+      title: "Consent",
+      blocks: [p("Because the site sets no cookies and uses no tracking, we don't show a cookie banner. The checklist storage is only created when you choose to tick an item, and you can remove it at any time. If we ever add cookies or other technologies that need your consent, we will ask for it before they are used and list them on this page.")],
+    },
+    {
+      title: "Clearing Checklist Progress",
+      blocks: [
+        list([
+          "Untick all the items in a checklist: its entry is deleted.",
+          "Or clear this site's data in your browser settings (often under \"Cookies and site data\" or \"Site settings\"), which removes all our checklist entries at once.",
+        ]),
+      ],
+    },
+    {
+      title: "Other Websites",
+      blocks: [p("When you follow a link to another website — such as an official source or a transport operator — that website may set its own cookies under its own policies.")],
+    },
+    {
+      title: "Changes to This Policy",
+      blocks: [p(`We will update this page before the site starts storing anything new in your browser. See also our [Privacy Policy](${routes.privacyPolicy}). Questions: ${mail}.`)],
     },
   ],
 };

@@ -9,6 +9,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-dm-serif), ui-serif, Georgia, "Times New Roman", serif;
+  --color-sand: var(--sand);
+  --color-sand-border: var(--sand-border);
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
   --color-ink-muted: var(--ink-muted);
@@ -52,7 +55,7 @@
 }
 
 :root {
-  /* BS Insights editorial palette */
+  /* Life in Italia editorial palette */
   --background: #fafaf7;
   --foreground: #171717;
   --card: #ffffff;
@@ -64,13 +67,15 @@
   --secondary: #f1f1ec;
   --secondary-foreground: #171717;
   --muted: #f1f1ec;
-  --muted-foreground: #6b7280;
+  --muted-foreground: #666666;
   --accent: #eef2fd;
   --accent-foreground: #2544b0;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #e5e7eb;
   --input: #e5e7eb;
   --ring: #3157d5;
+  --sand: #f3eee5;
+  --sand-border: #e4dccd;
   --ink: #111827;
   --ink-foreground: #f9fafb;
   --ink-muted: #9ca3af;

@@ -22,7 +22,7 @@ export default async function AppleIcon() {
         }}
       >
         <div style={{ fontSize: 84, fontWeight: 800, letterSpacing: -2 }}>
-          BS
+          Li
         </div>
         <div
           style={{

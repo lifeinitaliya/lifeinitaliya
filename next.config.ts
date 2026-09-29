@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
@@ -10,11 +11,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // Sections replaced the old category pages.
+      { source: "/categories", destination: "/", permanent: true },
+      { source: "/category/:slug", destination: "/:slug", permanent: true },
+      // The short Galleria article was merged into the Milan guide, which covers it.
+      {
+        source: "/culture/galleria-vittorio-emanuele",
+        destination: "/cities/milan-beyond-the-duomo",
+        statusCode: 301,
+      },
+    ];
+  },
   experimental: {
-    serverActions: {
-      // Guest-post submissions include a featured image of up to 5 MB.
-      bodySizeLimit: "6mb",
-    },
+    // English and Italian use separate root layouts, so unmatched URLs need
+    // an app-wide 404 (app/global-not-found.tsx).
+    globalNotFound: true,
+    // Server Actions keep Next's default 1 MB request limit: the contact form
+    // (the only live form) sends at most a few kilobytes.
   },
 };
 

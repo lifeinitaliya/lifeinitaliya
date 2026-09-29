@@ -6,7 +6,7 @@ export interface Heading {
   level: 2 | 3;
 }
 
-const slugify = (text: string) =>
+export const slugify = (text: string) =>
   text
     .toLowerCase()
     .normalize("NFKD")

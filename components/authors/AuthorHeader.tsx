@@ -19,7 +19,7 @@ export function AuthorHeader({ author }: { author: AuthorWithCount }) {
           <AuthorAvatar author={author} size="lg" />
           <div className="max-w-2xl">
             <p className="text-sm font-semibold text-primary">{author.role}</p>
-            <h1 className="mt-2 text-[clamp(34px,5vw,56px)] leading-[1.02] font-extrabold tracking-[-0.04em] text-balance">
+            <h1 className="mt-2 font-display text-[clamp(40px,5.5vw,68px)] leading-[1] text-balance">
               {author.name}
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">

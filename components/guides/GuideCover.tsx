@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 import { categoryIcons } from "@/components/guides/category-icons";
-import type { Guide } from "@/lib/types";
+import type { Article } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface GuideCoverProps {
-  guide: Pick<Guide, "image" | "category">;
+  guide: Pick<Article, "image" | "category">;
   sizes: string;
   priority?: boolean;
   className?: string;
@@ -23,7 +23,7 @@ export function GuideCover({
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-lg bg-secondary",
+        "relative overflow-hidden bg-secondary",
         className
       )}
     >

@@ -1,27 +1,31 @@
 "use server";
 
-export interface NewsletterState {
-  status: "idle" | "success" | "error";
-  message: string;
-}
-
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+import { isEmail, text, type FormState } from "@/lib/forms";
 
 export async function subscribeToNewsletter(
-  _prev: NewsletterState,
+  _prev: FormState<"email">,
   formData: FormData
-): Promise<NewsletterState> {
-  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+): Promise<FormState<"email">> {
+  const email = text(formData, "email").toLowerCase();
+  const italian = text(formData, "locale") === "it";
 
-  if (!EMAIL_PATTERN.test(email) || email.length > 254) {
-    return { status: "error", message: "Please enter a valid email address." };
+  if (!isEmail(email)) {
+    const message = italian ? "Inserisci un indirizzo email valido." : "Please enter a valid email address.";
+    return {
+      status: "error",
+      message,
+      fieldErrors: { email: message },
+      values: { email },
+    };
   }
 
-  // TODO: persist the subscriber (e.g. Supabase `newsletter_subscribers` table
-  // or an email provider) once the backend is connected.
-
+  // TODO: store the subscriber (Supabase or an email provider with double
+  // opt-in), then return { status: "success" }.
   return {
-    status: "success",
-    message: "Thanks! Please check your inbox to confirm your subscription.",
+    status: "unavailable",
+    message: italian
+      ? "Le iscrizioni alla newsletter non sono ancora aperte: il tuo indirizzo non è stato salvato. Riprova più avanti."
+      : "Newsletter sign-ups aren't open yet, so your email has not been saved. Please check back soon.",
+    values: { email },
   };
 }

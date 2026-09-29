@@ -8,6 +8,7 @@ import {
   PaginationEllipsis,
   PaginationItem,
 } from "@/components/ui/pagination";
+import { t, type Locale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 interface GuidePaginationProps {
@@ -17,6 +18,7 @@ interface GuidePaginationProps {
   /** Other query params to keep, e.g. `{ category: "travel" }`. */
   params?: Record<string, string | undefined>;
   className?: string;
+  locale?: Locale;
 }
 
 const pageList = (page: number, total: number): (number | "gap")[] => {
@@ -31,8 +33,10 @@ export function GuidePagination({
   basePath,
   params = {},
   className,
+  locale = "en",
 }: GuidePaginationProps) {
   if (totalPages <= 1) return null;
+  const dict = t(locale);
 
   const href = (target: number) => {
     const search = new URLSearchParams();
@@ -54,14 +58,14 @@ export function GuidePagination({
       <PaginationContent className="gap-1">
         <PaginationItem>
           {page > 1 ? (
-            <Link href={href(page - 1)} className={stepClass} aria-label="Previous page">
+            <Link href={href(page - 1)} className={stepClass} aria-label={dict.previousPage}>
               <ChevronLeft aria-hidden />
-              <span className="hidden sm:inline">Previous</span>
+              <span className="hidden sm:inline">{dict.previous}</span>
             </Link>
           ) : (
             <span aria-hidden className={cn(stepClass, "pointer-events-none opacity-40")}>
               <ChevronLeft />
-              <span className="hidden sm:inline">Previous</span>
+              <span className="hidden sm:inline">{dict.previous}</span>
             </span>
           )}
         </PaginationItem>
@@ -73,7 +77,7 @@ export function GuidePagination({
             ) : (
               <Link
                 href={href(item)}
-                aria-label={`Page ${item}`}
+                aria-label={dict.pageN(item)}
                 aria-current={item === page ? "page" : undefined}
                 className={linkClass(item === page)}
               >
@@ -85,13 +89,13 @@ export function GuidePagination({
 
         <PaginationItem>
           {page < totalPages ? (
-            <Link href={href(page + 1)} className={stepClass} aria-label="Next page">
-              <span className="hidden sm:inline">Next</span>
+            <Link href={href(page + 1)} className={stepClass} aria-label={dict.nextPage}>
+              <span className="hidden sm:inline">{dict.next}</span>
               <ChevronRight aria-hidden />
             </Link>
           ) : (
             <span aria-hidden className={cn(stepClass, "pointer-events-none opacity-40")}>
-              <span className="hidden sm:inline">Next</span>
+              <span className="hidden sm:inline">{dict.next}</span>
               <ChevronRight />
             </span>
           )}

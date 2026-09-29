@@ -1,3 +1,4 @@
+import { t, type Locale } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -8,15 +9,16 @@ interface GuideRankProps {
   score: number;
   variant?: GuideRankVariant;
   tone?: GuideRankTone;
-  /** Shows a subtle "Powered by BS Insights" line (stacked variant only). */
+  /** Shows a subtle "Powered by Life in Italia" line (stacked variant only). */
   showAttribution?: boolean;
   className?: string;
+  locale?: Locale;
 }
 
 const clamp = (score: number) => Math.min(100, Math.max(0, Math.round(score)));
 
 /**
- * BS Insights' own editorial score for how useful and complete a guide is.
+ * Life in Italia's own editorial score for how useful and complete a guide is.
  * Deliberately styled as an index — not a star/review rating or a search-engine score.
  */
 export function GuideRank({
@@ -25,9 +27,10 @@ export function GuideRank({
   tone = "light",
   showAttribution = false,
   className,
+  locale = "en",
 }: GuideRankProps) {
   const value = clamp(score);
-  const label = `Guide Rank ${value} out of 100`;
+  const label = t(locale).guideRankAria(value);
   const dark = tone === "dark";
 
   if (variant === "stacked") {
@@ -85,7 +88,7 @@ export function GuideRank({
               dark ? "text-ink-muted" : "text-muted-foreground"
             )}
           >
-            Powered by {siteConfig.name}
+            {t(locale).poweredBy} {siteConfig.name}
           </span>
         )}
       </div>

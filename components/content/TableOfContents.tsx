@@ -8,10 +8,11 @@ import { cn } from "@/lib/utils";
 interface TableOfContentsProps {
   headings: Heading[];
   className?: string;
+  title?: string;
 }
 
 /** Desktop table of contents that highlights the section currently in view. */
-export function TableOfContents({ headings, className }: TableOfContentsProps) {
+export function TableOfContents({ headings, className, title = "On this page" }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string | undefined>(headings[0]?.id);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export function TableOfContents({ headings, className }: TableOfContentsProps) {
         id="toc-title"
         className="text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase"
       >
-        On this page
+        {title}
       </p>
       <TocList headings={headings} activeId={activeId} className="mt-4" />
     </nav>

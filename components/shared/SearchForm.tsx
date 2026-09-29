@@ -15,17 +15,19 @@ interface SearchFormProps {
   /** Extra query params to preserve, e.g. an active category filter. */
   hiddenFields?: Record<string, string | undefined>;
   required?: boolean;
+  submitLabel?: string;
   className?: string;
 }
 
 export function SearchForm({
   id = "site-search",
   action = routes.search,
-  label = "Search BS Insights",
+  label = "Search Life in Italia",
   placeholder = "What do you want to learn today?",
   defaultValue,
   hiddenFields = {},
   required = true,
+  submitLabel = "Search",
   className,
 }: SearchFormProps) {
   return (
@@ -64,7 +66,7 @@ export function SearchForm({
           "mr-2 hidden hover:bg-primary/90 sm:inline-flex"
         )}
       >
-        Search
+        {submitLabel}
       </button>
     </Form>
   );
