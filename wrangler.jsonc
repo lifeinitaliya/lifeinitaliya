@@ -1,0 +1,33 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	// Must match the Worker name in the Cloudflare dashboard.
+	"name": "lifeinitaliya",
+	"compatibility_date": "2026-09-26",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			// Self-reference service binding; the service name must match the Worker name.
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "lifeinitaliya"
+		}
+	],
+	"images": {
+		// next/image optimisation through Cloudflare Images.
+		"binding": "IMAGES"
+	},
+	// Public, non-secret settings. RESEND_API_KEY is NOT set here: add it in the
+	// dashboard under Settings → Variables and Secrets as type "Secret"
+	// (or `npx wrangler secret put RESEND_API_KEY`). Secrets survive deploys.
+	"vars": {
+		"NEXT_PUBLIC_SITE_URL": "https://lifeinitaliya.com",
+		"RESEND_FROM_EMAIL": "Life in Italia <onboarding@resend.dev>"
+	},
+	"observability": {
+		"enabled": true
+	}
+}
