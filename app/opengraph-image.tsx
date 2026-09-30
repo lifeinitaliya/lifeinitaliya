@@ -23,45 +23,76 @@ export default async function OpengraphImage() {
           fontFamily: "Inter",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
           <div
             style={{
-              width: 72,
-              height: 64,
+              width: 80,
+              height: 80,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: 14,
-              background: "#171717",
+              borderRadius: 20,
+              background: "#12161f",
               color: "#ffffff",
-              fontSize: 30,
-              fontWeight: 800,
+              position: "relative",
+              padding: 8,
             }}
           >
-            Li
+            {/* Tricolor dots */}
             <div
               style={{
-                width: 24,
-                height: 4,
+                display: "flex",
+                gap: 5,
+                marginBottom: 3,
+              }}
+            >
+              <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#16a34a" }} />
+              <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#f8fafc" }} />
+              <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#dc2626" }} />
+            </div>
+            {/* Tuscan Sun */}
+            <div
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: "50%",
+                background: "#f59e0b",
+                marginBottom: 2,
+              }}
+            />
+            {/* LI */}
+            <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: 1, lineHeight: 1 }}>
+              LI
+            </div>
+            {/* Azzurro Blue bar */}
+            <div
+              style={{
+                width: 32,
+                height: 3,
                 marginTop: 4,
                 borderRadius: 2,
-                background: "#3157d5",
+                background: "#2563eb",
               }}
             />
           </div>
-          <div style={{ fontSize: 30, fontWeight: 600, letterSpacing: 7 }}>
-            LIFE IN ITALIA
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ fontSize: 32, fontWeight: 800, letterSpacing: 5 }}>
+              LIFE IN ITALIA
+            </div>
+            <div style={{ fontSize: 13, fontWeight: 600, letterSpacing: 3, color: "#666666", textTransform: "uppercase" }}>
+              Editorial &amp; Guides
+            </div>
           </div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              fontSize: 84,
+              fontSize: 80,
               fontWeight: 800,
               letterSpacing: -3,
-              lineHeight: 1,
+              lineHeight: 1.05,
             }}
           >
             Italy, in one place.
@@ -69,19 +100,19 @@ export default async function OpengraphImage() {
           <div
             style={{
               marginTop: 20,
-              fontSize: 40,
+              fontSize: 36,
               fontWeight: 600,
               letterSpacing: -1,
               lineHeight: 1.2,
               color: "#666666",
             }}
           >
-            Practical travel guides, cities and food.
+            Practical travel guides, city culture and Italian food.
           </div>
           <div
             style={{
               marginTop: 32,
-              width: 120,
+              width: 140,
               height: 6,
               borderRadius: 3,
               background: "#3157d5",
@@ -93,3 +124,4 @@ export default async function OpengraphImage() {
     { ...size, fonts: await loadBrandFonts() }
   );
 }
+
