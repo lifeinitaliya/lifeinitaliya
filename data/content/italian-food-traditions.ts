@@ -102,7 +102,7 @@ export const italianFoodTraditions: ArticleContent = {
     h2("Southern Italy"),
     p("The south is often summed up as tomatoes and dried pasta, which is fair as far as it goes — but it leaves out a great deal: vegetables, legumes, fish, cheeses, breads and preserves. And southern food isn't uniformly spicy: chilli matters in Calabria and elsewhere, far less in many dishes."),
     ul(
-      "**Campania** — Neapolitan pizza (Pizza Napoletana is a Traditional Speciality Guaranteed), Mozzarella di Bufala Campana (PDO), dried pasta from Gragnano (Pasta di Gragnano IGP), San Marzano tomatoes (PDO) and, on the Amalfi Coast, Colatura di alici di Cetara (PDO), an anchovy extract.",
+      "**Campania** — [Neapolitan pizza](/food/neapolitan-pizza) (Pizza Napoletana is a Traditional Speciality Guaranteed), Mozzarella di Bufala Campana (PDO), dried pasta from Gragnano (Pasta di Gragnano IGP), San Marzano tomatoes (PDO) and, on the Amalfi Coast, Colatura di alici di Cetara (PDO), an anchovy extract.",
       "**Puglia** — orecchiette and other durum-wheat pasta, Pane di Altamura (PDO), Burrata di Andria (IGP), Mozzarella di Gioia del Colle and Canestrato Pugliese (PDO), and olive oil such as Terra di Bari (PDO).",
       "**Basilicata** — an inland, pastoral region with sheep's cheeses such as Pecorino di Filiano (PDO), legumes and cured pork.",
       "**Calabria** — Caciocavallo Silano (PDO), Liquirizia di Calabria (PDO) and spicy spreadable 'nduja — a traditional product with no EU label, which shows that protection and tradition aren't the same thing.",

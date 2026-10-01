@@ -17,6 +17,7 @@ import { milanBeyondTheDuomo } from "@/data/content/milan-beyond-the-duomo";
 import { naplesFirstVisit } from "@/data/content/naples-first-visit";
 import { palermoMarketsMonuments } from "@/data/content/palermo-markets-monuments";
 import { romeInThreeDays } from "@/data/content/rome-in-three-days";
+import { neapolitanPizza } from "@/data/content/neapolitan-pizza";
 import { sicilyFoodTraditions } from "@/data/content/sicily-food-traditions";
 import { traditionalItalianDesserts } from "@/data/content/traditional-italian-desserts";
 import { turinFirstVisit } from "@/data/content/turin-first-visit";
@@ -133,14 +134,7 @@ export const articleContent: Record<string, ArticleContent> = {
 
   "italian-regional-wines": italianRegionalWines,
 
-  "neapolitan-pizza": {
-    body: [
-      p("Neapolitan pizza has a soft, puffy crust with charred spots and a thin, moist centre. In 2017, UNESCO recognised the art of the Neapolitan pizzaiuolo as part of the world's intangible cultural heritage."),
-      h2("What makes it different"),
-      ul("A simple dough, left to rise for many hours", "Stretched by hand, not with a rolling pin", "Baked very quickly in an extremely hot wood-fired oven", "Classic toppings kept simple: the margherita and the marinara"),
-      p("Expect the centre to be soft — Neapolitans often eat it with a knife and fork, or fold it."),
-    ],
-  },
+  "neapolitan-pizza": neapolitanPizza,
 
   "traditional-italian-desserts": traditionalItalianDesserts,
 

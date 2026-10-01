@@ -103,7 +103,7 @@ export const traditionalItalianDesserts: ArticleContent = {
 
     // ——— 5 ———
     h2("Naples and Campania"),
-    p("Naples has a pastry culture as strong as its pizza culture, and the Regione Campania's own list of traditional products tells the stories behind many of its sweets — some of them clearly legends."),
+    p("Naples has a pastry culture as strong as its [pizza culture](/food/neapolitan-pizza), and the Regione Campania's own list of traditional products tells the stories behind many of its sweets — some of them clearly legends."),
     ul(
       "**Sfogliatella** — a shell-shaped pastry, either *riccia* (many crisp layers) or *frolla* (shortcrust), filled with ricotta, semolina and candied citrus. The region's account traces it to the Santa Rosa convent at Conca dei Marini on the Amalfi Coast, where a nun is said to have created its ancestor about four centuries ago; the recipe reached Naples around 1800.",
       "**Babà** — a light yeast cake soaked in rum syrup. The region repeats the story that it began at the court of the Polish king Stanisław Leszczyński, passed through France and reached Naples with the French cooks (*monsù*) of noble households, where it took its familiar mushroom shape.",

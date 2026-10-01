@@ -153,4 +153,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "italian-coffee-culture", it: "caffe-italiano", enPath: "/food/italian-coffee-culture", itPath: "/it/cibo/caffe-italiano" },
   { en: "traditional-italian-desserts", it: "dolci-tradizionali-italiani", enPath: "/food/traditional-italian-desserts", itPath: "/it/cibo/dolci-tradizionali-italiani" },
   { en: "italian-regional-wines", it: "vini-regionali-italiani", enPath: "/food/italian-regional-wines", itPath: "/it/cibo/vini-regionali-italiani" },
+  { en: "neapolitan-pizza", it: "pizza-napoletana", enPath: "/food/neapolitan-pizza", itPath: "/it/cibo/pizza-napoletana" },
 ];

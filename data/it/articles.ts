@@ -203,7 +203,7 @@ export const itArticles: Article[] = [
       credit: unsplash("Grafi Jeremiah", "_jeremiah85_"),
     },
     socialImages: social("/images/cities/naples-first-visit/naples-bay-vesuvius"),
-    relatedSlugs: ["viaggiare-in-italia-in-treno", "quando-andare-in-italia", "guida-completa-viaggio-italia", "guidare-in-italia", "firenze-per-la-prima-volta"],
+    relatedSlugs: ["pizza-napoletana", "viaggiare-in-italia-in-treno", "quando-andare-in-italia", "guida-completa-viaggio-italia", "guidare-in-italia", "firenze-per-la-prima-volta"],
   },
   {
     kind: "story",
@@ -600,6 +600,32 @@ export const itArticles: Article[] = [
     },
     socialImages: social("/images/food/sicily-food-traditions/erice-pastry-counter"),
     relatedSlugs: ["tradizioni-della-cucina-italiana", "palermo-per-la-prima-volta", "traghetti-in-italia", "come-spostarsi-tra-le-citta-italiane", "napoli-per-la-prima-volta", "guida-completa-viaggio-italia"],
+  },
+  {
+    kind: "story",
+    locale: "it",
+    slug: "pizza-napoletana",
+    title: "La pizza napoletana: storia, tradizione e cultura di Napoli",
+    shortTitle: "La pizza napoletana",
+    seoTitle: "La pizza napoletana: storia, tradizione e cultura di Napoli",
+    seoDescription:
+      "Che cos'è la pizza napoletana e perché è di Napoli: storia, impasto, forno e ingredienti, marinara e margherita, UNESCO e disciplinari, e come mangiarla in città.",
+    excerpt:
+      "Che cosa rende diversa la pizza di Napoli — impasto, forno e mestiere — con la vera storia della margherita e come ordinarla, mangiarla e piegarla a Napoli.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["pizza", "regional-cuisine"],
+    regionSlugs: ["campania"],
+    readingTimeMinutes: 21,
+    // Genuine publication date of the Italian edition.
+    publishedAt: "2026-10-01",
+    updatedAt: "2026-10-01",
+    image: {
+      src: "/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven.webp",
+      alt: "Una pizza con pomodoro, mozzarella fusa e basilico che cuoce sulla platea di un forno a legna, con il cornicione gonfio e maculato e le fiamme alle spalle",
+    },
+    socialImages: social("/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven"),
+    relatedSlugs: ["napoli-per-la-prima-volta", "tradizioni-della-cucina-italiana", "dolci-tradizionali-italiani", "caffe-italiano", "tradizioni-della-cucina-siciliana"],
   },
   {
     kind: "story",

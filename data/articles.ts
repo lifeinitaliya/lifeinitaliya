@@ -572,6 +572,7 @@ const allArticles: Article[] = [
       { src: "/images/cities/naples-first-visit/naples-bay-vesuvius-1x1.jpg", width: 1200, height: 1200 },
     ],
     relatedSlugs: [
+      "neapolitan-pizza",
       "italy-by-train",
       "best-time-to-visit-italy",
       "complete-italy-travel-guide",
@@ -870,11 +871,33 @@ const allArticles: Article[] = [
   }),
   story({
     slug: "neapolitan-pizza", category: "food",
-    title: "Neapolitan Pizza: What Makes It Different",
-    excerpt: "The dough, the oven and the tradition behind Naples' most famous export.",
+    title: "Neapolitan Pizza: The Story, Tradition and Culture of Naples",
+    shortTitle: "Neapolitan Pizza",
+    seoTitle: "Neapolitan Pizza: The Story, Tradition and Culture of Naples",
+    seoDescription:
+      "What Neapolitan pizza is and why it belongs to Naples: its history, dough, oven and ingredients, marinara and margherita, UNESCO and the rules, and how to eat it there.",
+    excerpt:
+      "What makes Naples' pizza different — the dough, the oven and the craft — plus the real story of the margherita and how to order, eat and fold it in Naples.",
     authorSlug: "editorial-team", topicSlugs: ["pizza", "regional-cuisine"], regionSlugs: ["campania"],
-    readingTimeMinutes: 5, publishedAt: "2026-07-31", updatedAt: "2026-08-29",
-    image: img("1622880833523-7cf1c0bd4296", "A pizza baking in a wood-fired oven"),
+    // Planned at this URL earlier but never published; this is its genuine
+    // first publication date.
+    readingTimeMinutes: 22, publishedAt: "2026-10-01", updatedAt: "2026-10-01",
+    image: {
+      src: "/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven.webp",
+      alt: "A pizza topped with tomato, melted mozzarella and basil baking on the floor of a wood-fired oven, its rim puffed and blistered, with flames rising behind it",
+    },
+    socialImages: [
+      { src: "/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/neapolitan-pizza/pizza-baking-wood-fired-oven-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "naples-first-visit",
+      "italian-food-traditions",
+      "traditional-italian-desserts",
+      "italian-coffee-culture",
+      "sicily-food-traditions",
+    ],
   }),
   story({
     slug: "traditional-italian-desserts", category: "food",
@@ -1129,7 +1152,6 @@ export const unpublishedSlugs = new Set([
   "sardinia-where-to-stay",
   "matera-city-of-the-sassi",
   "roman-pasta-classics",
-  "neapolitan-pizza",
   "italian-food-markets",
   "how-to-choose-gelato",
   "planning-a-visit-to-the-uffizi",

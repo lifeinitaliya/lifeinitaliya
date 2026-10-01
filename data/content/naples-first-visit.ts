@@ -250,7 +250,7 @@ export const naplesFirstVisit: ArticleContent = {
     h2("Naples food"),
     p("Food is one of the main reasons to visit Naples, and much of the best is simple and inexpensive."),
     ul(
-      "**Neapolitan pizza** — soft, with a puffy rim and a short, very hot bake. The art of the Neapolitan pizzaiuolo is on UNESCO's list of intangible cultural heritage. The Margherita and the marinara are the classics.",
+      "**Neapolitan pizza** — soft, with a puffy rim and a short, very hot bake. The art of the Neapolitan pizzaiuolo is on UNESCO's list of intangible cultural heritage. The Margherita and the marinara are the classics; our [guide to Neapolitan pizza](/food/neapolitan-pizza) covers its history and how to eat it.",
       "**Pizza fritta** — fried, filled pizza, a traditional street food.",
       "**Pizza a portafoglio** — a small pizza folded in four and eaten on the go.",
       "**Street food** — the cuoppo (a paper cone of fried snacks) and the frittatina di pasta (fried pasta bites).",

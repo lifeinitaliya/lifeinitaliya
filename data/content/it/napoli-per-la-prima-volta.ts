@@ -249,7 +249,7 @@ export const napoliPerLaPrimaVolta: ArticleContent = {
     h2("Cosa mangiare a Napoli"),
     p("A Napoli si viene anche per mangiare, e molto del meglio è semplice ed economico."),
     ul(
-      "**Pizza napoletana** — morbida, con il cornicione alto e una cottura breve a temperatura altissima. L'arte del pizzaiuolo napoletano è iscritta nella lista del patrimonio culturale immateriale UNESCO. Margherita e marinara sono i classici.",
+      "**Pizza napoletana** — morbida, con il cornicione alto e una cottura breve a temperatura altissima. L'arte del pizzaiuolo napoletano è iscritta nella lista del patrimonio culturale immateriale UNESCO. Margherita e marinara sono i classici; storia e consigli nella nostra guida alla [pizza napoletana](/it/cibo/pizza-napoletana).",
       "**Pizza fritta** — ripiena e fritta, un classico del cibo di strada.",
       "**Pizza a portafoglio** — piccola, piegata in quattro e mangiata passeggiando.",
       "**Cibo di strada** — il cuoppo di fritture e la frittatina di pasta.",

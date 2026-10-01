@@ -102,7 +102,7 @@ export const dolciTradizionaliItaliani: ArticleContent = {
 
     // ——— 5 ———
     h2("Napoli e la Campania"),
-    p("A Napoli la pasticceria conta quanto la pizza, e le schede dei prodotti tradizionali della Regione Campania raccontano le storie di molti dolci — alcune dichiaratamente leggendarie."),
+    p("A Napoli la pasticceria conta quanto la [pizza](/it/cibo/pizza-napoletana), e le schede dei prodotti tradizionali della Regione Campania raccontano le storie di molti dolci — alcune dichiaratamente leggendarie."),
     ul(
       "**Sfogliatella** — riccia, a sfoglie croccanti, o frolla, ripiena di ricotta, semola e canditi. Secondo il racconto riportato dalla Regione, l'antenata nacque circa quattro secoli fa nel convento di Santa Rosa a Conca dei Marini, in Costiera Amalfitana, e la ricetta arrivò a Napoli intorno al 1800.",
       "**Babà** — pasta lievitata bagnata nello sciroppo al rum. La Regione riporta la storia della corte del re polacco Stanislao Leszczyński, del passaggio in Francia e dell'arrivo a Napoli con i *monsù*, i cuochi francesi delle famiglie nobili, dove prese la forma a fungo.",

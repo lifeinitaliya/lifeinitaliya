@@ -101,7 +101,7 @@ export const tradizioniDellaCucinaItaliana: ArticleContent = {
     h2("Il Sud"),
     p("Il Sud viene spesso riassunto in pomodoro e pasta secca, il che è vero solo in parte: restano fuori verdure, legumi, pesce, formaggi, pani e conserve. E la cucina del Sud non è sempre piccante: il peperoncino conta in Calabria e altrove, molto meno in tanti piatti."),
     ul(
-      "**Campania** — la pizza napoletana (Pizza Napoletana STG), la Mozzarella di Bufala Campana (DOP), la pasta secca di Gragnano (Pasta di Gragnano IGP), il pomodoro San Marzano (DOP) e, in Costiera Amalfitana, la Colatura di alici di Cetara (DOP).",
+      "**Campania** — la [pizza napoletana](/it/cibo/pizza-napoletana) (Pizza Napoletana STG), la Mozzarella di Bufala Campana (DOP), la pasta secca di Gragnano (Pasta di Gragnano IGP), il pomodoro San Marzano (DOP) e, in Costiera Amalfitana, la Colatura di alici di Cetara (DOP).",
       "**Puglia** — orecchiette e altre paste di grano duro, Pane di Altamura (DOP), Burrata di Andria (IGP), Mozzarella di Gioia del Colle e Canestrato Pugliese (DOP), e oli come il Terra di Bari (DOP).",
       "**Basilicata** — una regione interna e pastorale, con formaggi di pecora come il Pecorino di Filiano (DOP), legumi e salumi.",
       "**Calabria** — Caciocavallo Silano (DOP), Liquirizia di Calabria (DOP) e la 'nduja piccante e spalmabile: un prodotto tradizionale senza marchio UE, a dimostrazione che tutela e tradizione non coincidono.",

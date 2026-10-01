@@ -14,6 +14,7 @@ import { dolomitiPrimaVolta } from "@/data/content/it/dolomiti-prima-volta";
 import { palermoPerLaPrimaVolta } from "@/data/content/it/palermo-per-la-prima-volta";
 import { romaInTreGiorni } from "@/data/content/it/roma-in-tre-giorni";
 import { torinoPerLaPrimaVolta } from "@/data/content/it/torino-per-la-prima-volta";
+import { pizzaNapoletana } from "@/data/content/it/pizza-napoletana";
 import { tradizioniDellaCucinaSiciliana } from "@/data/content/it/tradizioni-della-cucina-siciliana";
 import { tradizioniDellaCucinaItaliana } from "@/data/content/it/tradizioni-della-cucina-italiana";
 import { traghettiInItalia } from "@/data/content/it/traghetti-in-italia";
@@ -49,6 +50,7 @@ export const itArticleContent: Record<string, ArticleContent> = {
   "traghetti-in-italia": traghettiInItalia,
   "tradizioni-della-cucina-italiana": tradizioniDellaCucinaItaliana,
   "tradizioni-della-cucina-siciliana": tradizioniDellaCucinaSiciliana,
+  "pizza-napoletana": pizzaNapoletana,
   "caffe-italiano": caffeItaliano,
   "dolci-tradizionali-italiani": dolciTradizionaliItaliani,
   "vini-regionali-italiani": viniRegionaliItaliani,
