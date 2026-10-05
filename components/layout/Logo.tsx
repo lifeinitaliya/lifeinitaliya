@@ -85,22 +85,22 @@ export function Logo({
       href={it ? "/it" : "/"}
       aria-label={it ? `${siteConfig.name}, prima pagina` : `${siteConfig.name} home`}
       className={cn(
-        "group inline-flex items-center gap-2.5 sm:gap-3 rounded-sm leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
+        "group inline-flex items-center gap-2 min-[360px]:gap-2.5 sm:gap-3 rounded-sm leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
         className
       )}
     >
-      <BrandIcon className="size-8 sm:size-[34px]" />
+      <BrandIcon className="size-7 min-[360px]:size-8 sm:size-[34px]" />
       <div className="flex flex-col justify-center gap-[3px]">
         <span
           aria-hidden
-          className="text-[13.5px] font-bold tracking-[0.14em] text-foreground transition-colors group-hover:text-primary min-[360px]:text-[14.5px] sm:text-[15.5px] sm:tracking-[0.16em] whitespace-nowrap"
+          className="text-[12.5px] font-bold tracking-[0.12em] text-foreground transition-colors group-hover:text-primary min-[360px]:text-[14.5px] min-[360px]:tracking-[0.14em] sm:text-[15.5px] sm:tracking-[0.16em] whitespace-nowrap"
         >
           LIFE IN ITALIA
         </span>
         {showSubtitle && (
           <span
             aria-hidden
-            className="text-[8px] font-semibold tracking-[0.22em] text-muted-foreground uppercase sm:text-[9px] sm:tracking-[0.26em] whitespace-nowrap"
+            className="text-[7.5px] font-semibold tracking-[0.16em] text-muted-foreground uppercase min-[360px]:text-[8px] min-[360px]:tracking-[0.22em] sm:text-[9px] sm:tracking-[0.26em] whitespace-nowrap"
           >
             {subtitle}
           </span>

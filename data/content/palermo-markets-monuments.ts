@@ -189,7 +189,7 @@ export const palermoMarketsMonuments: ArticleContent = {
 
     // ——— 7 ———
     h2("Palermo's markets"),
-    p("Palermo's three historic markets occupy streets rather than halls: stalls line the lanes, with shops, bars and street-food stands behind them. They're working markets for residents, selling fish, meat, fruit, vegetables and household goods, and they're also the easiest places to try the city's street food. Go in the morning, when the stalls are fullest; activity quietens in the afternoon, and trading on Sundays and public holidays varies."),
+    p("Palermo's three historic markets occupy streets rather than halls: stalls line the lanes, with shops, bars and street-food stands behind them. They're working markets for residents, selling fish, meat, fruit, vegetables and household goods, and they're also the easiest places to try the city's street food. Go in the morning, when the stalls are fullest; activity quietens in the afternoon, and trading on Sundays and public holidays varies. Our guide to [Italian food markets](/food/italian-food-markets) has tips on shopping and market etiquette."),
     table(
       ["Market", "Where", "Known for", "Good for"],
       [

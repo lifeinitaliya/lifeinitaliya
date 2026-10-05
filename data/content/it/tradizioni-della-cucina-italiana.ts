@@ -241,7 +241,7 @@ export const tradizioniDellaCucinaItaliana: ArticleContent = {
 
     // ——— 16 ———
     h2("I mercati"),
-    p("I mercati mostrano che cosa si mangia in un luogo e che cosa è di stagione. Produttori e commercianti espongono frutta e verdura, formaggi, salumi, pesce e pane, e in molte città il mercato è anche il posto per un pranzo veloce."),
+    p("I mercati mostrano che cosa si mangia in un luogo e che cosa è di stagione. Produttori e commercianti espongono frutta e verdura, formaggi, salumi, pesce e pane, e in molte città il mercato è anche il posto per un pranzo veloce. La nostra guida ai [mercati alimentari italiani](/it/cibo/mercati-alimentari-italiani) spiega i diversi tipi e come fare la spesa."),
     ul(
       "**Firenze** — il Mercato Centrale, con la food hall al piano di sopra, e il mercato di quartiere di Sant'Ambrogio.",
       "**Bologna** — botteghe e banchi nel centro storico, con pasta fresca, formaggi e salumi.",

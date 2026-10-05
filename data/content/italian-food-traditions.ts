@@ -242,7 +242,7 @@ export const italianFoodTraditions: ArticleContent = {
 
     // ——— 16 ———
     h2("Markets"),
-    p("Markets show what a place eats and what's in season. Fresh produce, cheeses, cured meats, fish and bread are laid out by producers and traders, and in many cities markets double as places for a quick lunch."),
+    p("Markets show what a place eats and what's in season. Fresh produce, cheeses, cured meats, fish and bread are laid out by producers and traders, and in many cities markets double as places for a quick lunch. Our guide to [Italian food markets](/food/italian-food-markets) explains the different kinds and how to shop at them."),
     ul(
       "**Florence** — the Mercato Centrale, with its food hall upstairs, and the neighbourhood market at Sant'Ambrogio.",
       "**Bologna** — food shops and market stalls around the old centre, selling fresh pasta, cheeses and cured meats.",

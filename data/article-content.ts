@@ -8,6 +8,7 @@ import { florenceForFirstTimers } from "@/data/content/florence-for-first-timers
 import { gettingBetweenItalianCities } from "@/data/content/getting-between-italian-cities";
 import { italianRegionalWines } from "@/data/content/italian-regional-wines";
 import { italyAirportTransfers } from "@/data/content/italy-airport-transfers";
+import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
 import { italyByTrain } from "@/data/content/italy-by-train";
 import { italyTravelPlanningChecklist } from "@/data/content/italy-travel-planning-checklist";
@@ -17,6 +18,7 @@ import { milanBeyondTheDuomo } from "@/data/content/milan-beyond-the-duomo";
 import { naplesFirstVisit } from "@/data/content/naples-first-visit";
 import { palermoMarketsMonuments } from "@/data/content/palermo-markets-monuments";
 import { romeInThreeDays } from "@/data/content/rome-in-three-days";
+import { romanPastaClassics } from "@/data/content/roman-pasta-classics";
 import { neapolitanPizza } from "@/data/content/neapolitan-pizza";
 import { sicilyFoodTraditions } from "@/data/content/sicily-food-traditions";
 import { traditionalItalianDesserts } from "@/data/content/traditional-italian-desserts";
@@ -121,14 +123,7 @@ export const articleContent: Record<string, ArticleContent> = {
   "verona-first-visit": veronaFirstVisit,
   // ——— Food ———
   "sicily-food-traditions": sicilyFoodTraditions,
-  "roman-pasta-classics": {
-    body: [
-      p("Rome's four classic pasta dishes are built from a few of the same ingredients: guanciale (cured pork cheek), pecorino romano and black pepper."),
-      { type: "table", headers: ["Dish", "Main ingredients"], rows: [["Cacio e pepe", "Pecorino romano, black pepper"], ["Gricia", "Guanciale, pecorino romano, black pepper"], ["Carbonara", "Guanciale, egg, pecorino romano, black pepper"], ["Amatriciana", "Guanciale, tomato, pecorino romano"]] },
-      p("Traditional versions don't include cream or garlic, and many Romans feel strongly about it."),
-      tip("Order a primo (pasta course) on its own if you're not hungry for a full meal — it's normal in most trattorias."),
-    ],
-  },
+  "roman-pasta-classics": romanPastaClassics,
 
   "italian-coffee-culture": italianCoffeeCulture,
 
@@ -140,15 +135,7 @@ export const articleContent: Record<string, ArticleContent> = {
 
   "italian-food-traditions": italianFoodTraditions,
 
-  "italian-food-markets": {
-    body: [
-      p("Markets are one of the best ways to understand what's in season and what a region eats."),
-      h2("Etiquette"),
-      ul("Go in the morning — many markets close by early afternoon.", "Don't handle produce yourself unless invited; ask the stallholder.", "Buying small quantities is fine."),
-      h2("Markets worth visiting"),
-      ul("**Mercato Centrale**, Florence", "**Rialto Market**, Venice", "**Campo de' Fiori** and neighbourhood markets, Rome", "**Ballarò**, Palermo"),
-    ],
-  },
+  "italian-food-markets": italianFoodMarkets,
 
   "how-to-choose-gelato": {
     body: [

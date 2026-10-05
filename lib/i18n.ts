@@ -154,4 +154,6 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "traditional-italian-desserts", it: "dolci-tradizionali-italiani", enPath: "/food/traditional-italian-desserts", itPath: "/it/cibo/dolci-tradizionali-italiani" },
   { en: "italian-regional-wines", it: "vini-regionali-italiani", enPath: "/food/italian-regional-wines", itPath: "/it/cibo/vini-regionali-italiani" },
   { en: "neapolitan-pizza", it: "pizza-napoletana", enPath: "/food/neapolitan-pizza", itPath: "/it/cibo/pizza-napoletana" },
+  { en: "roman-pasta-classics", it: "pasta-romana", enPath: "/food/roman-pasta-classics", itPath: "/it/cibo/pasta-romana" },
+  { en: "italian-food-markets", it: "mercati-alimentari-italiani", enPath: "/food/italian-food-markets", itPath: "/it/cibo/mercati-alimentari-italiani" },
 ];

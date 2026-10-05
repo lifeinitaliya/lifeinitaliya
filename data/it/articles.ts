@@ -630,6 +630,57 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "pasta-romana",
+    title: "Pasta Romana: Carbonara, Cacio e Pepe, Amatriciana e Gricia",
+    shortTitle: "Pasta Romana",
+    seoTitle: "Pasta Romana: Carbonara, Cacio e Pepe, Amatriciana e Gricia",
+    seoDescription:
+      "I quattro primi romani spiegati: ingredienti, tecnica, differenze tra carbonara, cacio e pepe, amatriciana e gricia, e come ordinarli al ristorante a Roma.",
+    excerpt:
+      "Carbonara, cacio e pepe, amatriciana e gricia condividono pochi ingredienti — e molte opinioni. Ecco cosa li distingue davvero.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["pasta", "regional-cuisine"],
+    regionSlugs: ["lazio"],
+    readingTimeMinutes: 17,
+    publishedAt: "2026-10-04",
+    updatedAt: "2026-10-04",
+    image: {
+      src: "https://images.unsplash.com/photo-1755594461640-b800c6bafdfa?auto=format&fit=crop&w=1600&q=75",
+      alt: "Una ciotola di spaghetti alla carbonara con una salsa lucida di uovo e pecorino, pepe nero e guanciale croccante",
+      credit: unsplash("Stötzer Balázs", "stotzer"),
+    },
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "pizza-napoletana", "roma-in-tre-giorni", "vini-regionali-italiani", "dolci-tradizionali-italiani"],
+  },
+  {
+    kind: "story",
+    locale: "it",
+    slug: "mercati-alimentari-italiani",
+    title: "I mercati alimentari italiani: cosa mangiare, cosa comprare e cosa sapere",
+    shortTitle: "I mercati alimentari italiani",
+    seoTitle: "I mercati alimentari italiani: cosa mangiare, comprare e sapere",
+    seoDescription:
+      "Come funzionano i mercati alimentari in Italia: tipi di mercato, cosa comprare, stagioni e differenze regionali, i mercati di Roma, Firenze, Bologna, Napoli, Palermo, Venezia e Torino.",
+    excerpt:
+      "A che cosa servono i mercati italiani, che cosa comprare e mangiare, come cambiano da Torino a Palermo e come fare la spesa al banco senza passi falsi.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["markets", "regional-cuisine"],
+    regionSlugs: ["lazio", "tuscany", "emilia-romagna", "campania", "sicily", "veneto", "piedmont", "sardinia"],
+    readingTimeMinutes: 22,
+    // Genuine publication date of the Italian edition.
+    publishedAt: "2026-10-05",
+    updatedAt: "2026-10-05",
+    image: {
+      src: "/images/food/italian-food-markets/naples-produce-street-market.webp",
+      alt: "Una donna fa la spesa a un banco di frutta e verdura carico di arance, meloni e verdure in un affollato mercato di strada a Napoli, con scooter e negozi sullo sfondo",
+    },
+    socialImages: social("/images/food/italian-food-markets/naples-produce-street-market"),
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "tradizioni-della-cucina-siciliana", "palermo-per-la-prima-volta", "bologna-in-due-giorni", "pizza-napoletana"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",

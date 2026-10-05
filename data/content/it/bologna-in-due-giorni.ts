@@ -124,7 +124,7 @@ export const bolognaInDueGiorni: ArticleContent = {
     h3("Piazza Santo Stefano e le Sette Chiese"),
     p("A pochi passi dalle torri, piazza Santo Stefano è una piazza a forma di cuneo circondata da portici e palazzi. In fondo c'è il complesso di Santo Stefano, un insieme di chiese, chiostri e cortili collegati tra loro e costruiti nel corso dei secoli, che i bolognesi chiamano le Sette Chiese. È una visita raccolta e suggestiva di circa 45 minuti."),
     h3("Il Quadrilatero e i mercati"),
-    p("La rete di viuzze a est di piazza Maggiore è il quartiere del mercato fin dal Medioevo, oggi pieno di salumerie, pescherie, fruttivendoli e piccoli locali. Il **Mercato di Mezzo**, in via Clavature, è un mercato dove si mangia; il **Mercato delle Erbe**, coperto, in via Ugo Bassi, è un mercato vero e proprio con banchi e posti dove mangiare. Vai la mattina, quando le botteghe sono in piena attività."),
+    p("La rete di viuzze a est di piazza Maggiore è il quartiere del mercato fin dal Medioevo, oggi pieno di salumerie, pescherie, fruttivendoli e piccoli locali. Il **Mercato di Mezzo**, in via Clavature, è un mercato dove si mangia; il **Mercato delle Erbe**, coperto, in via Ugo Bassi, è un mercato vero e proprio con banchi e posti dove mangiare. Vai la mattina, quando le botteghe sono in piena attività. Per i mercati in tutta Italia, vedi [I mercati alimentari italiani](/it/cibo/mercati-alimentari-italiani)."),
     h3("La Pinacoteca Nazionale"),
     p("La pinacoteca, in zona universitaria, racconta la tradizione pittorica bolognese, dai polittici gotici ai Carracci, Guido Reni e il Guercino, con l'*Estasi di santa Cecilia* di Raffaello. Di solito è chiusa il lunedì; calcola un'ora e mezza o due."),
     h3("Il MAMbo"),

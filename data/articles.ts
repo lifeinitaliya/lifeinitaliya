@@ -795,11 +795,31 @@ const allArticles: Article[] = [
   }),
   story({
     slug: "roman-pasta-classics", category: "food",
-    title: "Roman Pasta Classics, Explained",
-    excerpt: "Carbonara, cacio e pepe, amatriciana and gricia share a few ingredients — and a lot of opinions.",
+    title: "Roman Pasta: Carbonara, Cacio e Pepe, Amatriciana and Gricia",
+    shortTitle: "Roman Pasta",
+    seoTitle: "Roman Pasta: Carbonara, Cacio e Pepe, Amatriciana and Gricia",
+    seoDescription:
+      "The four classic Roman pasta dishes explained: ingredients, technique, how carbonara, cacio e pepe, amatriciana and gricia differ, and what to know eating them in Rome.",
+    excerpt: "Carbonara, cacio e pepe, amatriciana and gricia share a few ingredients — and a lot of opinions. Here's what actually sets them apart.",
     authorSlug: "editorial-team", topicSlugs: ["pasta", "regional-cuisine"], regionSlugs: ["lazio"],
-    readingTimeMinutes: 6, publishedAt: "2026-09-04", updatedAt: "2026-09-17",
-    image: img("1638402089014-df7b917a1cd3", "A nest of dried spaghetti on a wooden surface"),
+    readingTimeMinutes: 17, publishedAt: "2026-09-04", updatedAt: "2026-10-04",
+    image: {
+      src: "https://images.unsplash.com/photo-1755594461640-b800c6bafdfa?auto=format&fit=crop&w=1600&q=75",
+      alt: "A bowl of spaghetti carbonara coated in a glossy egg and Pecorino sauce, with black pepper and crisp guanciale",
+      credit: {
+        name: "Stötzer Balázs",
+        url: "https://unsplash.com/@stotzer?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    relatedSlugs: [
+      "italian-food-traditions",
+      "neapolitan-pizza",
+      "rome-in-three-days",
+      "italian-regional-wines",
+      "traditional-italian-desserts",
+    ],
   }),
   story({
     slug: "italian-coffee-culture", category: "food",
@@ -968,11 +988,34 @@ const allArticles: Article[] = [
   }),
   story({
     slug: "italian-food-markets", category: "food",
-    title: "How to Shop at an Italian Food Market",
-    excerpt: "Timing, etiquette and a few of Italy's most rewarding markets.",
-    authorSlug: "editorial-team", topicSlugs: ["markets"], regionSlugs: ["tuscany", "veneto", "lazio", "sicily"],
-    readingTimeMinutes: 5, publishedAt: "2026-06-05", updatedAt: "2026-08-17",
-    image: img("1705661250872-66faa4b4c0b4", "Customers at a delicatessen counter hung with cured hams"),
+    title: "Italian Food Markets: What to Eat, Buy and Know Before You Go",
+    shortTitle: "Italian Food Markets",
+    seoTitle: "Italian Food Markets: What to Eat, Buy and Know Before You Go",
+    seoDescription:
+      "How Italian food markets work: the kinds of market, what to buy, seasons and regional differences, markets in Rome, Florence, Bologna, Naples, Palermo, Venice and Turin, and how to shop.",
+    excerpt:
+      "What Italian markets are for, what to buy and eat, how they change from Turin to Palermo, and how to shop at a stall without a word out of place.",
+    authorSlug: "editorial-team", topicSlugs: ["markets", "regional-cuisine"],
+    regionSlugs: ["lazio", "tuscany", "emilia-romagna", "campania", "sicily", "veneto", "piedmont", "sardinia"],
+    // Planned at this URL earlier but never published; this is its genuine
+    // first publication date.
+    readingTimeMinutes: 21, publishedAt: "2026-10-05", updatedAt: "2026-10-05",
+    image: {
+      src: "/images/food/italian-food-markets/naples-produce-street-market.webp",
+      alt: "A woman shopping at a fruit and vegetable stall piled with oranges, melons and greens on a busy street market in Naples, with scooters and shopfronts behind",
+    },
+    socialImages: [
+      { src: "/images/food/italian-food-markets/naples-produce-street-market-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-food-markets/naples-produce-street-market-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-food-markets/naples-produce-street-market-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-food-traditions",
+      "sicily-food-traditions",
+      "palermo-markets-monuments",
+      "bologna-in-two-days",
+      "neapolitan-pizza",
+    ],
   }),
   story({
     slug: "how-to-choose-gelato", category: "food",
@@ -1151,8 +1194,6 @@ export const unpublishedSlugs = new Set([
   "puglia-itria-valley",
   "sardinia-where-to-stay",
   "matera-city-of-the-sassi",
-  "roman-pasta-classics",
-  "italian-food-markets",
   "how-to-choose-gelato",
   "planning-a-visit-to-the-uffizi",
   "italian-fashion-history",

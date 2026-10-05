@@ -188,7 +188,7 @@ export const palermoPerLaPrimaVolta: ArticleContent = {
 
     // ——— 7 ———
     h2("I mercati di Palermo"),
-    p("I tre mercati storici di Palermo non stanno in un edificio ma nelle strade: i banchi occupano le vie, con botteghe, bar e friggitorie alle spalle. Sono mercati veri, dove i palermitani comprano pesce, carne, frutta, verdura e casalinghi, e sono anche il posto più semplice per assaggiare il cibo di strada. Vai la mattina, quando i banchi sono più pieni; nel pomeriggio l'attività cala, e la domenica e nei festivi varia."),
+    p("I tre mercati storici di Palermo non stanno in un edificio ma nelle strade: i banchi occupano le vie, con botteghe, bar e friggitorie alle spalle. Sono mercati veri, dove i palermitani comprano pesce, carne, frutta, verdura e casalinghi, e sono anche il posto più semplice per assaggiare il cibo di strada. Vai la mattina, quando i banchi sono più pieni; nel pomeriggio l'attività cala, e la domenica e nei festivi varia. Consigli su spesa e galateo nella nostra guida ai [mercati alimentari italiani](/it/cibo/mercati-alimentari-italiani)."),
     table(
       ["Mercato", "Dove", "Famoso per", "Ideale per"],
       [

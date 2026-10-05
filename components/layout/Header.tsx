@@ -16,7 +16,7 @@ export function Header({ locale = "en" }: { locale?: Locale }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md supports-backdrop-filter:bg-background/80">
-      <Container className="flex h-16 items-center gap-6 lg:h-[72px]">
+      <Container className="flex h-16 items-center gap-3 sm:gap-6 lg:h-[72px]">
         <Logo locale={locale} />
 
         <nav aria-label={it ? "Principale" : "Main"} className="hidden lg:ml-8 lg:block xl:ml-12">
