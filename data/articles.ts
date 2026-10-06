@@ -1018,12 +1018,35 @@ const allArticles: Article[] = [
     ],
   }),
   story({
-    slug: "how-to-choose-gelato", category: "food",
-    title: "Gelato: How to Spot the Good Stuff",
-    excerpt: "Colours, containers and flavours — simple signs of a gelateria worth queuing for.",
-    authorSlug: "editorial-team", topicSlugs: ["desserts"], regionSlugs: [],
-    readingTimeMinutes: 4, publishedAt: "2026-05-27", updatedAt: "2026-08-10",
-    image: img("1651325982013-958f9e1ad468", "A hand holding a gelato cone on a narrow street"),
+    // Replaces an unpublished placeholder ("how-to-choose-gelato") that never
+    // went live; this is the article's genuine first publication date.
+    slug: "italian-gelato", category: "food",
+    title: "Italian Gelato: History, Flavours and How to Choose a Good Gelateria",
+    shortTitle: "Italian Gelato",
+    seoTitle: "Italian Gelato: History, Flavours and How to Choose a Gelateria",
+    seoDescription:
+      "Italian gelato explained: how it differs from ice cream, its real history, classic flavours, what \"artigianale\" means, and how to choose a gelateria and order in Italy.",
+    excerpt:
+      "What gelato is, where it really comes from, what the signs on the counter mean, and how to choose and order with confidence — from pistachio to granita.",
+    authorSlug: "editorial-team", topicSlugs: ["desserts", "regional-cuisine"],
+    regionSlugs: ["sicily", "tuscany", "campania", "piedmont", "lombardy", "emilia-romagna"],
+    readingTimeMinutes: 20, publishedAt: "2026-10-06", updatedAt: "2026-10-06",
+    image: {
+      src: "/images/food/italian-gelato/rome-gelateria-cone-handover.webp",
+      alt: "A gelato maker in a white cap holding out a cone of pale green and white gelato topped with whipped cream across the counter of a gelateria in Rome",
+    },
+    socialImages: [
+      { src: "/images/food/italian-gelato/rome-gelateria-cone-handover-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-gelato/rome-gelateria-cone-handover-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-gelato/rome-gelateria-cone-handover-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "traditional-italian-desserts",
+      "italian-coffee-culture",
+      "sicily-food-traditions",
+      "italian-food-markets",
+      "italian-food-traditions",
+    ],
   }),
 
   // ——— Culture ———
@@ -1194,7 +1217,6 @@ export const unpublishedSlugs = new Set([
   "puglia-itria-valley",
   "sardinia-where-to-stay",
   "matera-city-of-the-sassi",
-  "how-to-choose-gelato",
   "planning-a-visit-to-the-uffizi",
   "italian-fashion-history",
   "venice-carnival-traditions",

@@ -334,6 +334,7 @@ export const traditionalItalianDesserts: ArticleContent = {
       "**Semifreddo** — a \"half-cold\" dessert of cream and eggs, frozen in a mould and served in slices.",
       "**Affogato** — gelato \"drowned\" in a shot of espresso.",
     ),
+    p("For gelato in depth — its history, the classic flavours and how to choose a gelateria — see [Italian gelato](/food/italian-gelato)."),
 
     // ——— 24 ———
     h2("How dessert names change across Italy"),

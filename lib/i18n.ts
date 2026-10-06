@@ -156,4 +156,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "neapolitan-pizza", it: "pizza-napoletana", enPath: "/food/neapolitan-pizza", itPath: "/it/cibo/pizza-napoletana" },
   { en: "roman-pasta-classics", it: "pasta-romana", enPath: "/food/roman-pasta-classics", itPath: "/it/cibo/pasta-romana" },
   { en: "italian-food-markets", it: "mercati-alimentari-italiani", enPath: "/food/italian-food-markets", itPath: "/it/cibo/mercati-alimentari-italiani" },
+  { en: "italian-gelato", it: "gelato-italiano", enPath: "/food/italian-gelato", itPath: "/it/cibo/gelato-italiano" },
 ];

@@ -317,7 +317,7 @@ export const tradizioniDellaCucinaSiciliana: ArticleContent = {
 
     // ——— 18 ———
     h2("Granita e colazione"),
-    p("D'estate — e nella Sicilia orientale per buona parte dell'anno — la colazione può essere una **granita con la brioche**: un ghiaccio morbido al limone, alla mandorla, al caffè, al pistacchio, ai gelsi o al cioccolato, da mangiare al cucchiaio intingendo la *brioche col tuppo*, il panino dolce con il \"chignon\". Non è una bibita ghiacciata: la consistenza cambia da paese a paese e da bar a bar."),
+    p("D'estate — e nella Sicilia orientale per buona parte dell'anno — la colazione può essere una **granita con la brioche**: un ghiaccio morbido al limone, alla mandorla, al caffè, al pistacchio, ai gelsi o al cioccolato, da mangiare al cucchiaio intingendo la *brioche col tuppo*, il panino dolce con il \"chignon\". Non è una bibita ghiacciata: la consistenza cambia da paese a paese e da bar a bar. Le differenze con gelato e sorbetto sono spiegate in [Il gelato italiano](/it/cibo/gelato-italiano)."),
     p("Per il resto la colazione è quella italiana di sempre, cappuccino o espresso e cornetto al bar. Approfondimenti in [Il caffè italiano](/it/cibo/caffe-italiano)."),
 
     // ——— 19 ———

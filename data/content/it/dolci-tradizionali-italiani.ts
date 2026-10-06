@@ -333,6 +333,7 @@ export const dolciTradizionaliItaliani: ArticleContent = {
       "**Semifreddo** — dolce di panna e uova congelato in stampo e servito a fette.",
       "**Affogato** — gelato \"annegato\" in un caffè espresso.",
     ),
+    p("Per il gelato in dettaglio — storia, gusti classici e come scegliere una gelateria — vedi [Il gelato italiano](/it/cibo/gelato-italiano)."),
 
     // ——— 24 ———
     h2("Un dolce, tanti nomi"),

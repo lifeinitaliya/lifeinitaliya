@@ -317,7 +317,7 @@ export const sicilyFoodTraditions: ArticleContent = {
 
     // ——— 18 ———
     h2("Granita and breakfast"),
-    p("In summer — and in eastern Sicily for much of the year — breakfast can be a **granita with a brioche**: a soft, semi-frozen ice, typically lemon, almond, coffee, pistachio, mulberry or chocolate, eaten with a spoon and a sweet bun (*brioche col tuppo*, named after its topknot) for dipping. Granita is smoother than a slush; texture varies by town and bar."),
+    p("In summer — and in eastern Sicily for much of the year — breakfast can be a **granita with a brioche**: a soft, semi-frozen ice, typically lemon, almond, coffee, pistachio, mulberry or chocolate, eaten with a spoon and a sweet bun (*brioche col tuppo*, named after its topknot) for dipping. Granita is smoother than a slush; texture varies by town and bar. How it differs from gelato and sorbetto is explained in our guide to [Italian gelato](/food/italian-gelato)."),
     p("Otherwise, breakfast is the usual Italian one: a cappuccino or espresso with a cornetto at a bar. See [Italian coffee culture](/food/italian-coffee-culture) for how bars work."),
 
     // ——— 19 ———

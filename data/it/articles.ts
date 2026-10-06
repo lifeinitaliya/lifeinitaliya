@@ -681,6 +681,32 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "gelato-italiano",
+    title: "Il gelato italiano: storia, gusti e come scegliere una buona gelateria",
+    shortTitle: "Il gelato italiano",
+    seoTitle: "Il gelato italiano: storia, gusti e come scegliere una gelateria",
+    seoDescription:
+      "Il gelato spiegato: differenze con l'ice cream, la storia vera, i gusti classici, che cosa significa \"artigianale\" e come scegliere una gelateria e ordinare.",
+    excerpt:
+      "Che cos'è il gelato, da dove viene davvero, che cosa vogliono dire le scritte al banco e come scegliere con cognizione di causa — dal pistacchio alla granita.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["desserts", "regional-cuisine"],
+    regionSlugs: ["sicily", "tuscany", "campania", "piedmont", "lombardy", "emilia-romagna"],
+    readingTimeMinutes: 19,
+    // Genuine publication date of the Italian edition.
+    publishedAt: "2026-10-06",
+    updatedAt: "2026-10-06",
+    image: {
+      src: "/images/food/italian-gelato/rome-gelateria-cone-handover.webp",
+      alt: "Un gelatiere con il cappello bianco porge oltre il banco un cono di gelato verde chiaro e bianco con panna montata, in una gelateria di Roma",
+    },
+    socialImages: social("/images/food/italian-gelato/rome-gelateria-cone-handover"),
+    relatedSlugs: ["dolci-tradizionali-italiani", "caffe-italiano", "tradizioni-della-cucina-siciliana", "mercati-alimentari-italiani", "tradizioni-della-cucina-italiana"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",

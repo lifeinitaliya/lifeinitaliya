@@ -9,6 +9,7 @@ import { gettingBetweenItalianCities } from "@/data/content/getting-between-ital
 import { italianRegionalWines } from "@/data/content/italian-regional-wines";
 import { italyAirportTransfers } from "@/data/content/italy-airport-transfers";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
+import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
 import { italyByTrain } from "@/data/content/italy-by-train";
 import { italyTravelPlanningChecklist } from "@/data/content/italy-travel-planning-checklist";
@@ -137,12 +138,7 @@ export const articleContent: Record<string, ArticleContent> = {
 
   "italian-food-markets": italianFoodMarkets,
 
-  "how-to-choose-gelato": {
-    body: [
-      p("There's a lot of excellent gelato in Italy, and some that's made for show. A few signs help you tell the difference."),
-      ul("**Natural colours** — pistachio should look olive-brown rather than bright green, and banana greyish rather than yellow.", "**Covered or flat containers** — many artisan shops keep gelato in covered metal tubs rather than piled high.", "**Seasonal flavours** — fruit flavours that change with the seasons suggest fresh ingredients.", "**A short list** — fewer flavours can mean they're made daily."),
-    ],
-  },
+  "italian-gelato": italianGelato,
 
   // ——— Culture ———
   "planning-a-visit-to-the-uffizi": {

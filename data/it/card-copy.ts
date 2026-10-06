@@ -41,10 +41,6 @@ export const itCardCopy: Record<string, { title: string; excerpt: string }> = {
     title: "Come fare la spesa in un mercato italiano",
     excerpt: "Orari, galateo e alcuni dei mercati più interessanti del Paese.",
   },
-  "how-to-choose-gelato": {
-    title: "Gelato: come riconoscere quello buono",
-    excerpt: "Colori, vaschette e gusti: i segnali semplici di una gelateria che vale la fila.",
-  },
 
   // Culture
   "planning-a-visit-to-the-uffizi": {
