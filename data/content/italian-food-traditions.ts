@@ -238,7 +238,7 @@ export const italianFoodTraditions: ArticleContent = {
 
     // ——— 15 ———
     h2("Aperitivo and eating together"),
-    p("*Aperitivo* — an early-evening drink with something to eat — is a social ritual in many cities, especially in the north. It takes different local forms: vermouth in Turin; a spritz in the Veneto; in Venice, *cicchetti* — small snacks eaten standing at the counter of a *bacaro* — with an *ombra*, a small glass of wine; and in Milan, bars that serve generous plates or buffets with the drink. The buffet version, sometimes called *apericena*, is a more recent development and can replace dinner; traditional aperitivo is lighter. Beyond the drink, food in Italy is above all social: long Sunday lunches, family festivals and village *sagre* (food fairs) are where many traditions are kept alive."),
+    p("*Aperitivo* — an early-evening drink with something to eat — is a social ritual in many cities, especially in the north. It takes different local forms: vermouth in Turin; a spritz in the Veneto; in Venice, *cicchetti* — small snacks eaten standing at the counter of a *bacaro* — with an *ombra*, a small glass of wine; and in Milan, bars that serve generous plates or buffets with the drink. The buffet version, sometimes called *apericena*, is a more recent development and can replace dinner; traditional aperitivo is lighter. Our guide to [Italian aperitivo](/food/italian-aperitivo) covers the drinks and the regional versions. Beyond the drink, food in Italy is above all social: long Sunday lunches, family festivals and village *sagre* (food fairs) are where many traditions are kept alive."),
 
     // ——— 16 ———
     h2("Markets"),

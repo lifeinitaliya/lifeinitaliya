@@ -203,7 +203,7 @@ export const turinFirstVisit: ArticleContent = {
 
     // ——— 9 ———
     h2("Aperitivo in Turin"),
-    p("Aperitivo is the early-evening drink before dinner, usually from about 18:00 to 20:00, and Turin has a strong claim to it through vermouth. Traditionally it means a vermouth, a Negroni or a spritz with a few snacks; many bars now serve larger buffets, sometimes called *apericena*, which can replace a light dinner. It isn't the same as dinner, though: if you want Piedmontese cooking, book a table afterwards."),
+    p("Aperitivo is the early-evening drink before dinner, usually from about 18:00 to 20:00, and Turin has a strong claim to it through vermouth. Traditionally it means a vermouth, a Negroni or a spritz with a few snacks; many bars now serve larger buffets, sometimes called *apericena*, which can replace a light dinner. It isn't the same as dinner, though: if you want Piedmontese cooking, book a table afterwards. More on vermouth and the drinks in our guide to [Italian aperitivo](/food/italian-aperitivo)."),
     ul(
       "Order at the bar or from your table; snacks usually come with the drink.",
       "Don't treat a buffet as an all-you-can-eat meal unless it's clearly offered as one.",

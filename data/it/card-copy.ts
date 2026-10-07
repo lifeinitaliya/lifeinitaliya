@@ -79,10 +79,6 @@ export const itCardCopy: Record<string, { title: string; excerpt: string }> = {
     title: "La passeggiata: il rito della sera",
     excerpt: "Perché nel tardo pomeriggio le vie principali di tante città italiane si riempiono, e come unirsi.",
   },
-  "aperitivo-ritual": {
-    title: "L'aperitivo, il rito prima di cena",
-    excerpt: "Spritz, vermut e stuzzichini: l'abitudine del tardo pomeriggio spiegata.",
-  },
 
   // Transport
 

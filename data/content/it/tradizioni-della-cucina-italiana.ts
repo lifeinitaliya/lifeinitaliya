@@ -237,7 +237,7 @@ export const tradizioniDellaCucinaItaliana: ArticleContent = {
 
     // ——— 15 ———
     h2("L'aperitivo e il mangiare insieme"),
-    p("L'aperitivo — un drink a fine giornata con qualcosa da mangiare — è un rito sociale in molte città, soprattutto al Nord, e cambia forma da un posto all'altro: il vermouth a Torino, lo spritz in Veneto; a Venezia i cicchetti, da mangiare in piedi al banco del bacaro con un'ombra di vino; a Milano i bar che accompagnano il drink con piatti abbondanti o buffet. La formula a buffet, detta anche apericena, è più recente e può sostituire la cena; l'aperitivo tradizionale è più leggero. Oltre al bicchiere, il cibo in Italia è soprattutto socialità: i lunghi pranzi della domenica, le feste di famiglia e le sagre di paese sono i luoghi in cui molte tradizioni restano vive."),
+    p("L'aperitivo — un drink a fine giornata con qualcosa da mangiare — è un rito sociale in molte città, soprattutto al Nord, e cambia forma da un posto all'altro: il vermouth a Torino, lo spritz in Veneto; a Venezia i cicchetti, da mangiare in piedi al banco del bacaro con un'ombra di vino; a Milano i bar che accompagnano il drink con piatti abbondanti o buffet. La formula a buffet, detta anche apericena, è più recente e può sostituire la cena; l'aperitivo tradizionale è più leggero. Bevande e versioni regionali nella nostra guida all'[aperitivo italiano](/it/cibo/aperitivo-italiano). Oltre al bicchiere, il cibo in Italia è soprattutto socialità: i lunghi pranzi della domenica, le feste di famiglia e le sagre di paese sono i luoghi in cui molte tradizioni restano vive."),
 
     // ——— 16 ———
     h2("I mercati"),

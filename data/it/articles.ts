@@ -707,6 +707,32 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "aperitivo-italiano",
+    title: "L'aperitivo italiano: bevande, cibo e cultura del prima di cena",
+    shortTitle: "L'aperitivo italiano",
+    seoTitle: "L'aperitivo italiano: bevande, cibo e cultura del prima di cena",
+    seoDescription:
+      "Che cos'è l'aperitivo: le bevande e il cibo, spritz, vermouth e Negroni, apericena e cicchetti, le tradizioni di Milano, Torino, Venezia e Roma, e come funziona al bar.",
+    excerpt:
+      "Perché in Italia ci si ritrova a bere qualcosa prima di cena, che cosa si ordina e si mangia e come cambia il rito tra Milano, Torino, Venezia e Roma.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["lombardy", "piedmont", "veneto", "lazio", "emilia-romagna", "tuscany"],
+    readingTimeMinutes: 16,
+    // Genuine publication date of the Italian edition.
+    publishedAt: "2026-10-07",
+    updatedAt: "2026-10-07",
+    image: {
+      src: "/images/food/italian-aperitivo/venice-canal-spritz.webp",
+      alt: "Persone sedute lungo un canale veneziano con bicchieri di spritz a inizio serata, con pali d'ormeggio in legno e un piccolo ponte sullo sfondo",
+    },
+    socialImages: social("/images/food/italian-aperitivo/venice-canal-spritz"),
+    relatedSlugs: ["caffe-italiano", "vini-regionali-italiani", "tradizioni-della-cucina-italiana", "milano-oltre-il-duomo", "torino-per-la-prima-volta"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",

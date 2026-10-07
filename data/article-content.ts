@@ -8,6 +8,7 @@ import { florenceForFirstTimers } from "@/data/content/florence-for-first-timers
 import { gettingBetweenItalianCities } from "@/data/content/getting-between-italian-cities";
 import { italianRegionalWines } from "@/data/content/italian-regional-wines";
 import { italyAirportTransfers } from "@/data/content/italy-airport-transfers";
+import { italianAperitivo } from "@/data/content/italian-aperitivo";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
@@ -218,15 +219,7 @@ export const articleContent: Record<string, ArticleContent> = {
     ],
   },
 
-  "aperitivo-ritual": {
-    body: [
-      p("Aperitivo is the early-evening drink before dinner, usually served with something to eat."),
-      h2("What to drink"),
-      ul("**Spritz** — prosecco with Aperol, Campari or another bitter, popular across the north-east", "**Vermouth** — closely associated with Turin", "**Negroni** — gin, vermouth and Campari", "A glass of local wine"),
-      h2("What you get"),
-      p("Many bars serve small snacks with your drink. Some offer a larger buffet for a set price, especially in Milan."),
-    ],
-  },
+  "italian-aperitivo": italianAperitivo,
 
   // ——— Transport ———
   "ferries-in-italy": ferriesInItaly,

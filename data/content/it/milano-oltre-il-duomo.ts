@@ -243,7 +243,7 @@ export const milanoOltreIlDuomo: ArticleContent = {
       "**Polenta** — diffusa in tutta la Lombardia, soprattutto nei mesi freddi.",
       "**Panettone** — il dolce più legato a Milano, soprattutto a Natale.",
     ),
-    p("**L'aperitivo** è un rito quotidiano: un drink nel tardo pomeriggio, spesso con stuzzichini o buffet, nei bar di Brera, dei Navigli, dell'Isola e di Porta Venezia. Si dice comunemente che il Negroni sbagliato sia nato a Milano. La Lombardia ha anche vini importanti, dalle bollicine della Franciacorta ai rossi della Valtellina. Sulle abitudini della tavola italiana c'è il nostro approfondimento sulle [tradizioni della cucina italiana](/it/cibo/tradizioni-della-cucina-italiana)."),
+    p("**L'aperitivo** è un rito quotidiano: un drink nel tardo pomeriggio, spesso con stuzzichini o buffet, nei bar di Brera, dei Navigli, dell'Isola e di Porta Venezia. Si dice comunemente che il Negroni sbagliato sia nato a Milano; di più nella nostra guida all'[aperitivo italiano](/it/cibo/aperitivo-italiano). La Lombardia ha anche vini importanti, dalle bollicine della Franciacorta ai rossi della Valtellina. Sulle abitudini della tavola italiana c'è il nostro approfondimento sulle [tradizioni della cucina italiana](/it/cibo/tradizioni-della-cucina-italiana)."),
     h3("I Navigli e la Milano della sera"),
     p("La vita serale milanese si concentra sui Navigli, a Brera, Porta Venezia, all'Isola e in corso Como. L'aperitivo inizia di solito verso le 18, la cena intorno alle 20. Nelle sere calde le sponde dei canali si riempiono, e nel fine settimana possono essere affollatissime; per una serata più tranquilla, prosegui lungo il Naviglio Grande o scegli l'Isola."),
     {

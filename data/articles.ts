@@ -1119,12 +1119,35 @@ const allArticles: Article[] = [
     image: img("1654670027962-bbfa198e02f7", "People walking along a street between tall buildings"),
   }),
   story({
-    slug: "aperitivo-ritual", category: "lifestyle",
-    title: "Aperitivo: Italy's Early-Evening Ritual",
-    excerpt: "Spritz, vermouth and small plates — the pre-dinner custom explained.",
-    authorSlug: "editorial-team", topicSlugs: ["daily-life"], regionSlugs: ["lombardy", "piedmont", "veneto"],
-    readingTimeMinutes: 4, publishedAt: "2026-07-26", updatedAt: "2026-08-23",
-    image: img("1608120181805-8896890318da", "Spritz cocktails and a board of bread and cured meats"),
+    // Replaces an unpublished lifestyle placeholder ("aperitivo-ritual") that
+    // never went live; this is the article's genuine first publication date.
+    slug: "italian-aperitivo", category: "food",
+    title: "Italian Aperitivo: Drinks, Food and the Culture of Pre-Dinner Time",
+    shortTitle: "Italian Aperitivo",
+    seoTitle: "Italian Aperitivo: Drinks, Food and the Culture of Pre-Dinner Time",
+    seoDescription:
+      "What aperitivo means in Italy: the classic drinks and food, spritz, vermouth and the Negroni, apericena and cicchetti, city-by-city traditions, and how to order.",
+    excerpt:
+      "Why Italians meet for a drink before dinner, what they order and eat, how Milan, Turin, Venice and Rome do it differently, and how to join in.",
+    authorSlug: "editorial-team", topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["lombardy", "piedmont", "veneto", "lazio", "emilia-romagna", "tuscany"],
+    readingTimeMinutes: 17, publishedAt: "2026-10-07", updatedAt: "2026-10-07",
+    image: {
+      src: "/images/food/italian-aperitivo/venice-canal-spritz.webp",
+      alt: "People sitting along a Venetian canal with glasses of spritz in the early evening, with wooden mooring poles and a small bridge behind",
+    },
+    socialImages: [
+      { src: "/images/food/italian-aperitivo/venice-canal-spritz-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-aperitivo/venice-canal-spritz-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-aperitivo/venice-canal-spritz-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-coffee-culture",
+      "italian-regional-wines",
+      "italian-food-traditions",
+      "milan-beyond-the-duomo",
+      "turin-first-visit",
+    ],
   }),
 
   // ——— Transport ———
@@ -1225,7 +1248,6 @@ export const unpublishedSlugs = new Set([
   "italian-design-and-its-makers",
   "italian-cinema-film-makers",
   "the-passeggiata",
-  "aperitivo-ritual",
   "venice-gondola-rides",
   "amalfi-coast-boat-trips",
   "chianti-wine-day",

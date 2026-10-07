@@ -203,7 +203,7 @@ export const torinoPerLaPrimaVolta: ArticleContent = {
 
     // ——— 9 ———
     h2("L'aperitivo a Torino"),
-    p("L'aperitivo è il drink del tardo pomeriggio prima di cena, di solito tra le 18 e le 20, e Torino può rivendicarlo grazie al vermut. Tradizionalmente significa un vermut, un Negroni o uno spritz con qualche stuzzichino; molti locali oggi propongono buffet più abbondanti, detti *apericena*, che possono sostituire una cena leggera. Non è però la stessa cosa della cena: se vuoi la cucina piemontese, prenota un tavolo dopo."),
+    p("L'aperitivo è il drink del tardo pomeriggio prima di cena, di solito tra le 18 e le 20, e Torino può rivendicarlo grazie al vermut. Tradizionalmente significa un vermut, un Negroni o uno spritz con qualche stuzzichino; molti locali oggi propongono buffet più abbondanti, detti *apericena*, che possono sostituire una cena leggera. Non è però la stessa cosa della cena: se vuoi la cucina piemontese, prenota un tavolo dopo. Vermut e bevande nella nostra guida all'[aperitivo italiano](/it/cibo/aperitivo-italiano)."),
     ul(
       "Si ordina al banco o al tavolo; gli stuzzichini di solito arrivano con il drink.",
       "Non trattare il buffet come un pasto a volontà, a meno che non sia chiaramente proposto così.",

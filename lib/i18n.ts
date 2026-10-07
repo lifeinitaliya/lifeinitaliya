@@ -157,4 +157,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "roman-pasta-classics", it: "pasta-romana", enPath: "/food/roman-pasta-classics", itPath: "/it/cibo/pasta-romana" },
   { en: "italian-food-markets", it: "mercati-alimentari-italiani", enPath: "/food/italian-food-markets", itPath: "/it/cibo/mercati-alimentari-italiani" },
   { en: "italian-gelato", it: "gelato-italiano", enPath: "/food/italian-gelato", itPath: "/it/cibo/gelato-italiano" },
+  { en: "italian-aperitivo", it: "aperitivo-italiano", enPath: "/food/italian-aperitivo", itPath: "/it/cibo/aperitivo-italiano" },
 ];

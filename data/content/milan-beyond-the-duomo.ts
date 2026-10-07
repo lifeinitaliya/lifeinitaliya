@@ -243,7 +243,7 @@ export const milanBeyondTheDuomo: ArticleContent = {
       "**Polenta** — common across Lombardy, especially in colder months.",
       "**Panettone** — the sweet bread closely associated with Milan, especially at Christmas.",
     ),
-    p("**Aperitivo** is a daily ritual: an early-evening drink, often served with snacks or a buffet, in bars across Brera, the Navigli, Isola and Porta Venezia. The Negroni sbagliato is commonly said to have been created in Milan. Lombardy also has notable wines, from Franciacorta sparkling wines to Valtellina reds — see [Italian regional wines](/food/italian-regional-wines) — and [Italian food traditions you should know](/food/italian-food-traditions) explains how meals work."),
+    p("**Aperitivo** is a daily ritual: an early-evening drink, often served with snacks or a buffet, in bars across Brera, the Navigli, Isola and Porta Venezia. The Negroni sbagliato is commonly said to have been created in Milan; more in our guide to [Italian aperitivo](/food/italian-aperitivo). Lombardy also has notable wines, from Franciacorta sparkling wines to Valtellina reds — see [Italian regional wines](/food/italian-regional-wines) — and [Italian food traditions you should know](/food/italian-food-traditions) explains how meals work."),
     h3("The Navigli and evening Milan"),
     p("Evening life in Milan centres on the Navigli, Brera, Porta Venezia, Isola and Corso Como. Aperitivo usually runs from about 6pm, dinner from around 8pm. On warm evenings the canal banks fill with people, and at weekends they can be very busy; for a quieter evening, walk further along the Naviglio Grande or choose Isola."),
     {
