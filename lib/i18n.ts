@@ -158,4 +158,6 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "italian-food-markets", it: "mercati-alimentari-italiani", enPath: "/food/italian-food-markets", itPath: "/it/cibo/mercati-alimentari-italiani" },
   { en: "italian-gelato", it: "gelato-italiano", enPath: "/food/italian-gelato", itPath: "/it/cibo/gelato-italiano" },
   { en: "italian-aperitivo", it: "aperitivo-italiano", enPath: "/food/italian-aperitivo", itPath: "/it/cibo/aperitivo-italiano" },
+  { en: "italian-street-food", it: "cibo-di-strada-italiano", enPath: "/food/italian-street-food", itPath: "/it/cibo/cibo-di-strada-italiano" },
+  { en: "italian-breakfast", it: "colazione-italiana", enPath: "/food/italian-breakfast", itPath: "/it/cibo/colazione-italiana" },
 ];

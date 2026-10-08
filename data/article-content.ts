@@ -9,6 +9,8 @@ import { gettingBetweenItalianCities } from "@/data/content/getting-between-ital
 import { italianRegionalWines } from "@/data/content/italian-regional-wines";
 import { italyAirportTransfers } from "@/data/content/italy-airport-transfers";
 import { italianAperitivo } from "@/data/content/italian-aperitivo";
+import { italianStreetFood } from "@/data/content/italian-street-food";
+import { italianBreakfast } from "@/data/content/italian-breakfast";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
@@ -220,6 +222,8 @@ export const articleContent: Record<string, ArticleContent> = {
   },
 
   "italian-aperitivo": italianAperitivo,
+  "italian-street-food": italianStreetFood,
+  "italian-breakfast": italianBreakfast,
 
   // ——— Transport ———
   "ferries-in-italy": ferriesInItaly,

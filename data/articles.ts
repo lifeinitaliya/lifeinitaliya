@@ -1150,6 +1150,79 @@ const allArticles: Article[] = [
     ],
   }),
 
+  story({
+    slug: "italian-street-food", category: "food",
+    title: "Italian Street Food: Regional Foods to Eat Across Italy",
+    shortTitle: "Italian Street Food",
+    seoTitle: "Italian Street Food: Regional Foods to Eat Across Italy",
+    seoDescription:
+      "Italian street food is regional, not national: arancine in Palermo, pizza a portafoglio in Naples, supplì and pizza al taglio in Rome, lampredotto in Florence, piadina in Emilia-Romagna.",
+    excerpt:
+      "From Palermo's arancine and Naples' pizza a portafoglio to Roman supplì, Florentine lampredotto and Ligurian focaccia — a region-by-region guide to Italy's street food traditions.",
+    authorSlug: "editorial-team", topicSlugs: ["regional-cuisine", "street-food"],
+    regionSlugs: ["sicily", "campania", "lazio", "tuscany", "emilia-romagna", "liguria", "puglia", "veneto"],
+    readingTimeMinutes: 17, publishedAt: "2026-10-08", updatedAt: "2026-10-08",
+    image: {
+      src: "/images/food/italian-street-food/italy-street-market-stalls.webp",
+      alt: "Colourful produce stalls at a vibrant outdoor food market in Italy, with vendors and shoppers among baskets of fresh vegetables and fruit",
+      credit: {
+        name: "Teo Zac",
+        url: "https://unsplash.com/@teo_zac?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/food/italian-street-food/italy-street-market-stalls-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-street-food/italy-street-market-stalls-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-street-food/italy-street-market-stalls-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-food-traditions",
+      "italian-food-markets",
+      "neapolitan-pizza",
+      "roman-pasta-classics",
+      "sicily-food-traditions",
+      "palermo-markets-monuments",
+    ],
+  }),
+
+  story({
+    slug: "italian-breakfast", category: "food",
+    title: "Italian Breakfast: What Italians Eat in the Morning",
+    shortTitle: "Italian Breakfast",
+    seoTitle: "Italian Breakfast: What Italians Eat in the Morning",
+    seoDescription:
+      "What Italian breakfast looks like: cappuccino and cornetto at the bar, moka coffee and biscuits at home, Sicilian granita with brioche, and how to order like a local.",
+    excerpt:
+      "Why Italian breakfast is light, quick and sweet, what cappuccino has to do with it, how Sicily does things differently, and how to order at an Italian bar.",
+    authorSlug: "editorial-team", topicSlugs: ["coffee", "regional-cuisine"],
+    regionSlugs: ["sicily", "campania", "lazio", "tuscany", "lombardy"],
+    readingTimeMinutes: 15, publishedAt: "2026-10-08", updatedAt: "2026-10-08",
+    image: {
+      src: "/images/food/italian-breakfast/italian-bar-coffee-saucer.webp",
+      alt: "A cup of coffee on a saucer at an Italian bar counter in the morning",
+      credit: {
+        name: "Eileen Alcini",
+        url: "https://unsplash.com/@eileen_alcini?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/food/italian-breakfast/italian-bar-coffee-saucer-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-breakfast/italian-bar-coffee-saucer-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-breakfast/italian-bar-coffee-saucer-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-coffee-culture",
+      "italian-food-traditions",
+      "sicily-food-traditions",
+      "traditional-italian-desserts",
+      "naples-first-visit",
+    ],
+  }),
+
   // ——— Transport ———
   story({
     slug: "ferries-in-italy", category: "transport",
