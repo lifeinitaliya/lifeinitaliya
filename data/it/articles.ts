@@ -783,6 +783,31 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "formaggi-regionali-italiani",
+    title: "Formaggi regionali italiani: guida completa alle denominazioni DOP e IGP",
+    shortTitle: "Formaggi regionali italiani",
+    seoTitle: "Formaggi regionali italiani: guida alle DOP e IGP",
+    seoDescription:
+      "Guida completa ai formaggi regionali italiani: Parmigiano Reggiano, Gorgonzola, Taleggio, Fontina, Mozzarella di Bufala Campana, Pecorino Romano e oltre 15 DOP e IGP.",
+    excerpt:
+      "Dal Parmigiano Reggiano al Gorgonzola, dalla Mozzarella di Bufala Campana al Pecorino Romano: una guida regione per regione ai formaggi DOP e IGP italiani più importanti.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["regional-cuisine", "wine"],
+    regionSlugs: ["piedmont", "lombardy", "veneto", "friuli-venezia-giulia", "emilia-romagna", "tuscany", "lazio", "campania", "puglia", "sicily", "sardinia", "aosta-valley"],
+    readingTimeMinutes: 22,
+    publishedAt: "2026-10-10",
+    updatedAt: "2026-10-10",
+    image: {
+      src: "/images/food/italian-regional-cheeses/cheese-selection-board.webp",
+      alt: "Un tagliere di legno con una selezione di formaggi, frutta e accompagnamenti",
+    },
+    socialImages: social("/images/food/italian-regional-cheeses/cheese-selection-board"),
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "vini-regionali-italiani", "mercati-alimentari-italiani", "pasta-romana", "dolci-tradizionali-italiani", "tradizioni-della-cucina-siciliana"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",

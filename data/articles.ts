@@ -1188,6 +1188,43 @@ const allArticles: Article[] = [
   }),
 
   story({
+    slug: "italian-regional-cheeses", category: "food",
+    title: "Italian Regional Cheeses: A Complete Guide to Italy's PDO and PGI Varieties",
+    shortTitle: "Italian Regional Cheeses",
+    seoTitle: "Italian Regional Cheeses: PDO and PGI Varieties Explained",
+    seoDescription:
+      "A complete guide to Italian regional cheeses: Parmigiano Reggiano, Gorgonzola, Taleggio, Fontina, Mozzarella di Bufala, Pecorino Romano and 15 more PDO and PGI varieties.",
+    excerpt:
+      "From Parmigiano Reggiano and Gorgonzola to Mozzarella di Bufala and Pecorino Romano — a region-by-region guide to Italy's most important PDO and PGI cheeses.",
+    authorSlug: "editorial-team", topicSlugs: ["regional-cuisine", "wine"],
+    regionSlugs: ["piedmont", "lombardy", "veneto", "friuli-venezia-giulia", "emilia-romagna", "tuscany", "lazio", "campania", "puglia", "sicily", "sardinia", "aosta-valley"],
+    readingTimeMinutes: 22, publishedAt: "2026-10-10", updatedAt: "2026-10-10",
+    image: {
+      src: "/images/food/italian-regional-cheeses/cheese-selection-board.webp",
+      alt: "A wooden cutting board loaded with a selection of different cheeses, fruit and accompaniments",
+      credit: {
+        name: "Mike Houser",
+        url: "https://unsplash.com/photos/q3H7qKL5a7M?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/food/italian-regional-cheeses/cheese-selection-board-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-regional-cheeses/cheese-selection-board-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-regional-cheeses/cheese-selection-board-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-food-traditions",
+      "italian-regional-wines",
+      "italian-food-markets",
+      "roman-pasta-classics",
+      "traditional-italian-desserts",
+      "sicily-food-traditions",
+    ],
+  }),
+
+  story({
     slug: "italian-breakfast", category: "food",
     title: "Italian Breakfast: What Italians Eat in the Morning",
     shortTitle: "Italian Breakfast",

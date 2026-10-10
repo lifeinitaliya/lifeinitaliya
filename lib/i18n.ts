@@ -160,4 +160,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "italian-aperitivo", it: "aperitivo-italiano", enPath: "/food/italian-aperitivo", itPath: "/it/cibo/aperitivo-italiano" },
   { en: "italian-street-food", it: "cibo-di-strada-italiano", enPath: "/food/italian-street-food", itPath: "/it/cibo/cibo-di-strada-italiano" },
   { en: "italian-breakfast", it: "colazione-italiana", enPath: "/food/italian-breakfast", itPath: "/it/cibo/colazione-italiana" },
+  { en: "italian-regional-cheeses", it: "formaggi-regionali-italiani", enPath: "/food/italian-regional-cheeses", itPath: "/it/cibo/formaggi-regionali-italiani" },
 ];

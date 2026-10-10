@@ -21,6 +21,7 @@ import { gelatoItaliano } from "@/data/content/it/gelato-italiano";
 import { aperitivoItaliano } from "@/data/content/it/aperitivo-italiano";
 import { ciboDiStradaItaliano } from "@/data/content/it/cibo-di-strada-italiano";
 import { colazioneItaliana } from "@/data/content/it/colazione-italiana";
+import { formaggiRegionaliItaliani } from "@/data/content/it/formaggi-regionali-italiani";
 import { tradizioniDellaCucinaSiciliana } from "@/data/content/it/tradizioni-della-cucina-siciliana";
 import { tradizioniDellaCucinaItaliana } from "@/data/content/it/tradizioni-della-cucina-italiana";
 import { traghettiInItalia } from "@/data/content/it/traghetti-in-italia";
@@ -63,6 +64,7 @@ export const itArticleContent: Record<string, ArticleContent> = {
   "aperitivo-italiano": aperitivoItaliano,
   "cibo-di-strada-italiano": ciboDiStradaItaliano,
   "colazione-italiana": colazioneItaliana,
+  "formaggi-regionali-italiani": formaggiRegionaliItaliani,
   "caffe-italiano": caffeItaliano,
   "dolci-tradizionali-italiani": dolciTradizionaliItaliani,
   "vini-regionali-italiani": viniRegionaliItaliani,
