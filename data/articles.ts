@@ -1225,6 +1225,43 @@ const allArticles: Article[] = [
   }),
 
   story({
+    slug: "italian-pasta-shapes", category: "food",
+    title: "Italian Pasta Shapes: A Complete Guide to Every Format and How to Use It",
+    shortTitle: "Italian Pasta Shapes",
+    seoTitle: "Italian Pasta Shapes: Complete Guide to Every Format",
+    seoDescription:
+      "A complete guide to Italian pasta shapes: long pasta, ribbon pasta, short and tubular, filled pasta, regional specialities and how to pair each format with the right sauce.",
+    excerpt:
+      "From spaghetti and tagliatelle to orecchiette and culurgiones — a region-by-region guide to Italy's pasta formats, how they're made, and which sauces they pair with.",
+    authorSlug: "editorial-team", topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["emilia-romagna", "lombardy", "liguria", "tuscany", "lazio", "campania", "puglia", "sicily", "sardinia", "piedmont", "basilicata", "calabria"],
+    readingTimeMinutes: 20, publishedAt: "2026-10-11", updatedAt: "2026-10-11",
+    image: {
+      src: "/images/food/italian-pasta-shapes/pasta-shapes-variety.webp",
+      alt: "A variety of different Italian pasta shapes arranged on a wooden table",
+      credit: {
+        name: "Jason Leung",
+        url: "https://unsplash.com/photos/0hNFGTbxTgk?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/food/italian-pasta-shapes/pasta-shapes-variety-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-pasta-shapes/pasta-shapes-variety-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-pasta-shapes/pasta-shapes-variety-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "roman-pasta-classics",
+      "italian-food-markets",
+      "italian-regional-cheeses",
+      "italian-food-traditions",
+      "neapolitan-pizza",
+      "sicily-food-traditions",
+    ],
+  }),
+
+  story({
     slug: "italian-breakfast", category: "food",
     title: "Italian Breakfast: What Italians Eat in the Morning",
     shortTitle: "Italian Breakfast",

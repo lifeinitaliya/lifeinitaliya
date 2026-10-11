@@ -808,6 +808,31 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "formati-di-pasta-italiani",
+    title: "Formati di pasta italiani: guida completa a ogni formato e come usarlo",
+    shortTitle: "Formati di pasta italiani",
+    seoTitle: "Formati di pasta italiani: guida completa a ogni formato",
+    seoDescription:
+      "Guida completa ai formati di pasta italiani: pasta lunga, a nastro, corta e tubolare, pasta ripiena, specialità regionali e come abbinare ogni formato al condimento giusto.",
+    excerpt:
+      "Dagli spaghetti alle tagliatelle, dalle orecchiette ai culurgiones: una guida regione per regione ai formati di pasta italiani, come si fanno e con quali sughi si abbinano.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["emilia-romagna", "lombardy", "liguria", "tuscany", "lazio", "campania", "puglia", "sicily", "sardinia", "piedmont", "basilicata", "calabria"],
+    readingTimeMinutes: 20,
+    publishedAt: "2026-10-11",
+    updatedAt: "2026-10-11",
+    image: {
+      src: "/images/food/italian-pasta-shapes/pasta-shapes-variety.webp",
+      alt: "Una varietà di diversi formati di pasta italiana disposti su un tavolo di legno",
+    },
+    socialImages: social("/images/food/italian-pasta-shapes/pasta-shapes-variety"),
+    relatedSlugs: ["pasta-romana", "mercati-alimentari-italiani", "formaggi-regionali-italiani", "tradizioni-della-cucina-italiana", "pizza-napoletana", "tradizioni-della-cucina-siciliana"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",
