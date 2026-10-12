@@ -13,6 +13,7 @@ import { italianStreetFood } from "@/data/content/italian-street-food";
 import { italianBreakfast } from "@/data/content/italian-breakfast";
 import { italianRegionalCheeses } from "@/data/content/italian-regional-cheeses";
 import { italianPastaShapes } from "@/data/content/italian-pasta-shapes";
+import { italianDiningEtiquette } from "@/data/content/italian-dining-etiquette";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
@@ -228,6 +229,7 @@ export const articleContent: Record<string, ArticleContent> = {
   "italian-breakfast": italianBreakfast,
   "italian-regional-cheeses": italianRegionalCheeses,
   "italian-pasta-shapes": italianPastaShapes,
+  "italian-dining-etiquette": italianDiningEtiquette,
 
   // ——— Transport ———
   "ferries-in-italy": ferriesInItaly,

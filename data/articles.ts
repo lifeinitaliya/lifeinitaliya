@@ -1262,6 +1262,43 @@ const allArticles: Article[] = [
   }),
 
   story({
+    slug: "italian-dining-etiquette", category: "food",
+    title: "Italian Dining Etiquette: A Practical Guide for Visitors",
+    shortTitle: "Italian Dining Etiquette",
+    seoTitle: "Italian Dining Etiquette: A Practical Guide for Visitors",
+    seoDescription:
+      "A practical guide to Italian restaurant customs: meal times, how to order, understanding coperto and tipping, asking for the bill, table manners, and useful phrases.",
+    excerpt:
+      "From coperto and tipping to asking for the bill and ordering coffee — a practical guide to eating out in Italy without the guesswork.",
+    authorSlug: "editorial-team", topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["lazio", "lombardy", "campania", "tuscany", "emilia-romagna", "sicily"],
+    readingTimeMinutes: 18, publishedAt: "2026-10-12", updatedAt: "2026-10-12",
+    image: {
+      src: "/images/food/italian-dining-etiquette/restaurant-interior-tables.webp",
+      alt: "A cozy Italian restaurant interior with set tables and warm ambient lighting",
+      credit: {
+        name: "Antonio Araujo",
+        url: "https://unsplash.com/photos/yQYtdkKOLnQ?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/food/italian-dining-etiquette/restaurant-interior-tables-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/food/italian-dining-etiquette/restaurant-interior-tables-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/food/italian-dining-etiquette/restaurant-interior-tables-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "italian-food-traditions",
+      "italian-coffee-culture",
+      "italian-aperitivo",
+      "italian-breakfast",
+      "italian-food-markets",
+      "roman-pasta-classics",
+    ],
+  }),
+
+  story({
     slug: "italian-breakfast", category: "food",
     title: "Italian Breakfast: What Italians Eat in the Morning",
     shortTitle: "Italian Breakfast",

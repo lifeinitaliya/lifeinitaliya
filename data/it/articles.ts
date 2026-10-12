@@ -833,6 +833,31 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "galateo-a-tavola",
+    title: "Galateo a Tavola in Italia: Guida Pratica per Chi Visita il Paese",
+    shortTitle: "Galateo a tavola in Italia",
+    seoTitle: "Galateo a tavola in Italia: guida pratica per visitatori",
+    seoDescription:
+      "Guida pratica alle abitudini del ristorante italiano: orari dei pasti, come ordinare, coperto e mancia, chiedere il conto, frasi utili e differenze regionali.",
+    excerpt:
+      "Dal coperto alla mancia, dall'ordine delle portate alle frasi giuste per chiedere il conto: tutto quello che serve per mangiare fuori in Italia senza incertezze.",
+    category: { slug: "food", name: "Cibo e Bevande" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["regional-cuisine"],
+    regionSlugs: ["lazio", "lombardy", "campania", "tuscany", "emilia-romagna", "sicily"],
+    readingTimeMinutes: 18,
+    publishedAt: "2026-10-12",
+    updatedAt: "2026-10-12",
+    image: {
+      src: "/images/food/italian-dining-etiquette/restaurant-interior-tables.webp",
+      alt: "L'interno accogliente di un ristorante italiano con tavoli apparecchiati e un'illuminazione calda",
+    },
+    socialImages: social("/images/food/italian-dining-etiquette/restaurant-interior-tables"),
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "caffe-italiano", "aperitivo-italiano", "colazione-italiana", "mercati-alimentari-italiani", "pasta-romana"],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "caffe-italiano",
     title: "Il caffè italiano: come il caffè è diventato parte della vita quotidiana",
     shortTitle: "Il caffè italiano",
