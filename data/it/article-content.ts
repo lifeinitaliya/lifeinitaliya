@@ -24,6 +24,7 @@ import { colazioneItaliana } from "@/data/content/it/colazione-italiana";
 import { formaggiRegionaliItaliani } from "@/data/content/it/formaggi-regionali-italiani";
 import { formatiDiPastaItaliani } from "@/data/content/it/formati-di-pasta-italiani";
 import { galateoATavola } from "@/data/content/it/galateo-a-tavola";
+import { mercatiniDiNataleItalia } from "@/data/content/it/mercatini-di-natale-italia";
 import { tradizioniDellaCucinaSiciliana } from "@/data/content/it/tradizioni-della-cucina-siciliana";
 import { tradizioniDellaCucinaItaliana } from "@/data/content/it/tradizioni-della-cucina-italiana";
 import { traghettiInItalia } from "@/data/content/it/traghetti-in-italia";
@@ -69,6 +70,7 @@ export const itArticleContent: Record<string, ArticleContent> = {
   "formaggi-regionali-italiani": formaggiRegionaliItaliani,
   "formati-di-pasta-italiani": formatiDiPastaItaliani,
   "galateo-a-tavola": galateoATavola,
+  "mercatini-di-natale-italia": mercatiniDiNataleItalia,
   "caffe-italiano": caffeItaliano,
   "dolci-tradizionali-italiani": dolciTradizionaliItaliani,
   "vini-regionali-italiani": viniRegionaliItaliani,

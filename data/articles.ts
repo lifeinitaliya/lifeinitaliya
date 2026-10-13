@@ -1412,6 +1412,45 @@ const allArticles: Article[] = [
     readingTimeMinutes: 7, publishedAt: "2026-06-01", updatedAt: "2026-09-10",
     image: img("1696687021837-7babaf30debb", "People walking along a street strung with lights at night"),
   }),
+  story({
+    slug: "christmas-markets-italy", category: "events",
+    title: "Christmas Markets in Italy 2026: Dates, Places and What to Expect",
+    shortTitle: "Christmas Markets in Italy",
+    seoTitle: "Christmas Markets in Italy 2026: Dates, Places and What to Expect",
+    seoDescription:
+      "Confirmed and estimated 2026 dates for nine Italian Christmas markets: Bolzano, Merano, Bressanone, Trento, Aosta, Milan, Verona, Florence and Rome — with practical planning advice.",
+    excerpt:
+      "Bolzano, Merano, Bressanone, Trento, Aosta, Milan, Verona, Florence and Rome — nine Christmas markets, their confirmed 2026 dates and what makes each one worth the trip.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["festivals", "traditions"],
+    regionSlugs: ["trentino-alto-adige", "aosta-valley", "lombardy", "veneto", "tuscany", "lazio"],
+    readingTimeMinutes: 16,
+    publishedAt: "2026-10-13",
+    updatedAt: "2026-10-13",
+    image: {
+      src: "/images/events/christmas-markets-italy/christmas-market-village-square.webp",
+      alt: "A festive village square with snow-covered buildings and people browsing Christmas market stalls at dusk",
+      credit: {
+        name: "Marsha Levina",
+        url: "https://unsplash.com/photos/jV9GY-CXnVc?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/events/christmas-markets-italy/christmas-market-village-square-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/events/christmas-markets-italy/christmas-market-village-square-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/events/christmas-markets-italy/christmas-market-village-square-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "best-time-to-visit-italy",
+      "italy-by-train",
+      "visiting-the-dolomites",
+      "milan-beyond-the-duomo",
+      "verona-first-visit",
+      "florence-for-first-timers",
+    ],
+  }),
 ];
 
 /**

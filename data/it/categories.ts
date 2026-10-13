@@ -115,6 +115,17 @@ export const itCategories: ItCategory[] = [
     seoDescription:
       "Opera all'Arena di Verona, carnevali, palii e feste stagionali: esperienze da mettere in calendario durante un viaggio in Italia.",
   },
+  {
+    slug: "events",
+    itSlug: "eventi",
+    name: "Eventi",
+    description: "Mercatini, fiere e appuntamenti stagionali in tutta Italia.",
+    intro:
+      "Mercatini di Natale, fiere e appuntamenti stagionali da Nord a Sud: raccontiamo quando si svolgono, come arrivarci e che cosa aspettarsi. Date e orari cambiano ogni anno; riportiamo sempre le fonti ufficiali degli organizzatori così puoi verificare le informazioni più aggiornate prima di partire.",
+    seoTitle: "Eventi in Italia: mercatini, fiere e appuntamenti stagionali",
+    seoDescription:
+      "Mercatini di Natale, fiere e appuntamenti stagionali in Italia: date, orari e consigli pratici per organizzare la visita.",
+  },
 ];
 
 export const itGuidesPage = {

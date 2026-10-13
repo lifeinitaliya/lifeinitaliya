@@ -163,4 +163,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "italian-regional-cheeses", it: "formaggi-regionali-italiani", enPath: "/food/italian-regional-cheeses", itPath: "/it/cibo/formaggi-regionali-italiani" },
   { en: "italian-pasta-shapes", it: "formati-di-pasta-italiani", enPath: "/food/italian-pasta-shapes", itPath: "/it/cibo/formati-di-pasta-italiani" },
   { en: "italian-dining-etiquette", it: "galateo-a-tavola", enPath: "/food/italian-dining-etiquette", itPath: "/it/cibo/galateo-a-tavola" },
+  { en: "christmas-markets-italy", it: "mercatini-di-natale-italia", enPath: "/events/christmas-markets-italy", itPath: "/it/eventi/mercatini-di-natale-italia" },
 ];

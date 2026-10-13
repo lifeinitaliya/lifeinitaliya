@@ -933,4 +933,36 @@ export const itArticles: Article[] = [
     socialImages: social("/images/food/italian-regional-wines/serralunga-langhe"),
     relatedSlugs: ["tradizioni-della-cucina-italiana", "tradizioni-della-cucina-siciliana", "dolci-tradizionali-italiani", "torino-per-la-prima-volta", "verona-per-la-prima-volta", "firenze-per-la-prima-volta"],
   },
+  {
+    kind: "story",
+    locale: "it",
+    slug: "mercatini-di-natale-italia",
+    title: "Mercatini di Natale in Italia 2026: date, luoghi e cosa aspettarsi",
+    shortTitle: "Mercatini di Natale in Italia",
+    seoTitle: "Mercatini di Natale in Italia 2026: date, luoghi e consigli",
+    seoDescription:
+      "Date confermate e stimate per nove mercatini di Natale italiani 2026: Bolzano, Merano, Bressanone, Trento, Aosta, Milano, Verona, Firenze e Roma.",
+    excerpt:
+      "Bolzano, Merano, Bressanone, Trento, Aosta, Milano, Verona, Firenze e Roma: nove mercatini di Natale, le date confermate per il 2026 e cosa rende ciascuno diverso dagli altri.",
+    category: { slug: "events", name: "Eventi" },
+    authorSlug: "editorial-team",
+    topicSlugs: ["festivals", "traditions"],
+    regionSlugs: ["trentino-alto-adige", "aosta-valley", "lombardy", "veneto", "tuscany", "lazio"],
+    readingTimeMinutes: 16,
+    publishedAt: "2026-10-13",
+    updatedAt: "2026-10-13",
+    image: {
+      src: "/images/events/christmas-markets-italy/christmas-market-village-square.webp",
+      alt: "Una piazza festiva con edifici innevati e visitatori che sfogliano le bancarelle di un mercatino di Natale al tramonto",
+    },
+    socialImages: social("/images/events/christmas-markets-italy/christmas-market-village-square"),
+    relatedSlugs: [
+      "quando-andare-in-italia",
+      "viaggiare-in-italia-in-treno",
+      "dolomiti-prima-volta",
+      "milano-oltre-il-duomo",
+      "verona-per-la-prima-volta",
+      "firenze-per-la-prima-volta",
+    ],
+  },
 ];
