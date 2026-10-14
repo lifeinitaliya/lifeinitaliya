@@ -164,4 +164,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "italian-pasta-shapes", it: "formati-di-pasta-italiani", enPath: "/food/italian-pasta-shapes", itPath: "/it/cibo/formati-di-pasta-italiani" },
   { en: "italian-dining-etiquette", it: "galateo-a-tavola", enPath: "/food/italian-dining-etiquette", itPath: "/it/cibo/galateo-a-tavola" },
   { en: "christmas-markets-italy", it: "mercatini-di-natale-italia", enPath: "/events/christmas-markets-italy", itPath: "/it/eventi/mercatini-di-natale-italia" },
+  { en: "italy-in-november", it: "italia-a-novembre", enPath: "/travel/italy-in-november", itPath: "/it/viaggi/italia-a-novembre" },
 ];

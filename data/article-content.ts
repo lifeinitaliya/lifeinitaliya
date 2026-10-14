@@ -15,6 +15,7 @@ import { italianRegionalCheeses } from "@/data/content/italian-regional-cheeses"
 import { italianPastaShapes } from "@/data/content/italian-pasta-shapes";
 import { italianDiningEtiquette } from "@/data/content/italian-dining-etiquette";
 import { christmasMarketsItaly } from "@/data/content/christmas-markets-italy";
+import { italyInNovember } from "@/data/content/italy-in-november";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
@@ -234,6 +235,9 @@ export const articleContent: Record<string, ArticleContent> = {
 
   // ——— Events ———
   "christmas-markets-italy": christmasMarketsItaly,
+
+  // ——— Travel ———
+  "italy-in-november": italyInNovember,
 
   // ——— Transport ———
   "ferries-in-italy": ferriesInItaly,

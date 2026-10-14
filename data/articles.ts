@@ -1451,6 +1451,49 @@ const allArticles: Article[] = [
       "florence-for-first-timers",
     ],
   }),
+  story({
+    slug: "italy-in-november",
+    category: "travel",
+    title: "Italy in November 2026: Weather, Events and Best Places to Visit",
+    shortTitle: "Italy in November",
+    seoTitle: "Italy in November 2026: Weather, Events and Best Places to Visit",
+    seoDescription:
+      "Plan a November trip to Italy: regional weather averages, confirmed 2026 events including the Alba Truffle Fair and Torino Film Festival, best cities to visit, seasonal food and sample itineraries.",
+    excerpt:
+      "November crowds are thin, prices are low, and white truffle season is at its peak. How to make the most of Italy in one of its quietest months.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["travel-tips", "festivals"],
+    regionSlugs: ["piedmont", "lazio", "tuscany", "campania", "sicily", "veneto"],
+    readingTimeMinutes: 18,
+    publishedAt: "2026-10-14",
+    updatedAt: "2026-10-14",
+    image: {
+      src: "/images/travel/italy-in-november/rome-skyline-november.webp",
+      alt: "Rome's rooftops and domes under a soft autumn sky, with St Peter's visible in the distance",
+      credit: {
+        name: "Dmitry Voronov",
+        url: "https://unsplash.com/@voronov_ph?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/travel/italy-in-november/rome-skyline-november-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/travel/italy-in-november/rome-skyline-november-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/travel/italy-in-november/rome-skyline-november-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "best-time-to-visit-italy",
+      "christmas-markets-italy",
+      "visiting-the-dolomites",
+      "florence-for-first-timers",
+      "rome-in-three-days",
+      "turin-first-visit",
+      "bologna-in-two-days",
+      "italian-food-traditions",
+      "italy-by-train",
+    ],
+  }),
 ];
 
 /**
