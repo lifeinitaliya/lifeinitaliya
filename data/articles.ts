@@ -1494,6 +1494,49 @@ const allArticles: Article[] = [
       "italy-by-train",
     ],
   }),
+  story({
+    slug: "new-years-eve-italy",
+    category: "events",
+    title: "New Year's Eve in Italy 2026–2027: Best Places, Events and Travel Tips",
+    shortTitle: "New Year's Eve in Italy",
+    seoTitle: "New Year's Eve in Italy 2026–2027: Best Places, Events and Travel Tips",
+    seoDescription:
+      "Plan New Year's Eve in Italy 2026–2027: where to celebrate in Rome, Naples, Venice, Florence and Milan, Italian Capodanno traditions, cenone dining, confirmed events and travel planning advice.",
+    excerpt:
+      "From Rome's Circus Maximus to Naples' bay fireworks and Venice's lagoon display — how to plan New Year's Eve in Italy, with honest guidance on what's confirmed and what to verify closer to the date.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["festivals", "traditions"],
+    regionSlugs: ["lazio", "campania", "veneto", "tuscany", "lombardy", "piedmont"],
+    readingTimeMinutes: 20,
+    publishedAt: "2026-10-15",
+    updatedAt: "2026-10-15",
+    image: {
+      src: "/images/events/new-years-eve-italy/rome-piazza-del-popolo-nye.webp",
+      alt: "A large crowd gathered around an illuminated Christmas tree in Piazza del Popolo, Rome, on a winter evening",
+      credit: {
+        name: "Gabriella Clare Marino",
+        url: "https://unsplash.com/@gabiontheroad?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/events/new-years-eve-italy/rome-piazza-del-popolo-nye-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/events/new-years-eve-italy/rome-piazza-del-popolo-nye-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/events/new-years-eve-italy/rome-piazza-del-popolo-nye-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "christmas-markets-italy",
+      "italy-in-november",
+      "best-time-to-visit-italy",
+      "rome-in-three-days",
+      "naples-first-visit",
+      "italian-food-traditions",
+      "italian-dining-etiquette",
+      "italy-by-train",
+      "getting-between-italian-cities",
+    ],
+  }),
 ];
 
 /**
