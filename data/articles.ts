@@ -1537,6 +1537,48 @@ const allArticles: Article[] = [
       "getting-between-italian-cities",
     ],
   }),
+  story({
+    slug: "lucca-comics-games-2026",
+    category: "events",
+    title: "Lucca Comics & Games 2026: Tickets, Travel, Where to Stay and Visitor Tips",
+    shortTitle: "Lucca Comics & Games 2026",
+    seoTitle: "Lucca Comics & Games 2026: Tickets, Travel, Where to Stay and Visitor Tips",
+    seoDescription:
+      "Plan your visit to Lucca Comics & Games 2026 (28 Oct – 1 Nov): official ticket and wristband process, how to get to Lucca from Pisa and Florence, where to stay, festival areas explained and first-timer tips.",
+    excerpt:
+      "The 60th-anniversary \"Legacy\" edition of Europe's biggest comics and gaming festival returns to Lucca from 28 October to 1 November 2026. Everything you need to plan the trip — tickets, transport, accommodation and what to expect.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["festivals", "travel-tips"],
+    regionSlugs: ["tuscany"],
+    readingTimeMinutes: 19,
+    publishedAt: "2026-10-18",
+    updatedAt: "2026-10-18",
+    image: {
+      src: "/images/events/lucca-comics-games-2026/lucca-bell-tower-rooftops.webp",
+      alt: "Stone bell towers rising above a terracotta rooftop panorama in Lucca's historic centre",
+      credit: {
+        name: "Filiz Elaerts",
+        url: "https://unsplash.com/@filizelaerts?utm_source=life_in_italia&utm_medium=referral",
+        source: "Unsplash",
+        sourceUrl: "https://unsplash.com/?utm_source=life_in_italia&utm_medium=referral",
+      },
+    },
+    socialImages: [
+      { src: "/images/events/lucca-comics-games-2026/lucca-bell-tower-rooftops-16x9.jpg", width: 1600, height: 900 },
+      { src: "/images/events/lucca-comics-games-2026/lucca-bell-tower-rooftops-4x3.jpg", width: 1600, height: 1200 },
+      { src: "/images/events/lucca-comics-games-2026/lucca-bell-tower-rooftops-1x1.jpg", width: 1200, height: 1200 },
+    ],
+    relatedSlugs: [
+      "christmas-markets-italy",
+      "italy-in-november",
+      "florence-for-first-timers",
+      "best-time-to-visit-italy",
+      "italy-by-train",
+      "getting-between-italian-cities",
+      "italy-airport-transfers",
+      "italy-trip-cost",
+    ],
+  }),
 ];
 
 /**

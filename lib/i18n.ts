@@ -166,4 +166,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "christmas-markets-italy", it: "mercatini-di-natale-italia", enPath: "/events/christmas-markets-italy", itPath: "/it/eventi/mercatini-di-natale-italia" },
   { en: "italy-in-november", it: "italia-a-novembre", enPath: "/travel/italy-in-november", itPath: "/it/viaggi/italia-a-novembre" },
   { en: "new-years-eve-italy", it: "capodanno-in-italia", enPath: "/events/new-years-eve-italy", itPath: "/it/eventi/capodanno-in-italia" },
+  { en: "lucca-comics-games-2026", it: "lucca-comics-games-2026", enPath: "/events/lucca-comics-games-2026", itPath: "/it/eventi/lucca-comics-games-2026" },
 ];
