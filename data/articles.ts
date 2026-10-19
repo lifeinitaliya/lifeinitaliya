@@ -1579,6 +1579,31 @@ const allArticles: Article[] = [
       "italy-trip-cost",
     ],
   }),
+  story({
+    slug: "italy-protests-october-2026",
+    category: "events",
+    title: "Italy Protests October 2026: What Happened, Where, and What It Means for Visitors",
+    shortTitle: "Italy Protests October 2026",
+    seoTitle: "Italy Protests October 2026: What Happened and What It Means for Visitors",
+    seoDescription:
+      "Fact-checked summary of Italy protests in October 2026: student demonstrations, CGIL march in Rome, and cost-of-living clashes in Milan, Turin and Bologna. Updated 19 October 2026.",
+    excerpt:
+      "Student protests, a major union march in Rome, and cost-of-living demonstrations in Milan, Turin and Bologna between 16–18 October 2026. A fact-checked summary of what happened, what was demanded, and what it means for people travelling to Italy.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["travel-tips"],
+    regionSlugs: [],
+    readingTimeMinutes: 12,
+    publishedAt: "2026-10-19",
+    updatedAt: "2026-10-19",
+    image: img("1552832586-c1c6dace5e72", "Rome cityscape at dusk with the Colosseum and the historic centre stretching to the horizon"),
+    relatedSlugs: [
+      "italy-in-november",
+      "italy-by-train",
+      "rome-in-three-days",
+      "getting-between-italian-cities",
+      "lucca-comics-games-2026",
+    ],
+  }),
 ];
 
 /**

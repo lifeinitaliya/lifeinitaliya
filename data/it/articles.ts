@@ -1040,6 +1040,36 @@ export const itArticles: Article[] = [
   {
     kind: "story",
     locale: "it",
+    slug: "proteste-italia-ottobre-2026",
+    title: "Proteste in Italia a ottobre 2026: cosa è successo e cosa significa per chi visita il paese",
+    shortTitle: "Proteste Italia ottobre 2026",
+    seoTitle: "Proteste in Italia ottobre 2026: cosa è successo e cosa significa per i visitatori",
+    seoDescription:
+      "Riepilogo verificato delle proteste in Italia a ottobre 2026: manifestazioni studentesche, corteo CGIL a Roma, scontri a Milano, Torino e Bologna. Aggiornato al 19 ottobre 2026.",
+    excerpt:
+      "Proteste studentesche, grande corteo sindacale a Roma e manifestazioni contro il caro vita a Milano, Torino e Bologna tra il 16 e il 18 ottobre 2026. Riepilogo verificato di cosa è successo, cosa chiedevano i manifestanti e cosa significa per chi viaggia in Italia.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["travel-tips"],
+    regionSlugs: [],
+    readingTimeMinutes: 13,
+    publishedAt: "2026-10-19",
+    updatedAt: "2026-10-19",
+    category: { slug: "events", name: "Eventi" },
+    image: {
+      src: "https://images.unsplash.com/photo-1552832586-c1c6dace5e72?auto=format&fit=crop&w=1600&q=75",
+      alt: "Panorama di Roma al crepuscolo con il Colosseo e il centro storico sullo sfondo",
+    },
+    relatedSlugs: [
+      "italia-a-novembre",
+      "viaggiare-in-italia-in-treno",
+      "roma-in-tre-giorni",
+      "come-spostarsi-tra-le-citta-italiane",
+      "lucca-comics-games-2026",
+    ],
+  },
+  {
+    kind: "story",
+    locale: "it",
     slug: "lucca-comics-games-2026",
     title: "Lucca Comics & Games 2026: Biglietti, Come Arrivare, Dove Dormire e Consigli",
     shortTitle: "Lucca Comics & Games 2026",
