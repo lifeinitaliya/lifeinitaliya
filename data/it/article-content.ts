@@ -29,6 +29,7 @@ import { italiaANovembre } from "@/data/content/it/italia-a-novembre";
 import { capodannoInItalia } from "@/data/content/it/capodanno-in-italia";
 import { luccaComicsGames2026It } from "@/data/content/it/lucca-comics-games-2026";
 import { protesteItaliaOttobre2026 } from "@/data/content/it/proteste-italia-ottobre-2026";
+import { nataleInItalia } from "@/data/content/it/natale-in-italia";
 import { tradizioniDellaCucinaSiciliana } from "@/data/content/it/tradizioni-della-cucina-siciliana";
 import { tradizioniDellaCucinaItaliana } from "@/data/content/it/tradizioni-della-cucina-italiana";
 import { traghettiInItalia } from "@/data/content/it/traghetti-in-italia";
@@ -79,6 +80,7 @@ export const itArticleContent: Record<string, ArticleContent> = {
   "capodanno-in-italia": capodannoInItalia,
   "lucca-comics-games-2026": luccaComicsGames2026It,
   "proteste-italia-ottobre-2026": protesteItaliaOttobre2026,
+  "natale-in-italia": nataleInItalia,
   "caffe-italiano": caffeItaliano,
   "dolci-tradizionali-italiani": dolciTradizionaliItaliani,
   "vini-regionali-italiani": viniRegionaliItaliani,

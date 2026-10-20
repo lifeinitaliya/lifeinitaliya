@@ -19,6 +19,7 @@ import { italyInNovember } from "@/data/content/italy-in-november";
 import { newYearsEveItaly } from "@/data/content/new-years-eve-italy";
 import { luccaComicsGames2026 } from "@/data/content/lucca-comics-games-2026";
 import { italyProtestsOctober2026 } from "@/data/content/italy-protests-october-2026";
+import { christmasInItaly } from "@/data/content/christmas-in-italy";
 import { italianFoodMarkets } from "@/data/content/italian-food-markets";
 import { italianGelato } from "@/data/content/italian-gelato";
 import { italianFoodTraditions } from "@/data/content/italian-food-traditions";
@@ -241,6 +242,7 @@ export const articleContent: Record<string, ArticleContent> = {
   "new-years-eve-italy": newYearsEveItaly,
   "lucca-comics-games-2026": luccaComicsGames2026,
   "italy-protests-october-2026": italyProtestsOctober2026,
+  "christmas-in-italy": christmasInItaly,
 
   // ——— Travel ———
   "italy-in-november": italyInNovember,

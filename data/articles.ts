@@ -1604,6 +1604,34 @@ const allArticles: Article[] = [
       "lucca-comics-games-2026",
     ],
   }),
+  story({
+    slug: "christmas-in-italy",
+    category: "events",
+    title: "Christmas in Italy 2026: Traditions, Food, Events and Travel Tips",
+    shortTitle: "Christmas in Italy",
+    seoTitle: "Christmas in Italy 2026: Traditions, Food, Events and Travel Tips",
+    seoDescription:
+      "Plan your Christmas trip to Italy in 2026: key dates, markets (confirmed), city guides for Rome, Naples, Florence, Milan and more, traditional food, what's open, weather, and transport.",
+    excerpt:
+      "The Italian Christmas season runs from 8 December through Epiphany on 6 January. This guide covers the traditions, the markets, where to go, what to eat, and the practical details that make the difference between a good trip and a stressful one.",
+    authorSlug: "editorial-team",
+    topicSlugs: ["festivals", "travel-tips", "traditions"],
+    regionSlugs: [],
+    readingTimeMinutes: 22,
+    publishedAt: "2026-10-20",
+    updatedAt: "2026-10-20",
+    image: img("1525874684015-58379d421a52", "The Trevi Fountain in Rome illuminated at night, with visitors gathered in the piazza"),
+    relatedSlugs: [
+      "christmas-markets-italy",
+      "new-years-eve-italy",
+      "italy-in-november",
+      "rome-in-three-days",
+      "naples-first-visit",
+      "florence-for-first-timers",
+      "italy-by-train",
+      "best-time-to-visit-italy",
+    ],
+  }),
 ];
 
 /**
