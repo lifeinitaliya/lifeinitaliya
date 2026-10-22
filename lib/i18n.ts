@@ -169,4 +169,5 @@ export const articlePairs: { en: string; it: string; enPath: string; itPath: str
   { en: "lucca-comics-games-2026", it: "lucca-comics-games-2026", enPath: "/events/lucca-comics-games-2026", itPath: "/it/eventi/lucca-comics-games-2026" },
   { en: "italy-protests-october-2026", it: "proteste-italia-ottobre-2026", enPath: "/events/italy-protests-october-2026", itPath: "/it/eventi/proteste-italia-ottobre-2026" },
   { en: "christmas-in-italy", it: "natale-in-italia", enPath: "/events/christmas-in-italy", itPath: "/it/eventi/natale-in-italia" },
+  { en: "festa-del-torrone-cremona-2026", it: "festa-del-torrone-cremona-2026", enPath: "/events/festa-del-torrone-cremona-2026", itPath: "/it/eventi/festa-del-torrone-cremona-2026" },
 ];
