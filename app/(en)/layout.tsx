@@ -59,7 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8406110988861499"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           crossOrigin="anonymous"
         />
       </body>
