@@ -1607,9 +1607,9 @@ const allArticles: Article[] = [
   story({
     slug: "festa-del-torrone-cremona-2026",
     category: "events",
-    title: "Festa del Torrone 2026 in Cremona: Dates, Programme and Travel Tips",
+    title: "Festa del Torrone 2026 in Cremona: Dates, Events and Travel Tips",
     shortTitle: "Festa del Torrone 2026",
-    seoTitle: "Festa del Torrone 2026 in Cremona: Dates, Programme and Travel Tips",
+    seoTitle: "Festa del Torrone 2026 in Cremona: Dates, Events and Travel Tips",
     seoDescription: "Everything you need to visit Festa del Torrone 2026 in Cremona (7–22 November): what torrone is, festival dates, programme status, things to do in Cremona, how to get there and what to eat.",
     excerpt: "Cremona's Festa del Torrone fills the medieval centre with nougat stalls, regional producers and historical events for over two weeks in November. Dates confirmed for 7–22 November 2026; this guide covers what to expect, how to get there and what to do in the city.",
     authorSlug: "editorial-team",

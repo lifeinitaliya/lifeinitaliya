@@ -99,11 +99,12 @@ export const festaDelTorroneCremona2026: ArticleContent = {
     ul(
       "**Traditional torrone cremonese**: the hard and soft varieties made to the IGP specification, in both classic almond and hazelnut formats. Buying directly from the producer stalls is the best way to taste before you buy.",
       "**Mostarda di Cremona**: not a mustard sauce in the English sense, but a preserved fruit condiment made with whole or large pieces of candied fruit in a sweet syrup with mustard oil. It is traditionally served alongside bollito misto (boiled meats) and aged cheeses. It is one of Cremona's most distinctive products alongside torrone.",
-      "**Seasonal Lombard produce**: cheeses — particularly Grana Padano, Taleggio, and local soft cheeses — cured meats, wines from the region, and other autumn-harvest products typically appear at the festival market.",
+      "**Seasonal Lombard produce**: cheeses — particularly [Grana Padano, Taleggio](/food/italian-regional-cheeses) and other Lombard varieties — cured meats, wines from the region, and other autumn-harvest products typically appear at the festival market.",
       "**Warm drinks and street food**: roasted chestnuts (*caldarroste*), mulled wine and hot drinks are typical at outdoor November markets in northern Italy. The historic centre has cafés and restaurants where more substantial meals are available."
     ),
     p("Prices for torrone vary considerably by producer and type. Hard torrone made to traditional recipes is generally less expensive per kilogram than artisan soft varieties with premium ingredients. Buying at the festival stalls — rather than at the airport or gift shops — typically gives access to the better-quality makers and more variety. Specific prices are set by individual producers and were not verified in advance of publication; compare before you buy."),
     tip("If you want to bring torrone home, the hard varieties (*torrone duro*) travel better than soft ones and do not require refrigeration. Many producers package it in gift boxes specifically designed for carrying."),
+    p("For context on where torrone sits within Italy's wider confectionery tradition, see our guide to [traditional Italian desserts](/food/traditional-italian-desserts). For an overview of how food markets work across Italy, see [Italian food markets](/food/italian-food-markets)."),
 
     mkt("gluhwein-vin-brule-stall", "A market vendor behind wooden counter with bottles of wine and warming drinks, at an outdoor food market in northern Italy"),
 
@@ -139,6 +140,7 @@ export const festaDelTorroneCremona2026: ArticleContent = {
     p("Cremona railway station is approximately 15 minutes on foot from Piazza del Comune. The walk is flat and straightforward. Taxis are available at the station."),
     p("Book return train tickets in advance, particularly for weekend days during the festival when trains between Milan and Cremona can fill. Check timetables at [trenitalia.com](https://www.trenitalia.com/)."),
     tip("On weekends during the festival, the last train back to Milan in the evening can sell out. If you plan to stay for dinner, check the last train time before committing to a restaurant booking that might run late."),
+    p("For a full guide to train travel in Italy — booking, pass options and what to expect on board — see [Italy by train](/guides/italy-by-train). For a comparison of all transport options between Italian cities, see [getting between Italian cities](/guides/getting-between-italian-cities)."),
 
     h3("By car"),
     p("Cremona is accessible from the A21 Brescia–Piacenza motorway (exit Cremona Ovest or Cremona Est). The historic centre has a limited traffic zone (ZTL); parking is available in the surrounding streets and in official parking areas near the centre. During festival weekends, parking fills early — arriving before 10:00 or using a park-and-walk approach from the edges of the centre is advisable. Public transport from Milan (train) is generally more practical for day visitors."),
@@ -150,7 +152,7 @@ export const festaDelTorroneCremona2026: ArticleContent = {
     p("Staying in Cremona itself allows you to experience the city in the evenings after the day visitors leave — when the piazza quiets and the atmosphere is more local. It also means you can visit the festival on a weekday morning, when the stalls are less crowded and producers have more time to talk. If you plan to visit the Museo del Violino and explore the lutherie district, an overnight stay allows a more relaxed schedule."),
 
     h3("Day trip from Milan"),
-    p("For visitors based in Milan, a day trip is practical: the approximately 1-hour train journey each way gives a full festival day with time for the cathedral and Torrazzo in the morning and the stalls in the afternoon. This approach works best on a weekday or early Saturday, when the stalls are less crowded and trains are easier to board."),
+    p("For visitors based in Milan, a day trip is practical: the approximately 1-hour train journey each way gives a full festival day with time for the cathedral and Torrazzo in the morning and the stalls in the afternoon. This approach works best on a weekday or early Saturday, when the stalls are less crowded and trains are easier to board. If you have time to spend in Milan itself, see our guide to [Milan beyond the Duomo](/cities/milan-beyond-the-duomo)."),
 
     note("Cremona's hotel inventory is limited compared with larger Italian cities. If you plan to stay overnight during the festival period, check availability and book early."),
 
@@ -171,6 +173,8 @@ export const festaDelTorroneCremona2026: ArticleContent = {
       "**Plan around the fog.** The Po Valley is famous for its autumn and winter fog (*nebbia*), which can be dense in November. This rarely disrupts the festival itself, but it can affect train visibility and reduce long-distance views from the Torrazzo. Check the local weather forecast.",
       "**Factor in the Museo del Violino.** It closes on Mondays and may have restricted hours during the festival period. Check [museodelviolino.org](https://www.museodelviolino.org/) for current hours before building it into your plan."
     ),
+
+    note("**Before you travel:** confirm the current programme and opening times at [festadeltorrone.com](https://www.festadeltorrone.com/) — details are added progressively in the weeks before the festival opens. Book train tickets at [trenitalia.com](https://www.trenitalia.com/), especially for festival weekends. For a broader November trip to Italy, see our [Italy in November](/travel/italy-in-november) guide; for general trip planning, the [complete Italy travel guide](/guides/complete-italy-travel-guide) is a useful starting point.", "Before you travel"),
   ],
 
   faqs: [

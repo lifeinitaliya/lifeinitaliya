@@ -98,11 +98,12 @@ export const festaDelTorroneCremona2026It: ArticleContent = {
     ul(
       "**Torrone cremonese tradizionale**: le versioni dure e morbide realizzate secondo il disciplinare IGP, in versione classica con mandorle e nocciole. Comprare direttamente dagli stand dei produttori permette di assaggiare prima di acquistare.",
       "**Mostarda di Cremona**: non una salsa alla senape in senso stretto, ma una conserva di frutta intera o a pezzi in sciroppo dolce con olio di senape. Si abbina tradizionalmente al bollito misto e ai formaggi stagionati. È uno dei prodotti tipici più caratteristici di Cremona insieme al torrone.",
-      "**Prodotti lombardi di stagione**: formaggi — in particolare Grana Padano, Taleggio e formaggi molli locali — salumi, vini regionali e altri prodotti del raccolto autunnale.",
+      "**Prodotti lombardi di stagione**: formaggi — tra cui [Grana Padano, Taleggio](/it/cibo/formaggi-regionali-italiani) e altre varietà lombarde — salumi, vini regionali e altri prodotti del raccolto autunnale.",
       "**Bevande calde e cibo di strada**: caldarroste, vin brulé e bevande calde sono elementi fissi dei mercati invernali in tutta l'Italia settentrionale. Nel centro storico ci sono bar e ristoranti dove fermarsi per un pasto più sostanzioso."
     ),
     p("I prezzi del torrone variano sensibilmente a seconda del produttore e della tipologia. Il torrone duro secondo la ricetta tradizionale è in genere meno costoso al chilogrammo rispetto alle varianti morbide artigianali con ingredienti di pregio. Acquistare direttamente alla festa — piuttosto che in aeroporto o nei negozi di souvenir — dà accesso a una selezione più ampia e spesso a qualità superiore."),
     tip("Se vuoi portare il torrone a casa, le versioni dure (*torrone duro*) si trasportano meglio di quelle morbide e non richiedono refrigerazione. Molti produttori confezionano scatole regalo pensate appositamente per il viaggio."),
+    p("Per approfondire la tradizione dolciaria italiana di cui fa parte il torrone, consulta la guida ai [dolci tradizionali italiani](/it/cibo/dolci-tradizionali-italiani). Per scoprire come funzionano i mercati alimentari in Italia, vedi la guida ai [mercati alimentari italiani](/it/cibo/mercati-alimentari-italiani)."),
 
     mkt("gluhwein-vin-brule-stall", "Un venditore di mercato dietro un bancone in legno con bottiglie di vino e bevande calde, in un mercato alimentare all'aperto nell'Italia settentrionale"),
 
@@ -138,6 +139,7 @@ export const festaDelTorroneCremona2026It: ArticleContent = {
     p("La stazione di Cremona si trova a circa 15 minuti a piedi da Piazza del Comune, su percorso pianeggiante. I taxi sono disponibili in stazione."),
     p("Prenota i biglietti di ritorno con anticipo, soprattutto nei weekend del festival, quando i treni sulla tratta Milano–Cremona si riempiono. Controlla gli orari su [trenitalia.com](https://www.trenitalia.com/)."),
     tip("Nei weekend del festival, l'ultimo treno serale per Milano può esaurire i posti. Se prevedi una cena in centro, controlla l'orario dell'ultimo treno prima di prenotare un ristorante a orario tardivo."),
+    p("Per una guida completa al viaggio in treno in Italia — prenotazione, tipologie di biglietti e consigli pratici — consulta [viaggiare in Italia in treno](/it/guide/viaggiare-in-italia-in-treno). Per un confronto tra tutti i mezzi di trasporto tra le città italiane, vedi [come spostarsi tra le città italiane](/it/guide/come-spostarsi-tra-le-citta-italiane)."),
 
     h3("In auto"),
     p("Cremona è raggiungibile dall'autostrada A21 Brescia–Piacenza (uscite Cremona Ovest o Cremona Est). Il centro storico è ZTL; i parcheggi sono nelle strade circostanti e nelle aree di sosta ufficiali vicino al centro. Nei weekend del festival i parcheggi si riempiono presto: è consigliabile arrivare prima delle 10:00 o usare un approccio park-and-walk dai margini del centro. Per i visitatori in giornata da Milano, il treno è in genere più pratico."),
@@ -149,7 +151,7 @@ export const festaDelTorroneCremona2026It: ArticleContent = {
     p("Soggiornare a Cremona permette di vivere la città la sera, dopo che i visitatori in giornata se ne sono andati, e di visitare la festa in settimana al mattino, quando gli stand sono meno affollati e i produttori hanno più tempo per parlare. Se vuoi visitare il Museo del Violino ed esplorare il quartiere liutaio, una notte consente un ritmo più rilassato."),
 
     h3("Gita in giornata da Milano"),
-    p("Per chi è a Milano, la gita in giornata è pratica: il treno di circa un'ora in ciascun senso permette una giornata intera, con la mattina per il Duomo e il Torrazzo e il pomeriggio per gli stand. Funziona meglio in settimana o al sabato mattina, quando gli stand sono meno affollati e i treni più facili da prendere."),
+    p("Per chi è a Milano, la gita in giornata è pratica: il treno di circa un'ora in ciascun senso permette una giornata intera, con la mattina per il Duomo e il Torrazzo e il pomeriggio per gli stand. Funziona meglio in settimana o al sabato mattina, quando gli stand sono meno affollati e i treni più facili da prendere. Se hai più tempo a disposizione a Milano, la nostra guida [Milano oltre il Duomo](/it/citta/milano-oltre-il-duomo) copre la città nel dettaglio."),
 
     note("L'offerta ricettiva di Cremona è limitata rispetto alle grandi città italiane. Se prevedi di pernottare durante il festival, verifica la disponibilità e prenota per tempo."),
 
@@ -170,6 +172,8 @@ export const festaDelTorroneCremona2026It: ArticleContent = {
       "**Metti in conto la nebbia.** La Pianura Padana è famosa per la *nebbia* autunnale e invernale, che in novembre può essere fitta. Raramente interferisce con la festa, ma può ridurre la visibilità dalla cima del Torrazzo e influire sulla circolazione dei treni. Controlla le previsioni meteo locali.",
       "**Tieni conto del Museo del Violino.** È chiuso il lunedì e potrebbe avere orari ridotti durante il festival. Verifica su [museodelviolino.org](https://www.museodelviolino.org/) prima di inserirlo nel programma."
     ),
+
+    note("**Prima di partire:** verifica il programma aggiornato su [festadeltorrone.com](https://www.festadeltorrone.com/) — i dettagli vengono pubblicati progressivamente nelle settimane prima dell'apertura. Prenota i biglietti del treno su [trenitalia.com](https://www.trenitalia.com/), specialmente nei weekend del festival. Per pianificare un viaggio più lungo in Italia a novembre, consulta la guida [l'Italia a novembre](/it/viaggi/italia-a-novembre); per la pianificazione generale, la [guida completa al viaggio in Italia](/it/guide/guida-completa-viaggio-italia) è un buon punto di partenza.", "Prima di partire"),
   ],
 
   faqs: [
