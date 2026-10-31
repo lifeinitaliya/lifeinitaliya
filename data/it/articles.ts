@@ -573,7 +573,7 @@ export const itArticles: Article[] = [
       credit: unsplash("Tushar Agarwal", "tagag"),
     },
     socialImages: social("/images/food/italian-food-traditions/florence-mercato-centrale-stall"),
-    relatedSlugs: ["firenze-per-la-prima-volta", "bologna-in-due-giorni", "napoli-per-la-prima-volta", "palermo-per-la-prima-volta", "roma-in-tre-giorni", "guida-completa-viaggio-italia"],
+    relatedSlugs: ["firenze-per-la-prima-volta", "bologna-in-due-giorni", "napoli-per-la-prima-volta", "palermo-per-la-prima-volta", "roma-in-tre-giorni", "guida-completa-viaggio-italia", "gelato-italiano", "cibo-di-strada-italiano"],
   },
   {
     kind: "story",
@@ -650,7 +650,7 @@ export const itArticles: Article[] = [
       alt: "Una ciotola di spaghetti alla carbonara con una salsa lucida di uovo e pecorino, pepe nero e guanciale croccante",
       credit: unsplash("Stötzer Balázs", "stotzer"),
     },
-    relatedSlugs: ["tradizioni-della-cucina-italiana", "pizza-napoletana", "roma-in-tre-giorni", "vini-regionali-italiani", "dolci-tradizionali-italiani"],
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "pizza-napoletana", "roma-in-tre-giorni", "vini-regionali-italiani", "dolci-tradizionali-italiani", "formati-di-pasta-italiani"],
   },
   {
     kind: "story",
@@ -879,7 +879,7 @@ export const itArticles: Article[] = [
       credit: unsplash("Gabriella Clare Marino", "gabiontheroad"),
     },
     socialImages: social("/images/food/italian-coffee-culture/rome-espresso-outdoor-table"),
-    relatedSlugs: ["tradizioni-della-cucina-italiana", "napoli-per-la-prima-volta", "torino-per-la-prima-volta", "venezia-per-la-prima-volta", "tradizioni-della-cucina-siciliana", "roma-in-tre-giorni"],
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "napoli-per-la-prima-volta", "torino-per-la-prima-volta", "venezia-per-la-prima-volta", "tradizioni-della-cucina-siciliana", "roma-in-tre-giorni", "colazione-italiana", "aperitivo-italiano"],
   },
   {
     kind: "story",
@@ -905,7 +905,7 @@ export const itArticles: Article[] = [
       credit: unsplash("Gene Gallin", "genefoto"),
     },
     socialImages: social("/images/food/traditional-italian-desserts/venice-pastry-counter"),
-    relatedSlugs: ["tradizioni-della-cucina-italiana", "tradizioni-della-cucina-siciliana", "caffe-italiano", "napoli-per-la-prima-volta", "torino-per-la-prima-volta", "venezia-per-la-prima-volta"],
+    relatedSlugs: ["tradizioni-della-cucina-italiana", "tradizioni-della-cucina-siciliana", "caffe-italiano", "napoli-per-la-prima-volta", "torino-per-la-prima-volta", "venezia-per-la-prima-volta", "gelato-italiano"],
   },
   {
     kind: "story",
@@ -963,6 +963,7 @@ export const itArticles: Article[] = [
       "milano-oltre-il-duomo",
       "verona-per-la-prima-volta",
       "firenze-per-la-prima-volta",
+      "natale-in-italia",
     ],
   },
   {
@@ -999,6 +1000,7 @@ export const itArticles: Article[] = [
       "bologna-in-due-giorni",
       "tradizioni-della-cucina-italiana",
       "viaggiare-in-italia-in-treno",
+      "proteste-italia-ottobre-2026",
     ],
   },
   {

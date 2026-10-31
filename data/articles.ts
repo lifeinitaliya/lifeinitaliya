@@ -819,6 +819,7 @@ const allArticles: Article[] = [
       "rome-in-three-days",
       "italian-regional-wines",
       "traditional-italian-desserts",
+      "italian-pasta-shapes",
     ],
   }),
   story({
@@ -853,6 +854,8 @@ const allArticles: Article[] = [
       "naples-first-visit",
       "turin-first-visit",
       "sicily-food-traditions",
+      "italian-breakfast",
+      "italian-aperitivo",
     ],
   }),
   story({
@@ -951,6 +954,7 @@ const allArticles: Article[] = [
       "italian-coffee-culture",
       "naples-first-visit",
       "turin-first-visit",
+      "italian-gelato",
     ],
   }),
   story({
@@ -984,6 +988,8 @@ const allArticles: Article[] = [
       "italian-coffee-culture",
       "traditional-italian-desserts",
       "bologna-in-two-days",
+      "italian-gelato",
+      "italian-street-food",
     ],
   }),
   story({
@@ -1449,6 +1455,8 @@ const allArticles: Article[] = [
       "milan-beyond-the-duomo",
       "verona-first-visit",
       "florence-for-first-timers",
+      "christmas-in-italy",
+      "festa-del-torrone-cremona-2026",
     ],
   }),
   story({
@@ -1492,6 +1500,7 @@ const allArticles: Article[] = [
       "bologna-in-two-days",
       "italian-food-traditions",
       "italy-by-train",
+      "italy-protests-october-2026",
     ],
   }),
   story({
