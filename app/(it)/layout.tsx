@@ -54,7 +54,7 @@ export default function ItalianRootLayout({ children }: { children: React.ReactN
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8406110988861499"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
         <a
           href="#main-content"
