@@ -393,5 +393,25 @@ export const christmasInItaly: ArticleContent = {
       url: "https://www.isprambiente.gov.it",
       note: "Long-term climate averages for Italian cities in December",
     },
+    {
+      label: "Italian public holidays — governo.it",
+      url: "https://www.governo.it/it/approfondimento/festivita-nazionali",
+      note: "Official Italian government list of national public holidays, including 8 December (Immacolata), 25–26 December, 1 January, 6 January (Epifania)",
+    },
+    {
+      label: "Epifania / Befana tradition — treccani.it",
+      url: "https://www.treccani.it/enciclopedia/befana",
+      note: "Treccani Encyclopaedia entry on the Befana figure and Epiphany folk tradition in Italy",
+    },
+    {
+      label: "Naples presepe tradition — San Gregorio Armeno, comune.napoli.it",
+      url: "https://www.comune.napoli.it",
+      note: "Comune di Napoli on the Via San Gregorio Armeno nativity artisan district; corroborated by UNESCO listing of Naples historic centre",
+    },
+    {
+      label: "Panettone and pandoro production standards — Gazzetta Ufficiale",
+      url: "https://www.gazzettaufficiale.it/eli/id/2005/07/30/05A08250/SG",
+      note: "Italian Ministry of Productive Activities decree of 22 July 2005 (published in GU 175, 30 July 2005) setting production standards for panettone, pandoro and colomba",
+    },
   ],
 };

@@ -3,13 +3,13 @@ import type { Author } from "@/lib/types";
 // Contributors.
 export const authors: Author[] = [
   {
-    slug: "bareera",
-    name: "Bareera",
-    role: "Founder & Editor",
+    slug: "bareera-sharif",
+    name: "Bareera Sharif",
+    role: "Founder & Managing Editor",
     shortBio:
-      "Writes about technology, practical guides, digital products and everyday topics.",
-    bio: "Bareera founded Life in Italia and edits its guides, writing about technology, practical guides, digital products and everyday topics.",
-    interests: ["Technology", "Practical guides", "Digital products", "Everyday topics"],
+      "Software engineer and founder of Life in Italia. Plans and edits the publication's guides and articles about Italy.",
+    bio: "Bareera Sharif is a software engineer with a background in digital platforms and online publishing. She founded Life in Italia and manages its editorial work — planning content, overseeing research and sourcing, reviewing articles for accuracy and usefulness, and maintaining the site. Life in Italia covers Italian destinations, travel planning, food culture, transport and regional traditions, in English and Italian.",
+    interests: ["Italy travel writing", "Editorial", "Practical guides", "Digital publishing"],
   },
   {
     slug: "editorial-team",

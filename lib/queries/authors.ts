@@ -7,9 +7,12 @@ const withCount = (author: Author): AuthorWithCount => ({
   guideCount: articles.filter((a) => a.authorSlug === author.slug).length,
 });
 
-/** Authors credited on published articles. Others have no public profile page. */
+// These authors always get a public profile page regardless of article credits.
+const ALWAYS_PUBLIC = new Set(["bareera-sharif"]);
+
+/** Authors credited on published articles, plus named editors with a standing profile. */
 export async function getAuthors(): Promise<AuthorWithCount[]> {
-  return authors.map(withCount).filter((a) => a.guideCount > 0);
+  return authors.map(withCount).filter((a) => a.guideCount > 0 || ALWAYS_PUBLIC.has(a.slug));
 }
 
 export async function getAuthorBySlug(slug: string): Promise<AuthorWithCount | null> {

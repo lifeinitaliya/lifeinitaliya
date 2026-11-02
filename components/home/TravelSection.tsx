@@ -24,7 +24,9 @@ export function TravelSection({ lead, stories }: { lead: Article; stories: Artic
         links={links}
       />
       <StoryCard article={lead} variant="feature" className="mt-10" />
-      <StoryGrid articles={stories} columns={4} showExcerpt={false} compactOnMobile className="mt-10 sm:mt-14" />
+      {stories.length > 0 && (
+        <StoryGrid articles={stories} columns={4} showExcerpt={false} compactOnMobile className="mt-10 sm:mt-14" />
+      )}
     </HomeSection>
   );
 }

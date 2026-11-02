@@ -24,7 +24,7 @@ export interface PolicyDocument {
 const p = (text: string): ContentBlock => ({ type: "paragraph", text });
 const list = (items: string[]): ContentBlock => ({ type: "list", items });
 
-const LAST_UPDATED = "2026-09-29";
+const LAST_UPDATED = "2026-11-02";
 
 export const editorialPolicy: PolicyDocument = {
   path: routes.editorialPolicy,
@@ -72,11 +72,14 @@ export const editorialPolicy: PolicyDocument = {
     },
     {
       title: "Independence, Advertising and Sponsorship",
-      blocks: [p("Life in Italia does not currently carry advertising, sponsored content or affiliate links, and no business pays to be included in an article. If that changes, advertising will be clearly separated from editorial content, sponsored content will be labelled as such, and affiliate links will be disclosed on the page. Commercial relationships will not decide what we write or recommend.")],
+      blocks: [p("Life in Italia carries display advertising provided by Google AdSense, which serves advertisements automatically based on page content and your browsing activity. Advertising appears in clearly marked areas and is not selected or influenced by our editorial team. We don't carry sponsored articles or affiliate links, and no business pays to be included in or to influence an article. Editorial decisions are made independently of advertising.")],
     },
     {
       title: "AI-Assisted Content",
-      blocks: [p("We may use AI tools to help with tasks such as research, outlining, drafting or editing. Published content is reviewed by the editorial team, facts are checked against sources, and we remain responsible for its accuracy.")],
+      blocks: [
+        p("Life in Italia uses digital tools, including AI-assisted tools, where appropriate during research, outlining, drafting, and editing. Published material is subject to human editorial review, with factual claims checked against relevant sources where possible."),
+        p("Editorial oversight is the responsibility of Bareera Sharif, Founder and Managing Editor."),
+      ],
     },
   ],
 };
@@ -108,11 +111,12 @@ export const privacyPolicy: PolicyDocument = {
       title: "The Short Version",
       blocks: [
         list([
-          "We don't use analytics, advertising or tracking of any kind, and the site sets no cookies.",
+          "The site displays advertising through Google AdSense. Google AdSense may set cookies in your browser and use your browsing data to show relevant ads. You can manage or opt out of personalised advertising through [Google's ad settings](https://adssettings.google.com/).",
+          "We don't use analytics tools or tracking of our own, and we don't build profiles of visitors.",
           "Like any website, the servers that deliver our pages receive technical information such as your IP address; this may be recorded in server logs by our hosting provider.",
           "If you contact us, your message is delivered to our email inbox through an email service, Resend, so that we can reply.",
           "If you tick items in one of our planning checklists, your progress is saved in your own browser and never sent to us.",
-          "Images and fonts are served from our own domain, so reading an article doesn't connect your browser to other companies' servers.",
+          "Images and fonts are served from our own domain, so reading an article only connects your browser to Google AdSense (for advertising) and not to other companies' servers.",
         ]),
       ],
     },
@@ -139,8 +143,8 @@ export const privacyPolicy: PolicyDocument = {
     {
       title: "Cookies and Browser Storage",
       blocks: [
-        p("The site does not set any cookies."),
-        p(`Some guides — for example the [travel planning checklist](/guides/italy-travel-planning-checklist) — contain interactive checklists. When you tick an item, your browser's local storage remembers which items are ticked so that your progress is still there next time. This information stays on your device and is never sent to us. Our [Cookie Policy](${routes.cookiePolicy}) describes it in detail, including how to clear it.`),
+        p("The site itself does not set cookies. Google AdSense, which we use to display advertising, sets cookies in your browser to serve and measure advertisements. For details, see [Google's Privacy & Terms](https://policies.google.com/privacy) and [How Google uses cookies](https://policies.google.com/technologies/cookies). You can manage or opt out of personalised advertising at [adssettings.google.com](https://adssettings.google.com/)."),
+        p(`Some guides — for example the [travel planning checklist](/guides/italy-travel-planning-checklist) — contain interactive checklists. When you tick an item, your browser's local storage remembers which items are ticked so that your progress is still there next time. This information stays on your device and is never sent to us. Our [Cookie Policy](${routes.cookiePolicy}) describes cookies and browser storage in detail.`),
       ],
     },
     {
@@ -158,6 +162,7 @@ export const privacyPolicy: PolicyDocument = {
           ["What happens", "Why", "Legal basis"],
           [
             ["Your browser's request (IP address, user agent, page, time) is processed and may be logged by our hosting provider", "To deliver the website and keep it secure and working", "Our legitimate interest in running a secure, working website"],
+            ["Google AdSense receives information about the page you are viewing and may use cookies and browser data to serve and measure advertisements", "To display advertising that supports the site", "Our legitimate interest in funding the site through advertising, subject to your right to object and (for EEA users) consent where required by law"],
             ["Messages you send through the contact form or by email", "To read and reply to your message and handle any follow-up", "Our legitimate interest in responding to people who contact us, or steps you ask us to take"],
             ["Disclosure to authorities", "Only where the law requires it", "Legal obligation"],
           ],
@@ -170,9 +175,10 @@ export const privacyPolicy: PolicyDocument = {
       blocks: [
         list([
           "**Our hosting provider** runs the servers that deliver the site and receives the technical request information described above. It acts on our behalf, to provide that service.",
+          "**Google AdSense** provides advertising on the site. When you view a page containing an ad, Google AdSense receives information about the page and may use cookies and browser data to serve relevant advertisements. See [Google's privacy policy](https://policies.google.com/privacy) and [personalised advertising settings](https://adssettings.google.com/).",
           "**Resend** (Resend, Inc.) delivers contact-form messages to our inbox. It processes the message and the details you entered on our behalf; see its [privacy policy](https://resend.com/legal/privacy-policy).",
           "**Google** provides the Gmail inbox where messages sent through the form or by email are received and kept; see [Google's privacy policy](https://policies.google.com/privacy).",
-          "**Nobody else.** We don't use analytics or advertising providers, and we don't sell or rent personal information.",
+          "**Nobody else.** We don't use analytics providers, and we don't sell or rent personal information.",
           "**Authorities**, if we are legally required to disclose information, for example in response to a valid legal request.",
         ]),
       ],
@@ -304,7 +310,7 @@ export const termsAndConditions: PolicyDocument = {
     },
     {
       title: "Advertising and Commercial Relationships",
-      blocks: [p("Life in Italia doesn't currently carry advertising, sponsored articles or affiliate links, and nobody pays to be mentioned in an article. If that changes, advertising and sponsored content will be clearly labelled and kept separate from editorial content, and these terms and our other policies will be updated first.")],
+      blocks: [p("Life in Italia displays advertising through Google AdSense, an automated display advertising service. Advertisements appear in clearly marked areas and are separate from editorial content. We don't carry sponsored articles or affiliate links, and nobody pays to be mentioned in or to influence an article.")],
     },
     {
       title: "Our Responsibility",
@@ -358,7 +364,7 @@ export const disclaimer: PolicyDocument = {
     },
     {
       title: "Commercial Relationships",
-      blocks: [p("Life in Italia doesn't currently carry advertising or sponsored content and doesn't use affiliate links. No business pays to appear in our articles.")],
+      blocks: [p("Life in Italia displays advertising through Google AdSense, an automated ad network. Advertisements are clearly marked and separate from editorial content. We don't use affiliate links, and no business pays to appear in or to influence our articles.")],
     },
     {
       title: "Guide Rank",
@@ -375,9 +381,9 @@ export const cookiePolicy: PolicyDocument = {
   path: routes.cookiePolicy,
   eyebrow: "Legal",
   title: "Cookie Policy",
-  description: "Life in Italia sets no cookies. This page lists the one thing the site does store in your browser — checklist progress — and how to clear it.",
+  description: "Cookies and browser storage used by Life in Italia: Google AdSense advertising cookies and optional checklist progress stored locally in your browser.",
   updatedAt: LAST_UPDATED,
-  intro: "Life in Italia does not set cookies — not for analytics, not for advertising and not for anything else. The only thing the site stores in your browser is your progress in our interactive planning checklists, and only if you use them. This page explains exactly what that is.",
+  intro: "Life in Italia uses Google AdSense to display advertising. Google AdSense sets cookies in your browser. Apart from those, the only thing the site itself stores in your browser is your progress in our interactive planning checklists, if you use them. This page explains what is stored and how to manage it.",
   sections: [
     {
       title: "Cookies and Browser Storage",
@@ -390,6 +396,14 @@ export const cookiePolicy: PolicyDocument = {
           ["Name", "Provider", "Purpose", "Type", "Duration", "Required?"],
           [
             [
+              "Various cookies (e.g. IDE, _gcl_au, AID)",
+              "Google (AdSense)",
+              "Serves and measures advertisements on the site. May personalise ads based on your browsing activity across sites. See Google's [cookie types](https://policies.google.com/technologies/cookies) for full details.",
+              "Cookie (advertising)",
+              "Varies by cookie; typically 1–13 months",
+              "Set automatically when a page with an ad loads; you can opt out at [adssettings.google.com](https://adssettings.google.com/)",
+            ],
+            [
               "bsi-checklist:[checklist name]",
               "Life in Italia (this website)",
               "Remembers which items you have ticked in an interactive planning checklist, so your progress is still there when you come back",
@@ -398,7 +412,7 @@ export const cookiePolicy: PolicyDocument = {
               "Optional: created only when you tick an item",
             ],
           ],
-          "A complete list of what Life in Italia stores in your browser. No cookies are set.",
+          "What Life in Italia and its advertising provider store in your browser.",
         ),
         p(`The checklists appear in a few practical guides, such as the [travel planning checklist](/guides/italy-travel-planning-checklist) and our guides to [airport transfers](/guides/italy-airport-transfers), [getting between cities](/guides/getting-between-italian-cities), [ferries](/transport/ferries-in-italy) and [the Dolomites](/guides/visiting-the-dolomites), and in their Italian editions. Each checklist has its own entry. It contains only the text of the items you ticked — no name, email address or identifier — and it is never sent to us.`),
         p("If your browser blocks site data, for example in some private-browsing modes, the checklist still works for the page you're on but forgets your ticks when you leave."),
@@ -408,16 +422,18 @@ export const cookiePolicy: PolicyDocument = {
       title: "What the Site Does Not Use",
       blocks: [
         list([
-          "**Analytics** — no Google Analytics or any other analytics service.",
-          "**Advertising** — no advertising cookies, pixels or ad networks.",
+          "**Analytics of our own** — no Google Analytics or other analytics service. Note: Google AdSense, used for advertising, may use your browsing data for ad measurement purposes.",
           "**Third-party embeds** — no embedded videos, maps or social-media widgets that could set their own cookies.",
-          "**Third-party requests** — images and fonts are served from our own domain, so reading a page doesn't send requests to other companies' servers.",
+          "**Third-party requests beyond advertising** — images and fonts are served from our own domain, so reading a page connects your browser only to Google AdSense (for advertising) and not to other companies' servers.",
         ]),
       ],
     },
     {
       title: "Consent",
-      blocks: [p("Because the site sets no cookies and uses no tracking, we don't show a cookie banner. The checklist storage is only created when you choose to tick an item, and you can remove it at any time. If we ever add cookies or other technologies that need your consent, we will ask for it before they are used and list them on this page.")],
+      blocks: [
+        p("Google AdSense sets cookies when you view a page with an advertisement. For visitors in the European Economic Area (EEA) and other regions where consent for advertising cookies is required by law, personalised advertising is only enabled after consent is given. You can manage or withdraw your advertising consent at any time through [Google's ad settings](https://adssettings.google.com/)."),
+        p("The checklist local storage is only created when you choose to tick an item, and you can remove it at any time by unticking all items or clearing this site's browser data."),
+      ],
     },
     {
       title: "Clearing Checklist Progress",

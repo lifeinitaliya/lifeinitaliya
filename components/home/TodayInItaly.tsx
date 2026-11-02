@@ -12,21 +12,21 @@ export function TodayInItaly({ lead, secondary }: TodayInItalyProps) {
   return (
     <section aria-labelledby="home-title">
       <Container className="pt-10 pb-14 sm:pt-14 sm:pb-20">
-        <div className="grid gap-6 border-b border-foreground pb-8 lg:grid-cols-12 lg:items-end lg:gap-10 lg:pb-10">
+        <div className="grid gap-6 border-b-2 border-foreground pb-8 lg:grid-cols-12 lg:items-end lg:gap-10 lg:pb-10">
           <div className="lg:col-span-8">
-            <p className="text-[12px] font-bold tracking-[0.2em] text-primary uppercase">
-              Today in Italy
+            <p className="text-[11px] font-bold tracking-[0.22em] text-primary uppercase">
+              Life in Italia
             </p>
             <h1
               id="home-title"
-              className="mt-4 font-display text-[clamp(52px,8.5vw,112px)] leading-[0.92] tracking-[-0.02em]"
+              className="mt-3 font-display text-[clamp(52px,8.5vw,112px)] leading-[0.92] tracking-[-0.02em]"
             >
               Italy, in one place.
             </h1>
           </div>
-          <p className="max-w-md text-lg leading-relaxed text-muted-foreground lg:col-span-4 lg:pb-2">
-            Discover where to go, what to eat, what to see, what&apos;s happening and how to
-            get around Italy.
+          <p className="max-w-md text-[17px] leading-relaxed text-muted-foreground lg:col-span-4 lg:pb-2">
+            Practical guides, city stories, food, culture and transport — everything you need
+            to plan and understand a trip to Italy.
           </p>
         </div>
 

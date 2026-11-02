@@ -41,36 +41,40 @@ export default async function AuthorPage({
 }: PageProps<"/author/[slug]">) {
   const [{ slug }, sp] = await Promise.all([params, searchParams]);
   const author = await getAuthorBySlug(slug);
-  if (!author || author.guideCount === 0) notFound();
+  if (!author) notFound();
 
   const path = routes.author(author.slug);
-  const guides = await getArticles({ author: author.slug, page: parsePage(sp.page) });
+  const guides = author.guideCount > 0
+    ? await getArticles({ author: author.slug, page: parsePage(sp.page) })
+    : null;
 
   return (
     <>
       <JsonLd data={profilePageSchema(author, path)} />
       <AuthorHeader author={author} />
 
-      <section aria-labelledby="published-title" className="py-12 sm:py-16">
-        <Container>
-          <SectionHeading
-            id="published-title"
-            title="Published Articles"
-            description="Latest contributions first."
-          />
-          <GuideGrid
-            guides={guides.items}
-            className="mt-10"
-            empty={`${author.name} hasn't published any guides yet.`}
-          />
-          <GuidePagination
-            page={guides.page}
-            totalPages={guides.totalPages}
-            basePath={path}
-            className="mt-14"
-          />
-        </Container>
-      </section>
+      {guides && (
+        <section aria-labelledby="published-title" className="py-12 sm:py-16">
+          <Container>
+            <SectionHeading
+              id="published-title"
+              title="Published Articles"
+              description="Latest contributions first."
+            />
+            <GuideGrid
+              guides={guides.items}
+              className="mt-10"
+              empty={`${author.name} hasn't published any guides yet.`}
+            />
+            <GuidePagination
+              page={guides.page}
+              totalPages={guides.totalPages}
+              basePath={path}
+              className="mt-14"
+            />
+          </Container>
+        </section>
+      )}
     </>
   );
 }

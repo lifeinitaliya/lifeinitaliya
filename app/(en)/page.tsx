@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
+import { CitiesSection } from "@/components/home/CitiesSection";
+import { CultureSection } from "@/components/home/CultureSection";
 import { FoodSection } from "@/components/home/FoodSection";
+import { ItalyEdit } from "@/components/home/ItalyEdit";
 import { LatestFromItaly } from "@/components/home/LatestFromItaly";
+import { PeopleSection } from "@/components/home/PeopleSection";
 import { PopularStories } from "@/components/home/PopularStories";
 import { PracticalGuides } from "@/components/home/PracticalGuides";
 import { RegionsSection } from "@/components/home/RegionsSection";
@@ -81,15 +85,23 @@ export default async function HomePage() {
   const inSection = (slug: Article["category"]["slug"]) =>
     stories.filter((a) => a.category.slug === slug);
 
+  const [lead, ...secondary] = hero;
+  // Sectioned content claimed first so "latest" gets whatever's newest & unclaimed.
   const [foodLead, ...food] = take(inSection("food"), 5);
-  const [travelLead, ...travel] = take([...inSection("travel"), ...inSection("cities")], 5);
+  const [travelLead, ...travel] = take(inSection("travel"), 5);
+  // Claim all city articles so they don't spill into "latest", then show them in CitiesSection.
+  const cityArticles = take(inSection("cities"), 20);
+  const [cultureLead, ...cultureStories] = take(
+    [...inSection("culture"), ...inSection("lifestyle")],
+    5
+  );
+  const people = take(inSection("people"), 4);
   const transport = take(
     guides.filter((g) => transportGuideSlugs.includes(g.slug)),
     4
   );
   const practical = take(guides, 6) as Guide[];
   const latest = take(stories, 4);
-  const [lead, ...secondary] = hero;
 
   return (
     <>
@@ -97,11 +109,15 @@ export default async function HomePage() {
       {lead && <TodayInItaly lead={lead} secondary={secondary} />}
       {latest.length > 0 && <LatestFromItaly articles={latest} />}
       {travelLead && <TravelSection lead={travelLead} stories={travel} />}
+      {cityArticles.length > 0 && <CitiesSection articles={cityArticles} />}
       <RegionsSection regions={regions} />
       {foodLead && <FoodSection lead={foodLead} stories={food} />}
+      {cultureLead && <CultureSection lead={cultureLead} stories={cultureStories} />}
+      {people.length > 0 && <PeopleSection articles={people} />}
       {transport.length > 0 && <TransportSection articles={transport} />}
       {practical.length > 0 && <PracticalGuides guides={practical} />}
       <PopularStories articles={popular} />
+      <ItalyEdit />
       <WhyBsInsights />
     </>
   );

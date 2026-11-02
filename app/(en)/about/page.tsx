@@ -86,10 +86,15 @@ export default function AboutPage() {
               slowly and each article is revisited as information changes.
             </p>
             <p>
-              Articles are researched and written by the Life in Italia editorial team and credited
-              to it. We are not affiliated with any tourism board, transport operator or business,
-              and we don&apos;t claim first-hand experiences or professional credentials we
-              don&apos;t have.
+              Life in Italia was founded and is managed by{" "}
+              <strong>Bareera Sharif</strong>, a software engineer with a background in digital
+              platforms and online publishing. She plans the publication&apos;s editorial content,
+              oversees research and sourcing, and reviews articles for accuracy and usefulness.
+            </p>
+            <p>
+              Articles are researched and written by the Life in Italia editorial team. We are not
+              affiliated with any tourism board, transport operator or business, and we don&apos;t
+              claim first-hand experiences or professional credentials we don&apos;t have.
             </p>
           </div>
         </Container>
@@ -206,9 +211,10 @@ export default function AboutPage() {
               check that it was really taken there.
             </p>
             <p>
-              Life in Italia does not currently carry advertising, sponsored content or affiliate
-              links, and nobody pays to appear in an article. If that changes, commercial content
-              will be clearly labelled and kept separate from editorial content.
+              The site carries display advertising provided by Google AdSense. Advertisements are
+              served automatically in clearly marked areas and are not selected or influenced by the
+              editorial team. We don&apos;t carry sponsored articles or affiliate links, and no
+              business pays to appear in or to influence an article.
             </p>
             <p>
               Articles show when they were published and last updated. If you spot an error,
