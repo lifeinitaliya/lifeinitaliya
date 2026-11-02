@@ -111,6 +111,22 @@ export async function ArticleView({
                   </Link>
                 </p>
                 <p className="text-muted-foreground">{article.author.role}</p>
+                {article.author.slug === "editorial-team" && (
+                  <>
+                    <p className="text-muted-foreground">
+                      {dict.providedBy}{" "}
+                      <Link href={routes.author("carlos")} hrefLang={it ? "en" : undefined} className="rounded-sm font-semibold hover:text-primary">
+                        Carlos
+                      </Link>
+                    </p>
+                    <p className="text-muted-foreground">
+                      {dict.reviewedBy}{" "}
+                      <Link href={routes.author("carlos")} hrefLang={it ? "en" : undefined} className="rounded-sm font-semibold hover:text-primary">
+                        Carlos
+                      </Link>
+                    </p>
+                  </>
+                )}
               </div>
             </div>
             <dl className="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-muted-foreground">

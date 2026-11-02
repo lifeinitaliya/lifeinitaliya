@@ -85,7 +85,7 @@ export const itArticles: Article[] = [
     excerpt:
       "Patente e documenti, regole della strada, ZTL, pedaggi, parcheggi e noleggio: che cosa sapere prima di mettersi al volante in Italia.",
     category: { slug: "transport", name: "Trasporti" },
-    authorSlug: "editorial-team",
+    authorSlug: "carlos",
     topicSlugs: ["driving", "road-trips"],
     regionSlugs: [],
     guideRank: 92,
@@ -481,7 +481,7 @@ export const itArticles: Article[] = [
     excerpt:
       "Taxi, tariffe fisse, NCC, treni e bus: come scegliere il modo giusto per lasciare i principali aeroporti italiani e che cosa controllare prima di prenotare.",
     category: { slug: "transport", name: "Trasporti" },
-    authorSlug: "editorial-team",
+    authorSlug: "carlos",
     topicSlugs: ["airports"],
     regionSlugs: ["lazio", "lombardy", "veneto", "campania"],
     guideRank: 88,

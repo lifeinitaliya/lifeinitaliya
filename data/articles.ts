@@ -147,7 +147,7 @@ const allArticles: Article[] = [
       "How to get from Italian airports to your destination: official taxi fares, private and shared transfers, airport trains and buses, and the main airports compared.",
     excerpt:
       "Taxis, fixed fares, private transfers, trains and buses: how to choose the right way out of Italy's main airports, and what to check before you book.",
-    category: "transport", authorSlug: "editorial-team", topicSlugs: ["airports"], regionSlugs: ["lazio", "lombardy", "veneto", "campania"],
+    category: "transport", authorSlug: "carlos", topicSlugs: ["airports"], regionSlugs: ["lazio", "lombardy", "veneto", "campania"],
     guideRank: 88, readingTimeMinutes: 21, publishedAt: "2026-05-06", updatedAt: "2026-09-28",
     image: {
       src: "/images/guides/italy-airport-transfers/rome-taxis-rank.webp",
@@ -183,7 +183,7 @@ const allArticles: Article[] = [
     excerpt:
       "What international visitors should know about licenses, road rules, ZTL zones, tolls, parking and renting a car in Italy.",
     category: "transport",
-    authorSlug: "editorial-team",
+    authorSlug: "carlos",
     topicSlugs: ["driving", "road-trips"],
     regionSlugs: [],
     guideRank: 92,

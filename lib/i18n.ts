@@ -45,6 +45,8 @@ const dictionaries = {
     regions: "Regions",
     editorialNote: "Editorial note",
     sourcesDefault: "Sources checked for this guide",
+    providedBy: "Information provided by",
+    reviewedBy: "Reviewed by",
     aboutAuthor: "About the author",
     moreFrom: (name: string) => `More from ${name}`,
     feedbackQuestion: (noun: "guide" | "article") => `Was this ${noun} useful?`,
@@ -97,6 +99,8 @@ const dictionaries = {
     regions: "Regioni",
     editorialNote: "Nota redazionale",
     sourcesDefault: "Fonti consultate per questa guida",
+    providedBy: "Informazioni fornite da",
+    reviewedBy: "Revisionato da",
     aboutAuthor: "Chi firma",
     moreFrom: (name: string) => `Tutti gli articoli di ${name}`,
     feedbackQuestion: (noun: "guide" | "article") =>
