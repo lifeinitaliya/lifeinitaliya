@@ -3,9 +3,9 @@
 // claims beyond the English profiles.
 
 export const itAuthorCopy: Record<string, { name?: string; role: string; shortBio: string }> = {
-  "bareera-sharif": {
-    role: "Fondatrice e Managing Editor",
-    shortBio: "Software engineer e fondatrice di Life in Italia. Pianifica e cura le guide e gli articoli della pubblicazione sull'Italia.",
+  "carlos": {
+    role: "Collaboratore per i Viaggi in Italia e Autista",
+    shortBio: "Autista professionista con base in Italia, con esperienza pratica sui percorsi che collegano le principali città, aeroporti e destinazioni regionali.",
   },
   "editorial-team": {
     name: "Redazione",

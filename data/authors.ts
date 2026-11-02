@@ -3,13 +3,13 @@ import type { Author } from "@/lib/types";
 // Contributors.
 export const authors: Author[] = [
   {
-    slug: "bareera-sharif",
-    name: "Bareera Sharif",
-    role: "Founder & Managing Editor",
+    slug: "carlos",
+    name: "Carlos",
+    role: "Italy Travel Contributor & Driver",
     shortBio:
-      "Software engineer and founder of Life in Italia. Plans and edits the publication's guides and articles about Italy.",
-    bio: "Bareera Sharif is a software engineer with a background in digital platforms and online publishing. She founded Life in Italia and manages its editorial work — planning content, overseeing research and sourcing, reviewing articles for accuracy and usefulness, and maintaining the site. Life in Italia covers Italian destinations, travel planning, food culture, transport and regional traditions, in English and Italian.",
-    interests: ["Italy travel writing", "Editorial", "Practical guides", "Digital publishing"],
+      "Professional driver based in Italy with practical experience on routes connecting major cities, airports and regional destinations.",
+    bio: "Carlos is a professional driver based in Italy who regularly travels across different Italian cities and regions. His work involves driving on routes connecting major cities, airports, tourist destinations and regional locations throughout Italy. Through his professional driving experience, he has developed practical familiarity with Italian roads, routes, distances and regional destinations. His contribution to Life in Italia focuses on sharing practical travel perspectives that help readers better understand transportation and getting around Italy.",
+    interests: ["Getting around Italy", "Italian roads and routes", "Transport", "Regional Italy"],
   },
   {
     slug: "editorial-team",

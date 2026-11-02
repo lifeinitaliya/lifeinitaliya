@@ -8,7 +8,7 @@ const withCount = (author: Author): AuthorWithCount => ({
 });
 
 // These authors always get a public profile page regardless of article credits.
-const ALWAYS_PUBLIC = new Set(["bareera-sharif"]);
+const ALWAYS_PUBLIC = new Set(["carlos"]);
 
 /** Authors credited on published articles, plus named editors with a standing profile. */
 export async function getAuthors(): Promise<AuthorWithCount[]> {

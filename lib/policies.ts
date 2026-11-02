@@ -78,7 +78,7 @@ export const editorialPolicy: PolicyDocument = {
       title: "AI-Assisted Content",
       blocks: [
         p("Life in Italia uses digital tools, including AI-assisted tools, where appropriate during research, outlining, drafting, and editing. Published material is subject to human editorial review, with factual claims checked against relevant sources where possible."),
-        p("Editorial oversight is the responsibility of Bareera Sharif, Founder and Managing Editor."),
+        p("Published material is reviewed by the Life in Italia editorial team before publication."),
       ],
     },
   ],

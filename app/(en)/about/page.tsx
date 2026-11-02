@@ -86,10 +86,10 @@ export default function AboutPage() {
               slowly and each article is revisited as information changes.
             </p>
             <p>
-              Life in Italia was founded and is managed by{" "}
-              <strong>Bareera Sharif</strong>, a software engineer with a background in digital
-              platforms and online publishing. She plans the publication&apos;s editorial content,
-              oversees research and sourcing, and reviews articles for accuracy and usefulness.
+              Our contributors include <strong>Carlos</strong>, a professional driver based in
+              Italy who travels regularly across Italian cities, airports and regional destinations.
+              His practical experience on Italian roads informs the transport and getting-around
+              sections of the site.
             </p>
             <p>
               Articles are researched and written by the Life in Italia editorial team. We are not
