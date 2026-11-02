@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -44,14 +43,17 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} ${dmSerif.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
-        {/* Google AdSense — auto ads + CMP (consent banner configured in AdSense dashboard → Privacy & messaging → GDPR) */}
-        <Script
+      <head>
+        {/* Google AdSense — auto ads + CMP (consent banner configured in AdSense dashboard → Privacy & messaging → GDPR).
+            Native <script async> in <head> so adsbygoogle.js executes before page content renders,
+            which Funding Choices requires to show the GDPR consent barrier. */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8406110988861499"
           crossOrigin="anonymous"
-          strategy="beforeInteractive"
         />
+      </head>
+      <body className="flex min-h-full flex-col">
         <a
           href="#main-content"
           className="sr-only z-50 rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
